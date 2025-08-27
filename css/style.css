@@ -280,3 +280,19 @@ footer {
   text-decoration: underline;
 }
 
+/* flexibel */
+/* Style untuk tablet */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    background-color: lightgreen;
+  }
+}
+
+/* Style untuk HP */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+    background-color: lightpink;
+  }
+}
