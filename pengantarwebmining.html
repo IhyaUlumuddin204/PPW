@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengantar Web Mining</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <img src="img/ftprofile.jpg" alt="Foto Profil" class="profile-img">
+
+    <!-- Search -->
+    <input type="text" id="search" class="search-box" placeholder="Search...">
+
+    <h3>Menu</h3>
+    <ul id="menu">
+      <li><a href="index.html">Profile</a></li>
+      <li><a href="page2.html">Pengantar Web Mining</a></li>
+    </ul>
+  </aside>
+
+  <!-- Konten Utama -->
+  <main class="content">
+    <!-- Header -->
+    <header class="header">
+      <button class="toggle-btn" id="toggleSidebar"><i class="bi bi-list"></i></button>
+    </header>
+
+    <section id="tugas">
+      <h1>Pengantar Web Mining</h1>
+
+      <h2>Web Mining</h2>
+      <p>
+        Web Mining adalah penerapan teknik data mining untuk menggali informasi, pola, atau pengetahuan dari data yang ada di web. 
+        Data web bisa berupa konten halaman (teks, gambar, video), struktur link antar halaman, maupun jejak penggunaan pengguna (usage data). 
+        Tujuannya adalah memanfaatkan data web untuk berbagai kepentingan, seperti bisnis, sistem rekomendasi, analisis perilaku pengguna, 
+        maupun pengembangan teknologi web yang lebih pintar.
+      </p>
+
+      <h2>Komponen Penting dalam Web Mining</h2>
+
+      <h3>1. Web Scraping</h3>
+      <p>
+        Teknik untuk mengambil data dari halaman web secara otomatis menggunakan program/script.  
+        <b>Tujuan:</b> mengumpulkan informasi yang ditampilkan di web (teks, tabel, harga produk, artikel).  
+        <b>Contoh:</b> mengambil data harga barang dari e-commerce untuk perbandingan harga.
+      </p>
+
+      <h3>2. Web Crawling</h3>
+      <p>
+        Proses menelusuri dan mengindeks banyak halaman web dengan bantuan program yang disebut crawler/spider.  
+        <b>Tujuan:</b> mengumpulkan data web dalam skala besar untuk dianalisis/disimpan.  
+        <b>Contoh:</b> Googlebot yang menjelajahi web untuk memperbarui indeks mesin pencari Google.
+      </p>
+
+      <h3>3. Web Data Preprocessing</h3>
+      <p>
+        Tahap persiapan data web sebelum dilakukan analisis.  
+        <b>Langkah-langkah:</b>
+      </p>
+      <ul>
+        <li>Data Cleaning → menghapus data yang tidak relevan/rusak.</li>
+        <li>Deduplication → menghilangkan data ganda.</li>
+        <li>Normalization → menyeragamkan format data.</li>
+        <li>Transformation → mengubah data agar lebih mudah diproses.</li>
+      </ul>
+      <p><b>Tujuan:</b> membuat data lebih berkualitas sehingga hasil analisis lebih akurat.</p>
+
+      <h3>4. Pembelajaran Terawasi (Supervised Learning)</h3>
+      <p>
+        Teknik machine learning dengan data berlabel (sudah ada target/jawaban).  
+        <b>Cara kerja:</b> model belajar dari data latih, lalu memprediksi data baru.  
+        <b>Contoh algoritma:</b> Decision Tree, SVM, Neural Network.  
+        <b>Penerapan:</b> klasifikasi email spam, prediksi harga rumah.
+      </p>
+
+      <h3>5. Pembelajaran Tak Terawasi (Unsupervised Learning)</h3>
+      <p>
+        Teknik machine learning dengan data tanpa label.  
+        <b>Tujuan:</b> menemukan pola atau pengelompokan dalam data.  
+        <b>Contoh algoritma:</b> K-Means, Association Rules, PCA.  
+        <b>Penerapan:</b> mengelompokkan pelanggan berdasarkan kebiasaan belanja, analisis log pengguna.
+      </p>
+
+      <h2>Taksonomi Web Mining</h2>
+
+      <h3>1. Web Structure Mining</h3>
+      <ul>
+        <li>Mining XML (DTD Schema) → analisis struktur data berbasis XML.</li>
+        <li>Mining HTML Documents → menggali informasi dari struktur HTML.</li>
+        <li>Navigation → menganalisis pola navigasi pengguna melalui hyperlink.</li>
+      </ul>
+
+      <h3>2. Web Usage Mining</h3>
+      <ul>
+        <li>Personalization → menyesuaikan layanan sesuai preferensi pengguna.</li>
+        <li>Business Intelligence → mendukung pengambilan keputusan bisnis.</li>
+        <li>Customer/User Profile → membentuk profil pengguna dari perilaku.</li>
+        <li>System Improvement → meningkatkan performa sistem web.</li>
+        <li>Recommendation → sistem rekomendasi (contoh: e-commerce).</li>
+        <li>E-Commerce → penerapan mining pada transaksi online.</li>
+        <li>Intrusion Detection → mendeteksi akses mencurigakan/serangan.</li>
+        <li>Web Agents → agen otomatis untuk analisis aktivitas web.</li>
+      </ul>
+
+      <h3>3. Web Content Mining</h3>
+      <ul>
+        <li>Clustering → mengelompokkan dokumen web yang mirip.</li>
+        <li>Association Rule → menemukan hubungan antar data.</li>
+        <li>Semantic Web → memahami makna data web agar lebih mudah diproses.</li>
+        <li>Web Page Content Mining → menggali isi halaman (teks, link, metadata).</li>
+        <li>Search Result Mining → menganalisis hasil pencarian.</li>
+        <li>Text Mining → menggali informasi dari data teks.</li>
+        <li>Image Mining → menggali informasi dari data gambar.</li>
+      </ul>
+
+      <small class="next-text"><a href="index.html">← Back to Profile</a></small>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <small>By 22-038 Ihya' Ulumuddin © 2025</small>
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
