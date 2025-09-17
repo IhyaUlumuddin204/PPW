@@ -1,11 +1,11 @@
 # Pengantar Web Mining
 
-**Pengantar Web Mining**
+## **Pengantar Web Mining**
 
 **Web Mining**
 Web Mining adalah penerapan teknik data mining untuk menggali informasi, pola, atau pengetahuan dari data yang ada di web. Data web bisa berupa konten halaman (teks, gambar, video), struktur link antar halaman, maupun jejak penggunaan pengguna (usage data). Tujuannya adalah memanfaatkan data web untuk berbagai kepentingan, seperti bisnis, sistem rekomendasi, analisis perilaku pengguna, maupun pengembangan teknologi web yang lebih pintar.
 
-**Komponen Penting dalam Web Mining**
+## **Komponen Penting dalam Web Mining**
 
 1. **Web Scraping**
    Teknik untuk mengambil data dari halaman web secara otomatis menggunakan program/script.
@@ -44,7 +44,7 @@ Web Mining adalah penerapan teknik data mining untuk menggali informasi, pola, a
 * Contoh algoritma: K-Means, Association Rules, PCA.
 * Penerapan: mengelompokkan pelanggan berdasarkan kebiasaan belanja, analisis log pengguna.
 
-**Taksonomi Web Mining**
+## **Taksonomi Web Mining**
 
 1. **Web Structure Mining**
 
