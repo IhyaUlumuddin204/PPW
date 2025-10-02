@@ -33,6 +33,6 @@ Here is a preview of the cell contents:
 -------------------
 ['def pta_all():', '    start_time = time.time()', '', '    data = {', '        "id": [],']
 ...
-['    print(f"⏱️ Waktu eksekusi: {jam} jam {menit} menit {detik} detik")', '', '    return df', '', 'pta_all()']
+['  ', '    return df', '', '', 'pta_all()']
 -------------------
 

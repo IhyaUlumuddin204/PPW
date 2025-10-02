@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'IhyaUlumuddin_CrawlingPPW';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tugas Tokenisasi abstrak" href="Tugastoken_ihya.html" />
     <link rel="prev" title="Web Crawling" href="webcrawling.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -184,6 +185,14 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas Crawling PTA dan Berita</a></li>
 
 
+<li class="toctree-l1"><a class="reference internal" href="Tugastoken_ihya.html">Tugas Tokenisasi abstrak</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tf_idf.html">TF-IDF</a></li>
 </ul>
 
     </div>
@@ -426,13 +435,18 @@ document.write(`
         <span class="s2">&quot;prodi&quot;</span><span class="p">:</span> <span class="p">[]</span>
     <span class="p">}</span>
 
-    <span class="n">total_prodi</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="c1"># ambil semua prodi (misalnya 1–40, sesuai jumlah asli di web lu)</span>
+    <span class="n">total_prodi</span> <span class="o">=</span> <span class="mi">40</span>
     <span class="n">total_pages</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">max_pages_dict</span> <span class="o">=</span> <span class="p">{}</span>
 
     <span class="c1"># hitung total halaman (untuk tiap prodi)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">total_prodi</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="n">max_page</span> <span class="o">=</span> <span class="n">get_max_page</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">max_page</span> <span class="o">=</span> <span class="n">get_max_page</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[WARN] Gagal ambil max_page prodi </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">max_page</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="n">max_pages_dict</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">max_page</span>
         <span class="n">total_pages</span> <span class="o">+=</span> <span class="n">max_page</span>
 
@@ -440,7 +454,13 @@ document.write(`
         <span class="n">max_page</span> <span class="o">=</span> <span class="n">max_pages_dict</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_page</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
             <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">&quot;</span>
-            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>  <span class="c1"># &lt;&lt; timeout ditambah</span>
+                <span class="n">r</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[SKIP] </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2"> error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">continue</span>
+
             <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
             <span class="n">jurnals</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;li[data-cat=&quot;#luxury&quot;]&#39;</span><span class="p">)</span>
 
@@ -457,14 +477,22 @@ document.write(`
                 <span class="n">id_match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;/detail/(\d+)&quot;</span><span class="p">,</span> <span class="n">link_keluar</span><span class="p">)</span>
                 <span class="n">pta_id</span> <span class="o">=</span> <span class="n">id_match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">id_match</span> <span class="k">else</span> <span class="kc">None</span>
 
-                <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link_keluar</span><span class="p">)</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link_keluar</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>  <span class="c1"># &lt;&lt; timeout lagi</span>
+                    <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[SKIP] Detail </span><span class="si">{</span><span class="n">link_keluar</span><span class="si">}</span><span class="s2"> error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">continue</span>
+
                 <span class="n">soup1</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
                 <span class="n">isi</span> <span class="o">=</span> <span class="n">soup1</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;div#content_journal&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">isi</span><span class="p">:</span>
+                    <span class="k">continue</span>
 
-                <span class="n">judul</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;a.title&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-                <span class="n">penulis</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Penulis&quot;)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; : &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-                <span class="n">pembimbing_pertama</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Dosen Pembimbing I&quot;)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; : &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-                <span class="n">pembimbing_kedua</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Dosen Pembimbing II&quot;)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; :&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">judul</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;a.title&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">if</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;a.title&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;N/A&quot;</span>
+                <span class="n">penulis</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Penulis&quot;)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; : &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Penulis&quot;)&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;N/A&quot;</span>
+                <span class="n">pembimbing_pertama</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Dosen Pembimbing I&quot;)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; : &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Dosen Pembimbing I&quot;)&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;N/A&quot;</span>
+                <span class="n">pembimbing_kedua</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Dosen Pembimbing II&quot;)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; :&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">isi</span><span class="o">.</span><span class="n">select_one</span><span class="p">(</span><span class="s1">&#39;span:contains(&quot;Dosen Pembimbing II&quot;)&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;N/A&quot;</span>
 
                 <span class="n">paragraf</span> <span class="o">=</span> <span class="n">isi</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;p[align=&quot;justify&quot;]&#39;</span><span class="p">)</span>
                 <span class="n">abstrak_id</span> <span class="o">=</span> <span class="n">paragraf</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">paragraf</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&quot;N/A&quot;</span>
@@ -498,45 +526,28 @@ document.write(`
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ Seluruh data berhasil dikumpulkan!&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📊 Total entri: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⏱️ Waktu eksekusi: </span><span class="si">{</span><span class="n">jam</span><span class="si">}</span><span class="s2"> jam </span><span class="si">{</span><span class="n">menit</span><span class="si">}</span><span class="s2"> menit </span><span class="si">{</span><span class="n">detik</span><span class="si">}</span><span class="s2"> detik&quot;</span><span class="p">)</span>
-
+  
     <span class="k">return</span> <span class="n">df</span>
+
 
 <span class="n">pta_all</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] Ilmu Hukum - Page 1/284 [--------------------] 0.35%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] Ilmu Hukum - Page 2/284 [--------------------] 0.70%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] Ilmu Hukum - Page 3/284 [--------------------] 1.06%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] Ilmu Hukum - Page 4/284 [--------------------] 1.41%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] Ilmu Hukum - Page 5/284 [--------------------] 1.76%
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] Ilmu Hukum - Page 6/284 [--------------------] 2.11%
-</pre></div>
-</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">90</span>
-<span class="g g-Whitespace">     </span><span class="mi">86</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⏱️ Waktu eksekusi: </span><span class="si">{</span><span class="n">jam</span><span class="si">}</span><span class="s2"> jam </span><span class="si">{</span><span class="n">menit</span><span class="si">}</span><span class="s2"> menit </span><span class="si">{</span><span class="n">detik</span><span class="si">}</span><span class="s2"> detik&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">88</span>     <span class="k">return</span> <span class="n">df</span>
-<span class="ne">---&gt; </span><span class="mi">90</span> <span class="n">pta_all</span><span class="p">()</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">110</span>
+<span class="g g-Whitespace">    </span><span class="mi">105</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⏱️ Waktu eksekusi: </span><span class="si">{</span><span class="n">jam</span><span class="si">}</span><span class="s2"> jam </span><span class="si">{</span><span class="n">menit</span><span class="si">}</span><span class="s2"> menit </span><span class="si">{</span><span class="n">detik</span><span class="si">}</span><span class="s2"> detik&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">107</span>     <span class="k">return</span> <span class="n">df</span>
+<span class="ne">--&gt; </span><span class="mi">110</span> <span class="n">pta_all</span><span class="p">()</span>
 
-<span class="nn">Cell In[4], line 29,</span> in <span class="ni">pta_all</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">27</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_page</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">28</span>     <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="ne">---&gt; </span><span class="mi">29</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">30</span>     <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">31</span>     <span class="n">jurnals</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;li[data-cat=&quot;#luxury&quot;]&#39;</span><span class="p">)</span>
+<span class="nn">Cell In[4], line 58,</span> in <span class="ni">pta_all</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">55</span> <span class="n">pta_id</span> <span class="o">=</span> <span class="n">id_match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">id_match</span> <span class="k">else</span> <span class="kc">None</span>
+<span class="g g-Whitespace">     </span><span class="mi">57</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">58</span>     <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link_keluar</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>  <span class="c1"># &lt;&lt; timeout lagi</span>
+<span class="g g-Whitespace">     </span><span class="mi">59</span>     <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">60</span> <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
 
 <span class="nn">File ~/.local/lib/python3.12/site-packages/requests/api.py:73,</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
 <span class="g g-Whitespace">     </span><span class="mi">62</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -1731,6 +1742,15 @@ sepakbola - Page 5/5 [███████████████████�
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Web Crawling</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Tugastoken_ihya.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tugas Tokenisasi abstrak</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

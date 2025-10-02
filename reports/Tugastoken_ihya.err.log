@@ -31,8 +31,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['import time, re, sys, requests, pandas as pd', 'from bs4 import BeautifulSoup', '', 'BASE_URL = "https://pta.trunojoyo.ac.id/c_search/byprod"  # tetap', '']
+['import time, re, sys, requests, pandas as pd', 'from bs4 import BeautifulSoup', '', 'BASE_URL = "https://pta.trunojoyo.ac.id/c_search/byprod/10"  # TI', '']
 ...
-['', '    return df', '', '# jalankan', 'pta_ti_only()']
+['    print(df.head(5))', '    return df', '', '# jalankan', 'pta_ti_only()']
 -------------------
 
