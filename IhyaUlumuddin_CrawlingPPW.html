@@ -193,6 +193,7 @@
 
 
 <li class="toctree-l1"><a class="reference internal" href="tf_idf.html">TF-IDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klassifikasi_berita.html">Klasifikasi Dengan LDA</a></li>
 </ul>
 
     </div>
@@ -535,6 +536,9 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] Ilmu Hukum - Page 1/284 [--------------------] 0.35%
+</pre></div>
+</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">110</span>
@@ -542,12 +546,12 @@ document.write(`
 <span class="g g-Whitespace">    </span><span class="mi">107</span>     <span class="k">return</span> <span class="n">df</span>
 <span class="ne">--&gt; </span><span class="mi">110</span> <span class="n">pta_all</span><span class="p">()</span>
 
-<span class="nn">Cell In[4], line 58,</span> in <span class="ni">pta_all</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">55</span> <span class="n">pta_id</span> <span class="o">=</span> <span class="n">id_match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">id_match</span> <span class="k">else</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">57</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">---&gt; </span><span class="mi">58</span>     <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link_keluar</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>  <span class="c1"># &lt;&lt; timeout lagi</span>
-<span class="g g-Whitespace">     </span><span class="mi">59</span>     <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">60</span> <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="nn">Cell In[4], line 35,</span> in <span class="ni">pta_all</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span> <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">35</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>  <span class="c1"># &lt;&lt; timeout ditambah</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span>     <span class="n">r</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
 
 <span class="nn">File ~/.local/lib/python3.12/site-packages/requests/api.py:73,</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
 <span class="g g-Whitespace">     </span><span class="mi">62</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
