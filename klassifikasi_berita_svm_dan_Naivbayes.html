@@ -450,12 +450,12 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]   Package punkt is already up-to-date!
 [nltk_data] Downloading package punkt_tab to
 [nltk_data]     /home/codespace/nltk_data...
-[nltk_data]   Package punkt_tab is already up-to-date!
-[nltk_data] Downloading package stopwords to
-[nltk_data]     /home/codespace/nltk_data...
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]   Package stopwords is already up-to-date!
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data]   Package punkt_tab is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /home/codespace/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
@@ -1036,37 +1036,19 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 <span class="g g-Whitespace">     </span><span class="mi">39</span> <span class="c1">#step 6</span>
 <span class="g g-Whitespace">     </span><span class="mi">40</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_word</span><span class="p">):</span>
 
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/Sastrawi/Stemmer/Context/Context.py:80,</span> in <span class="ni">Context.start_stemming_process</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">     </span><span class="mi">77</span>     <span class="k">return</span>
-<span class="g g-Whitespace">     </span><span class="mi">79</span> <span class="c1">#step 4, 5</span>
-<span class="ne">---&gt; </span><span class="mi">80</span> <span class="bp">self</span><span class="o">.</span><span class="n">remove_prefixes</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">81</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_word</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">82</span>     <span class="k">return</span>
+<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/Sastrawi/Stemmer/Context/Context.py:50,</span> in <span class="ni">Context.start_stemming_process</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_word</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span>     <span class="k">return</span>
+<span class="ne">---&gt; </span><span class="mi">50</span> <span class="bp">self</span><span class="o">.</span><span class="n">accept_visitors</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">visitors</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">51</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_word</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">52</span>     <span class="k">return</span>
 
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/Sastrawi/Stemmer/Context/Context.py:89,</span> in <span class="ni">Context.remove_prefixes</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">     </span><span class="mi">87</span> <span class="k">def</span><span class="w"> </span><span class="nf">remove_prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">88</span>     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">89</span>         <span class="bp">self</span><span class="o">.</span><span class="n">accept_prefix_visitors</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix_pisitors</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">90</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_word</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">91</span>             <span class="k">return</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/Sastrawi/Stemmer/Context/Context.py:110,</span> in <span class="ni">Context.accept_prefix_visitors</span><span class="nt">(self, visitors)</span>
-<span class="g g-Whitespace">    </span><span class="mi">108</span> <span class="n">removalCount</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">removals</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">109</span> <span class="k">for</span> <span class="n">visitor</span> <span class="ow">in</span> <span class="n">visitors</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">110</span>     <span class="bp">self</span><span class="o">.</span><span class="n">accept</span><span class="p">(</span><span class="n">visitor</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current_word</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">112</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">current_word</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/Sastrawi/Stemmer/Context/Context.py:97,</span> in <span class="ni">Context.accept</span><span class="nt">(self, visitor)</span>
+<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/Sastrawi/Stemmer/Context/Context.py:99,</span> in <span class="ni">Context.accept_visitors</span><span class="nt">(self, visitors)</span>
 <span class="g g-Whitespace">     </span><span class="mi">96</span> <span class="k">def</span><span class="w"> </span><span class="nf">accept</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">visitor</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">97</span>     <span class="n">visitor</span><span class="o">.</span><span class="n">visit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/Sastrawi/Stemmer/Context/Visitor/AbstractDisambiguatePrefixRule.py:15,</span> in <span class="ni">AbstractDisambiguatePrefixRule.visit</span><span class="nt">(self, context)</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="k">for</span> <span class="n">disambiguator</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">disambiguators</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">disambiguator</span><span class="o">.</span><span class="n">disambiguate</span><span class="p">(</span><span class="n">context</span><span class="o">.</span><span class="n">current_word</span><span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">15</span>     <span class="k">if</span> <span class="n">context</span><span class="o">.</span><span class="n">dictionary</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span>         <span class="k">break</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>     <span class="n">visitor</span><span class="o">.</span><span class="n">visit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">99</span> <span class="k">def</span><span class="w"> </span><span class="nf">accept_visitors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">visitors</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">100</span>     <span class="k">for</span> <span class="n">visitor</span> <span class="ow">in</span> <span class="n">visitors</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span>         <span class="bp">self</span><span class="o">.</span><span class="n">accept</span><span class="p">(</span><span class="n">visitor</span><span class="p">)</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -1788,7 +1770,7 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Spellchecking:  90%|█████████ | 1354/1500 [6:18:44&lt;37:14, 15.31s/row]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Spellchecking: 100%|██████████| 1500/1500 [6:54:51&lt;00:00, 16.59s/row]
 </pre></div>
 </div>
 </div>
@@ -1800,6 +1782,298 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Berita (Cek Ejaan):
+</pre></div>
+</div>
+<div class="output text_html">
+  <div id="df-3089a476-40e9-4968-96c1-1382e9a12f8a" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>isi_berita_expanded</th>
+      <th>isi_berita_spellchecked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[menteri, koordinator, menko, bidang, ekonomi,...</td>
+      <td>[menteri, koordinator, menko, bidang, ekonomi,...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[rangka, riah, perguruan, tinggi, surabaya, in...</td>
+      <td>[rangka, riah, perguruan, tinggi, surabaya, in...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>[wacana, presiden, prabowo, subianto, bentuk, ...</td>
+      <td>[wacana, presiden, prabawa, subianto, bentuk, ...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>[bpjs, ketenagakerjaan, menteri, agama, kemena...</td>
+      <td>[bps, ketenagakerjaan, menteri, agama, keceng,...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>[perintah, bentuk, satu, tugas, putus, hubung,...</td>
+      <td>[perintah, bentuk, satu, tugas, putus, hubung,...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>[menko, bidang, infrastruktur, bangun, wilayah...</td>
+      <td>[menko, bidang, infrastruktur, bangun, wilayah...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>[kepala, badan, gizi, nasional, dad, hindayana...</td>
+      <td>[kepala, badan, gizi, nasional, dad, hinayana,...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>[menteri, koordinator, bidang, pangan, zulkifl...</td>
+      <td>[menteri, koordinator, bidang, pangan, zulkifl...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>[uji, coba, alias, commissioning, bangkit, lis...</td>
+      <td>[uji, coba, alias, commissioning, bangkit, lis...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>[anak, crazy, rich, usaha, sawit, kalimantan, ...</td>
+      <td>[anak, arasy, reich, usaha, sawit, kalimantan,...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-3089a476-40e9-4968-96c1-1382e9a12f8a')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-3089a476-40e9-4968-96c1-1382e9a12f8a button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-3089a476-40e9-4968-96c1-1382e9a12f8a');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-98cfec89-46f0-4606-927b-89bc0df9db72">
+      <button class="colab-df-quickchart" onclick="quickchart('df-98cfec89-46f0-4606-927b-89bc0df9db72')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-98cfec89-46f0-4606-927b-89bc0df9db72 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+</div></div>
 </div>
 </section>
 <section id="pilih-kolom-yang-ingin-disimpan">
@@ -1807,7 +2081,6 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cols_to_save</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;no&quot;</span><span class="p">,</span>
     <span class="s2">&quot;judul&quot;</span><span class="p">,</span>
     <span class="s2">&quot;berita&quot;</span><span class="p">,</span>
     <span class="s2">&quot;tanggal&quot;</span><span class="p">,</span>
@@ -1828,6 +2101,11 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>File berhasil disimpan sebagai tempo_processed.csv
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1836,6 +2114,464 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-dde2eabe-c6ec-42e7-b8ab-8bc0166c3d57" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>judul</th>
+      <th>berita</th>
+      <th>tanggal</th>
+      <th>kategori</th>
+      <th>link</th>
+      <th>isi_berita_clean</th>
+      <th>isi_berita_tokens</th>
+      <th>isi_berita_filtered</th>
+      <th>isi_berita_stemmed</th>
+      <th>isi_berita_expanded</th>
+      <th>isi_berita_spellchecked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Airlangga Harap Kenaikan UMP Tingkatkan Daya B...</td>
+      <td>Menteri Koordinator (Menko) Bidang Perekonomia...</td>
+      <td>Minggu, 01 Des 2024 23:40 WIB</td>
+      <td>Ekonomi</td>
+      <td>https://www.cnnindonesia.com/ekonomi/202412012...</td>
+      <td>menteri koordinator menko bidang perekonomian ...</td>
+      <td>['menteri', 'koordinator', 'menko', 'bidang', ...</td>
+      <td>['menteri', 'koordinator', 'menko', 'bidang', ...</td>
+      <td>['menteri', 'koordinator', 'menko', 'bidang', ...</td>
+      <td>['menteri', 'koordinator', 'menko', 'bidang', ...</td>
+      <td>['menteri', 'koordinator', 'menko', 'bidang', ...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PT SIER Beri Penghargaan untuk 50 Tenant Terba...</td>
+      <td>Dalam rangka memeriahkan hari jadi ke-50, PT S...</td>
+      <td>Minggu, 01 Des 2024 20:45 WIB</td>
+      <td>Ekonomi</td>
+      <td>https://www.cnnindonesia.com/ekonomi/202412012...</td>
+      <td>dalam rangka memeriahkan hari jadi ke pt surab...</td>
+      <td>['dalam', 'rangka', 'memeriahkan', 'hari', 'ja...</td>
+      <td>['rangka', 'memeriahkan', 'pt', 'surabaya', 'i...</td>
+      <td>['rangka', 'riah', 'pt', 'surabaya', 'industri...</td>
+      <td>['rangka', 'riah', 'perguruan', 'tinggi', 'sur...</td>
+      <td>['rangka', 'riah', 'perguruan', 'tinggi', 'sur...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Prabowo Bakal Bentuk Kementerian Penerimaan Ne...</td>
+      <td>Wacana Presiden Prabowo Subianto akan membentu...</td>
+      <td>Minggu, 01 Des 2024 19:40 WIB</td>
+      <td>Ekonomi</td>
+      <td>https://www.cnnindonesia.com/ekonomi/202412011...</td>
+      <td>wacana presiden prabowo subianto akan membentu...</td>
+      <td>['wacana', 'presiden', 'prabowo', 'subianto', ...</td>
+      <td>['wacana', 'presiden', 'prabowo', 'subianto', ...</td>
+      <td>['wacana', 'presiden', 'prabowo', 'subianto', ...</td>
+      <td>['wacana', 'presiden', 'prabowo', 'subianto', ...</td>
+      <td>['wacana', 'presiden', 'prabawa', 'subianto', ...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Sinergi Kemenag &amp; BPJS Ketenagakerjaan Lindung...</td>
+      <td>BPJS Ketenagakerjaan dan Kementerian Agama (Ke...</td>
+      <td>Minggu, 01 Des 2024 19:03 WIB</td>
+      <td>Ekonomi</td>
+      <td>https://www.cnnindonesia.com/ekonomi/202412011...</td>
+      <td>bpjs ketenagakerjaan dan kementerian agama kem...</td>
+      <td>['bpjs', 'ketenagakerjaan', 'dan', 'kementeria...</td>
+      <td>['bpjs', 'ketenagakerjaan', 'kementerian', 'ag...</td>
+      <td>['bpjs', 'ketenagakerjaan', 'menteri', 'agama'...</td>
+      <td>['bpjs', 'ketenagakerjaan', 'menteri', 'agama'...</td>
+      <td>['bps', 'ketenagakerjaan', 'menteri', 'agama',...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Pemerintah Segera Bentuk Satgas PHK Usai Tetap...</td>
+      <td>Pemerintah akan segera membentuk Satuan Tugas ...</td>
+      <td>Minggu, 01 Des 2024 19:00 WIB</td>
+      <td>Ekonomi</td>
+      <td>https://www.cnnindonesia.com/ekonomi/202412011...</td>
+      <td>pemerintah akan segera membentuk satuan tugas ...</td>
+      <td>['pemerintah', 'akan', 'segera', 'membentuk', ...</td>
+      <td>['pemerintah', 'membentuk', 'satuan', 'tugas',...</td>
+      <td>['perintah', 'bentuk', 'satu', 'tugas', 'putus...</td>
+      <td>['perintah', 'bentuk', 'satu', 'tugas', 'putus...</td>
+      <td>['perintah', 'bentuk', 'satu', 'tugas', 'putus...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1495</th>
+      <td>Laporan Sebab Tabrakan Pesawat-Black Hawk Dita...</td>
+      <td>Anggota Dewan Keselamatan Transportasi Nasiona...</td>
+      <td>Jumat, 31 Jan 2025 04:40 WIB</td>
+      <td>Internasional</td>
+      <td>https://www.cnnindonesia.com/internasional/202...</td>
+      <td>anggota dewan keselamatan transportasi nasiona...</td>
+      <td>['anggota', 'dewan', 'keselamatan', 'transport...</td>
+      <td>['anggota', 'dewan', 'keselamatan', 'transport...</td>
+      <td>['anggota', 'dewan', 'selamat', 'transportasi'...</td>
+      <td>['anggota', 'dewan', 'selamat', 'transportasi'...</td>
+      <td>['anggota', 'dewan', 'selamat', 'transportasi'...</td>
+    </tr>
+    <tr>
+      <th>1496</th>
+      <td>Israel Bebaskan 110 Sandera Palestina, Diantar...</td>
+      <td>Israel telah membebaskan 110 tahanan Palestina...</td>
+      <td>Jumat, 31 Jan 2025 03:01 WIB</td>
+      <td>Internasional</td>
+      <td>https://www.cnnindonesia.com/internasional/202...</td>
+      <td>israel telah membebaskan tahanan palestina pad...</td>
+      <td>['israel', 'telah', 'membebaskan', 'tahanan', ...</td>
+      <td>['israel', 'membebaskan', 'tahanan', 'palestin...</td>
+      <td>['israel', 'bebas', 'tahan', 'palestina', 'kam...</td>
+      <td>['israel', 'bebas', 'tahan', 'palestina', 'kam...</td>
+      <td>['israel', 'bebas', 'tahan', 'palestina', 'kam...</td>
+    </tr>
+    <tr>
+      <th>1497</th>
+      <td>Hamas Konfirmasi Kematian Komandan Al Qassam M...</td>
+      <td>Hamas mengonfirmasi kematian kepala militernya...</td>
+      <td>Jumat, 31 Jan 2025 02:30 WIB</td>
+      <td>Internasional</td>
+      <td>https://www.cnnindonesia.com/internasional/202...</td>
+      <td>hamas mengonfirmasi kematian kepala militernya...</td>
+      <td>['hamas', 'mengonfirmasi', 'kematian', 'kepala...</td>
+      <td>['hamas', 'mengonfirmasi', 'kematian', 'kepala...</td>
+      <td>['hamas', 'konfirmasi', 'mati', 'kepala', 'mil...</td>
+      <td>['hamas', 'konfirmasi', 'mati', 'kepala', 'mil...</td>
+      <td>['damas', 'konfirmasi', 'mati', 'kepala', 'mil...</td>
+    </tr>
+    <tr>
+      <th>1498</th>
+      <td>Black Box American Airlines Ditemukan Usai Tab...</td>
+      <td>Tim penyelam diduga menemukan satu dari dua bl...</td>
+      <td>Jumat, 31 Jan 2025 01:00 WIB</td>
+      <td>Internasional</td>
+      <td>https://www.cnnindonesia.com/internasional/202...</td>
+      <td>tim penyelam diduga menemukan satu dari dua bl...</td>
+      <td>['tim', 'penyelam', 'diduga', 'menemukan', 'sa...</td>
+      <td>['tim', 'penyelam', 'diduga', 'menemukan', 'bl...</td>
+      <td>['tim', 'selam', 'duga', 'temu', 'black', 'box...</td>
+      <td>['tim', 'selam', 'duga', 'temu', 'black', 'box...</td>
+      <td>['tim', 'selam', 'duga', 'temu', 'blak', 'bo',...</td>
+    </tr>
+    <tr>
+      <th>1499</th>
+      <td>Trump Salahkan Biden soal Penurunan Standar Ke...</td>
+      <td>Presiden AS Donald Trump menyalahkan pemerinta...</td>
+      <td>Jumat, 31 Jan 2025 00:40 WIB</td>
+      <td>Internasional</td>
+      <td>https://www.cnnindonesia.com/internasional/202...</td>
+      <td>presiden as donald trump menyalahkan pemerinta...</td>
+      <td>['presiden', 'as', 'donald', 'trump', 'menyala...</td>
+      <td>['presiden', 'as', 'donald', 'trump', 'menyala...</td>
+      <td>['presiden', 'as', 'donald', 'trump', 'salah',...</td>
+      <td>['presiden', 'as', 'donald', 'trump', 'salah',...</td>
+      <td>['presiden', 'as', 'dokal', 'tromp', 'salah', ...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1500 rows × 11 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-dde2eabe-c6ec-42e7-b8ab-8bc0166c3d57')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-dde2eabe-c6ec-42e7-b8ab-8bc0166c3d57 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-dde2eabe-c6ec-42e7-b8ab-8bc0166c3d57');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-7a364782-f173-4339-acbb-1365c94875a1">
+      <button class="colab-df-quickchart" onclick="quickchart('df-7a364782-f173-4339-acbb-1365c94875a1')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-7a364782-f173-4339-acbb-1365c94875a1 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_9ecb2d94-d1fe-46de-812a-019d622e3852">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('tempo_df_prs')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_9ecb2d94-d1fe-46de-812a-019d622e3852 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('tempo_df_prs');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1870,6 +2606,23 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;pta_embeddings.txt&#39;</span>
 <span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">save_word2vec_format</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">binary</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Embeddings disimpan ke </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kata mirip dengan &#39;presiden&#39;:
+[(&#39;subianto&#39;, 0.9641005992889404), (&#39;instruksi&#39;, 0.9574790596961975), (&#39;prabowo&#39;, 0.955876886844635), (&#39;vladimir&#39;, 0.9475571513175964), (&#39;utusan&#39;, 0.9338987469673157)]
+
+Kata mirip dengan &#39;data&#39;:
+[(&#39;aplikasi&#39;, 0.9923456311225891), (&#39;seiring&#39;, 0.991772472858429), (&#39;pedro&#39;, 0.9912920594215393), (&#39;toni&#39;, 0.9909254908561707), (&#39;saeful&#39;, 0.9907810688018799)]
+
+Cosmul (presiden + sistem - data):
+[(&#39;hukumtadi&#39;, 0.985581636428833), (&#39;prabowo&#39;, 0.9839866161346436), (&#39;subianto&#39;, 0.9817152619361877), (&#39;bapak&#39;, 0.9743037819862366), (&#39;instruksi&#39;, 0.9717552065849304)]
+
+Kata yang tidak cocok dalam [&#39;presiden&#39;, &#39;data&#39;, &#39;sistem&#39;, &#39;informasi&#39;]:
+presiden
+
+Embeddings disimpan ke pta_embeddings.txt
 </pre></div>
 </div>
 </div>
@@ -1925,11 +2678,125 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/95f5cecacf5825e6da276d18cd6fb96e0f8d4e7f7824eccb6038628c163f7e69.png" src="_images/95f5cecacf5825e6da276d18cd6fb96e0f8d4e7f7824eccb6038628c163f7e69.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>✅ Model terbaik memiliki 52 topik
+Coherence Score terbaik: 0.3763561254638307
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">optimal_model</span><span class="o">.</span><span class="n">print_topics</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Topik </span><span class="si">{</span><span class="n">idx</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">topic</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topik 1: 0.013*&quot;energi&quot; + 0.008*&quot;pertamina&quot; + 0.006*&quot;desa&quot; + 0.006*&quot;terbarukan&quot; + 0.006*&quot;untuk&quot; + 0.005*&quot;lestari&quot; + 0.005*&quot;uma&quot; + 0.005*&quot;palak&quot; + 0.004*&quot;deb&quot; + 0.004*&quot;berdikari&quot;
+
+Topik 2: 0.028*&quot;stasiun&quot; + 0.023*&quot;penumpang&quot; + 0.020*&quot;kereta&quot; + 0.017*&quot;tiket&quot; + 0.016*&quot;ka&quot; + 0.015*&quot;dan&quot; + 0.015*&quot;perjalanan&quot; + 0.015*&quot;whoosh&quot; + 0.012*&quot;karawang&quot; + 0.010*&quot;kai&quot;
+
+Topik 3: 0.021*&quot;pertamina&quot; + 0.016*&quot;dan&quot; + 0.016*&quot;bbm&quot; + 0.013*&quot;energi&quot; + 0.012*&quot;untuk&quot; + 0.010*&quot;juga&quot; + 0.010*&quot;nataru&quot; + 0.010*&quot;natal&quot; + 0.010*&quot;di&quot; + 0.009*&quot;yang&quot;
+
+Topik 4: 0.045*&quot;united&quot; + 0.042*&quot;arhan&quot; + 0.042*&quot;bangkok&quot; + 0.011*&quot;bermain&quot; + 0.010*&quot;pemain&quot; + 0.010*&quot;thailand&quot; + 0.009*&quot;liga&quot; + 0.008*&quot;pratama&quot; + 0.008*&quot;menit&quot; + 0.007*&quot;suwon&quot;
+
+Topik 5: 0.018*&quot;dan&quot; + 0.018*&quot;di&quot; + 0.015*&quot;yang&quot; + 0.010*&quot;itu&quot; + 0.009*&quot;pada&quot; + 0.009*&quot;dengan&quot; + 0.007*&quot;untuk&quot; + 0.007*&quot;juga&quot; + 0.007*&quot;hasto&quot; + 0.006*&quot;dalam&quot;
+
+Topik 6: 0.020*&quot;yang&quot; + 0.018*&quot;di&quot; + 0.016*&quot;dan&quot; + 0.014*&quot;itu&quot; + 0.012*&quot;ini&quot; + 0.010*&quot;akan&quot; + 0.009*&quot;untuk&quot; + 0.008*&quot;dari&quot; + 0.007*&quot;dengan&quot; + 0.006*&quot;ke&quot;
+
+Topik 7: 0.024*&quot;yang&quot; + 0.021*&quot;di&quot; + 0.015*&quot;dan&quot; + 0.011*&quot;itu&quot; + 0.007*&quot;untuk&quot; + 0.007*&quot;ada&quot; + 0.007*&quot;saya&quot; + 0.007*&quot;ke&quot; + 0.006*&quot;orang&quot; + 0.006*&quot;video&quot;
+
+Topik 8: 0.021*&quot;filipina&quot; + 0.021*&quot;indonesia&quot; + 0.015*&quot;atlet&quot; + 0.014*&quot;yang&quot; + 0.012*&quot;silat&quot; + 0.011*&quot;di&quot; + 0.009*&quot;pencak&quot; + 0.006*&quot;piala&quot; + 0.006*&quot;dunia&quot; + 0.006*&quot;dari&quot;
+
+Topik 9: 0.019*&quot;di&quot; + 0.018*&quot;dan&quot; + 0.015*&quot;yang&quot; + 0.011*&quot;untuk&quot; + 0.008*&quot;akan&quot; + 0.008*&quot;dalam&quot; + 0.008*&quot;dengan&quot; + 0.007*&quot;dari&quot; + 0.007*&quot;ke&quot; + 0.007*&quot;pada&quot;
+
+Topik 10: 0.016*&quot;di&quot; + 0.013*&quot;yang&quot; + 0.009*&quot;itu&quot; + 0.008*&quot;tidak&quot; + 0.007*&quot;untuk&quot; + 0.006*&quot;ini&quot; + 0.006*&quot;ke&quot; + 0.005*&quot;dan&quot; + 0.005*&quot;tak&quot; + 0.005*&quot;google&quot;
+
+Topik 11: 0.033*&quot;kebakaran&quot; + 0.029*&quot;di&quot; + 0.020*&quot;los&quot; + 0.019*&quot;yang&quot; + 0.019*&quot;angeles&quot; + 0.017*&quot;dan&quot; + 0.011*&quot;api&quot; + 0.009*&quot;dari&quot; + 0.008*&quot;ini&quot; + 0.008*&quot;itu&quot;
+
+Topik 12: 0.000*&quot;di&quot; + 0.000*&quot;yang&quot; + 0.000*&quot;dan&quot; + 0.000*&quot;sudah&quot; + 0.000*&quot;dengan&quot; + 0.000*&quot;itu&quot; + 0.000*&quot;kita&quot; + 0.000*&quot;ini&quot; + 0.000*&quot;rumah&quot; + 0.000*&quot;oleh&quot;
+
+Topik 13: 0.012*&quot;dan&quot; + 0.011*&quot;di&quot; + 0.011*&quot;yang&quot; + 0.008*&quot;untuk&quot; + 0.007*&quot;itu&quot; + 0.007*&quot;sebanyak&quot; + 0.006*&quot;juga&quot; + 0.006*&quot;korban&quot; + 0.006*&quot;warga&quot; + 0.006*&quot;kata&quot;
+
+Topik 14: 0.026*&quot;di&quot; + 0.023*&quot;yang&quot; + 0.019*&quot;dan&quot; + 0.016*&quot;indonesia&quot; + 0.015*&quot;pelatih&quot; + 0.014*&quot;timnas&quot; + 0.012*&quot;saya&quot; + 0.011*&quot;kluivert&quot; + 0.010*&quot;dengan&quot; + 0.010*&quot;ini&quot;
+
+Topik 15: 0.026*&quot;di&quot; + 0.025*&quot;yang&quot; + 0.014*&quot;dan&quot; + 0.011*&quot;program&quot; + 0.010*&quot;untuk&quot; + 0.010*&quot;dari&quot; + 0.010*&quot;itu&quot; + 0.009*&quot;ini&quot; + 0.009*&quot;makan&quot; + 0.008*&quot;pada&quot;
+
+Topik 16: 0.018*&quot;di&quot; + 0.017*&quot;yang&quot; + 0.015*&quot;indonesia&quot; + 0.013*&quot;dan&quot; + 0.013*&quot;vietnam&quot; + 0.012*&quot;aff&quot; + 0.010*&quot;piala&quot; + 0.009*&quot;dengan&quot; + 0.009*&quot;ke&quot; + 0.008*&quot;dari&quot;
+
+Topik 17: 0.030*&quot;indonesia&quot; + 0.027*&quot;di&quot; + 0.018*&quot;u&quot; + 0.017*&quot;akan&quot; + 0.015*&quot;dan&quot; + 0.015*&quot;timnas&quot; + 0.014*&quot;pada&quot; + 0.013*&quot;yang&quot; + 0.012*&quot;piala&quot; + 0.011*&quot;vs&quot;
+
+Topik 18: 0.022*&quot;minyak&quot; + 0.021*&quot;persen&quot; + 0.019*&quot;yang&quot; + 0.016*&quot;as&quot; + 0.015*&quot;us&quot; + 0.013*&quot;dan&quot; + 0.013*&quot;di&quot; + 0.012*&quot;pada&quot; + 0.012*&quot;harga&quot; + 0.011*&quot;per&quot;
+
+Topik 19: 0.030*&quot;uang&quot; + 0.021*&quot;palsu&quot; + 0.013*&quot;yang&quot; + 0.011*&quot;uin&quot; + 0.010*&quot;makassar&quot; + 0.009*&quot;polisi&quot; + 0.008*&quot;dan&quot; + 0.008*&quot;kampus&quot; + 0.007*&quot;ini&quot; + 0.007*&quot;itu&quot;
+
+Topik 20: 0.013*&quot;yang&quot; + 0.012*&quot;dan&quot; + 0.010*&quot;poin&quot; + 0.009*&quot;persib&quot; + 0.009*&quot;persita&quot; + 0.007*&quot;pukul&quot; + 0.007*&quot;di&quot; + 0.006*&quot;ini&quot; + 0.006*&quot;pada&quot; + 0.006*&quot;dengan&quot;
+
+Topik 21: 0.015*&quot;dan&quot; + 0.015*&quot;yang&quot; + 0.013*&quot;di&quot; + 0.011*&quot;jane&quot; + 0.011*&quot;mary&quot; + 0.010*&quot;dengan&quot; + 0.010*&quot;filipina&quot; + 0.009*&quot;untuk&quot; + 0.009*&quot;indonesia&quot; + 0.008*&quot;pada&quot;
+
+Topik 22: 0.018*&quot;dan&quot; + 0.016*&quot;di&quot; + 0.013*&quot;yang&quot; + 0.010*&quot;jalan&quot; + 0.009*&quot;bus&quot; + 0.009*&quot;bali&quot; + 0.009*&quot;sudah&quot; + 0.008*&quot;itu&quot; + 0.008*&quot;kecelakaan&quot; + 0.007*&quot;batu&quot;
+
+Topik 23: 0.023*&quot;yang&quot; + 0.019*&quot;kpk&quot; + 0.016*&quot;dan&quot; + 0.016*&quot;kasus&quot; + 0.013*&quot;tersangka&quot; + 0.009*&quot;dalam&quot; + 0.009*&quot;di&quot; + 0.009*&quot;hasto&quot; + 0.008*&quot;korupsi&quot; + 0.008*&quot;sebagai&quot;
+
+Topik 24: 0.025*&quot;dan&quot; + 0.021*&quot;israel&quot; + 0.020*&quot;yang&quot; + 0.020*&quot;gencatan&quot; + 0.019*&quot;di&quot; + 0.019*&quot;senjata&quot; + 0.015*&quot;akan&quot; + 0.013*&quot;gaza&quot; + 0.012*&quot;pada&quot; + 0.012*&quot;hamas&quot;
+
+Topik 25: 0.032*&quot;di&quot; + 0.027*&quot;yang&quot; + 0.022*&quot;dan&quot; + 0.015*&quot;israel&quot; + 0.011*&quot;dari&quot; + 0.011*&quot;pada&quot; + 0.011*&quot;pesawat&quot; + 0.010*&quot;itu&quot; + 0.010*&quot;serangan&quot; + 0.009*&quot;ke&quot;
+
+Topik 26: 0.009*&quot;stadion&quot; + 0.008*&quot;dprd&quot; + 0.007*&quot;malaysia&quot; + 0.007*&quot;kami&quot; + 0.006*&quot;marti&quot; + 0.006*&quot;suporter&quot; + 0.005*&quot;leste&quot; + 0.005*&quot;melawan&quot; + 0.005*&quot;pau&quot; + 0.005*&quot;timor&quot;
+
+Topik 27: 0.026*&quot;yoon&quot; + 0.017*&quot;yang&quot; + 0.015*&quot;presiden&quot; + 0.013*&quot;dan&quot; + 0.013*&quot;untuk&quot; + 0.012*&quot;darurat&quot; + 0.012*&quot;militer&quot; + 0.011*&quot;pada&quot; + 0.011*&quot;di&quot; + 0.011*&quot;ini&quot;
+
+Topik 28: 0.022*&quot;di&quot; + 0.021*&quot;ke&quot; + 0.019*&quot;gol&quot; + 0.018*&quot;yang&quot; + 0.018*&quot;menit&quot; + 0.014*&quot;pada&quot; + 0.011*&quot;thailand&quot; + 0.010*&quot;dari&quot; + 0.010*&quot;gawang&quot; + 0.010*&quot;babak&quot;
+
+Topik 29: 0.019*&quot;dan&quot; + 0.016*&quot;yang&quot; + 0.015*&quot;di&quot; + 0.013*&quot;ketenagakerjaan&quot; + 0.009*&quot;bpjs&quot; + 0.008*&quot;pekerja&quot; + 0.008*&quot;dari&quot; + 0.007*&quot;untuk&quot; + 0.007*&quot;ini&quot; + 0.007*&quot;karya&quot;
+
+Topik 30: 0.013*&quot;akan&quot; + 0.012*&quot;di&quot; + 0.011*&quot;ini&quot; + 0.011*&quot;yang&quot; + 0.010*&quot;pada&quot; + 0.009*&quot;itu&quot; + 0.009*&quot;dan&quot; + 0.008*&quot;untuk&quot; + 0.008*&quot;gempa&quot; + 0.007*&quot;kita&quot;
+
+Topik 31: 0.025*&quot;yang&quot; + 0.023*&quot;dan&quot; + 0.016*&quot;di&quot; + 0.012*&quot;itu&quot; + 0.011*&quot;untuk&quot; + 0.010*&quot;ini&quot; + 0.009*&quot;dengan&quot; + 0.009*&quot;dari&quot; + 0.008*&quot;dalam&quot; + 0.007*&quot;akan&quot;
+
+Topik 32: 0.026*&quot;indonesia&quot; + 0.024*&quot;timnas&quot; + 0.023*&quot;piala&quot; + 0.019*&quot;di&quot; + 0.017*&quot;shin&quot; + 0.015*&quot;yang&quot; + 0.015*&quot;dan&quot; + 0.014*&quot;pssi&quot; + 0.013*&quot;tae&quot; + 0.013*&quot;pemain&quot;
+
+Topik 33: 0.022*&quot;di&quot; + 0.018*&quot;dan&quot; + 0.018*&quot;yang&quot; + 0.013*&quot;suara&quot; + 0.011*&quot;itu&quot; + 0.010*&quot;ini&quot; + 0.007*&quot;dalam&quot; + 0.007*&quot;miftah&quot; + 0.006*&quot;ada&quot; + 0.006*&quot;untuk&quot;
+
+Topik 34: 0.028*&quot;di&quot; + 0.019*&quot;dan&quot; + 0.018*&quot;yang&quot; + 0.012*&quot;dengan&quot; + 0.011*&quot;dari&quot; + 0.009*&quot;dalam&quot; + 0.009*&quot;korban&quot; + 0.008*&quot;pada&quot; + 0.008*&quot;itu&quot; + 0.008*&quot;ini&quot;
+
+Topik 35: 0.015*&quot;ke&quot; + 0.013*&quot;di&quot; + 0.013*&quot;mu&quot; + 0.010*&quot;yang&quot; + 0.009*&quot;piala&quot; + 0.008*&quot;dan&quot; + 0.007*&quot;dalam&quot; + 0.007*&quot;itu&quot; + 0.007*&quot;gol&quot; + 0.006*&quot;pada&quot;
+
+Topik 36: 0.020*&quot;di&quot; + 0.018*&quot;ke&quot; + 0.016*&quot;indonesia&quot; + 0.014*&quot;yang&quot; + 0.011*&quot;dari&quot; + 0.011*&quot;menit&quot; + 0.011*&quot;pada&quot; + 0.010*&quot;vietnam&quot; + 0.010*&quot;dan&quot; + 0.010*&quot;gol&quot;
+
+Topik 37: 0.015*&quot;dan&quot; + 0.012*&quot;ini&quot; + 0.012*&quot;yang&quot; + 0.011*&quot;di&quot; + 0.011*&quot;dari&quot; + 0.010*&quot;pajak&quot; + 0.009*&quot;baru&quot; + 0.008*&quot;opsen&quot; + 0.007*&quot;kendaraan&quot; + 0.006*&quot;pkb&quot;
+
+Topik 38: 0.016*&quot;yang&quot; + 0.015*&quot;dan&quot; + 0.014*&quot;di&quot; + 0.009*&quot;pemerasan&quot; + 0.008*&quot;polri&quot; + 0.008*&quot;dalam&quot; + 0.008*&quot;dwp&quot; + 0.007*&quot;itu&quot; + 0.007*&quot;polda&quot; + 0.007*&quot;ini&quot;
+
+Topik 39: 0.037*&quot;laut&quot; + 0.030*&quot;pagar&quot; + 0.028*&quot;di&quot; + 0.021*&quot;dan&quot; + 0.018*&quot;yang&quot; + 0.017*&quot;itu&quot; + 0.012*&quot;tangerang&quot; + 0.010*&quot;ada&quot; + 0.010*&quot;ini&quot; + 0.009*&quot;nelayan&quot;
+
+Topik 40: 0.006*&quot;lecce&quot; + 0.006*&quot;dorgu&quot; + 0.006*&quot;ogura&quot; + 0.003*&quot;tsutomu&quot; + 0.003*&quot;mu&quot; + 0.003*&quot;dikabarkan&quot; + 0.002*&quot;suriah&quot; + 0.002*&quot;mendes&quot; + 0.002*&quot;pembicaraan&quot; + 0.002*&quot;kerkez&quot;
+
+Topik 41: 0.020*&quot;yang&quot; + 0.018*&quot;dalam&quot; + 0.015*&quot;sebagai&quot; + 0.013*&quot;baru&quot; + 0.013*&quot;di&quot; + 0.011*&quot;jabatan&quot; + 0.010*&quot;diangkat&quot; + 0.010*&quot;dari&quot; + 0.010*&quot;dan&quot; + 0.009*&quot;metro&quot;
+
+Topik 42: 0.015*&quot;persib&quot; + 0.013*&quot;yang&quot; + 0.012*&quot;di&quot; + 0.010*&quot;ke&quot; + 0.009*&quot;pada&quot; + 0.008*&quot;dengan&quot; + 0.008*&quot;menit&quot; + 0.008*&quot;bola&quot; + 0.007*&quot;al&quot; + 0.006*&quot;dari&quot;
+
+Topik 43: 0.033*&quot;red&quot; + 0.032*&quot;sparks&quot; + 0.024*&quot;di&quot; + 0.022*&quot;megawati&quot; + 0.020*&quot;poin&quot; + 0.016*&quot;dengan&quot; + 0.015*&quot;voli&quot; + 0.015*&quot;liga&quot; + 0.015*&quot;kemenangan&quot; + 0.015*&quot;korea&quot;
+
+Topik 44: 0.073*&quot;harga&quot; + 0.063*&quot;rp&quot; + 0.047*&quot;per&quot; + 0.026*&quot;beras&quot; + 0.025*&quot;kg&quot; + 0.018*&quot;ribu&quot; + 0.015*&quot;het&quot; + 0.015*&quot;cabai&quot; + 0.013*&quot;persen&quot; + 0.012*&quot;ke&quot;
+
+Topik 45: 0.018*&quot;dan&quot; + 0.018*&quot;yang&quot; + 0.015*&quot;rp&quot; + 0.012*&quot;di&quot; + 0.012*&quot;tahun&quot; + 0.010*&quot;dari&quot; + 0.009*&quot;dengan&quot; + 0.009*&quot;itu&quot; + 0.008*&quot;untuk&quot; + 0.008*&quot;korupsi&quot;
+
+Topik 46: 0.026*&quot;dan&quot; + 0.023*&quot;yang&quot; + 0.020*&quot;di&quot; + 0.013*&quot;untuk&quot; + 0.013*&quot;ini&quot; + 0.010*&quot;dalam&quot; + 0.008*&quot;dengan&quot; + 0.008*&quot;dari&quot; + 0.007*&quot;itu&quot; + 0.007*&quot;juga&quot;
+
+Topik 47: 0.030*&quot;di&quot; + 0.022*&quot;yang&quot; + 0.015*&quot;dan&quot; + 0.014*&quot;itu&quot; + 0.010*&quot;ini&quot; + 0.009*&quot;dengan&quot; + 0.008*&quot;saya&quot; + 0.007*&quot;dari&quot; + 0.007*&quot;dalam&quot; + 0.007*&quot;untuk&quot;
+
+Topik 48: 0.042*&quot;di&quot; + 0.022*&quot;yang&quot; + 0.021*&quot;dan&quot; + 0.013*&quot;banjir&quot; + 0.009*&quot;dari&quot; + 0.009*&quot;itu&quot; + 0.008*&quot;ini&quot; + 0.007*&quot;untuk&quot; + 0.006*&quot;kecamatan&quot; + 0.006*&quot;ada&quot;
+
+Topik 49: 0.018*&quot;yang&quot; + 0.013*&quot;city&quot; + 0.012*&quot;di&quot; + 0.010*&quot;dengan&quot; + 0.009*&quot;pada&quot; + 0.009*&quot;dan&quot; + 0.008*&quot;man&quot; + 0.008*&quot;indonesia&quot; + 0.008*&quot;ke&quot; + 0.007*&quot;itu&quot;
+
+Topik 50: 0.024*&quot;di&quot; + 0.016*&quot;yang&quot; + 0.014*&quot;dan&quot; + 0.014*&quot;investasi&quot; + 0.012*&quot;dengan&quot; + 0.009*&quot;dari&quot; + 0.009*&quot;ini&quot; + 0.007*&quot;juga&quot; + 0.007*&quot;itu&quot; + 0.007*&quot;indonesia&quot;
+
+Topik 51: 0.028*&quot;yang&quot; + 0.021*&quot;dan&quot; + 0.018*&quot;persen&quot; + 0.015*&quot;ppn&quot; + 0.012*&quot;untuk&quot; + 0.011*&quot;itu&quot; + 0.010*&quot;di&quot; + 0.009*&quot;ini&quot; + 0.008*&quot;akan&quot; + 0.008*&quot;pemerintah&quot;
+
+Topik 52: 0.016*&quot;dan&quot; + 0.015*&quot;untuk&quot; + 0.015*&quot;vs&quot; + 0.010*&quot;liga&quot; + 0.010*&quot;neymar&quot; + 0.009*&quot;rp&quot; + 0.009*&quot;triliun&quot; + 0.009*&quot;besar&quot; + 0.009*&quot;venezia&quot; + 0.009*&quot;yang&quot;
 </pre></div>
 </div>
 </div>
@@ -1952,6 +2819,337 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-1a0c6266-ec0b-44f0-ab20-ca987af19072" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>judul</th>
+      <th>kategori</th>
+      <th>Topik Dominan</th>
+      <th>Proporsi</th>
+      <th>isi_berita_clean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Airlangga Harap Kenaikan UMP Tingkatkan Daya B...</td>
+      <td>Ekonomi</td>
+      <td>51</td>
+      <td>0.612</td>
+      <td>menteri koordinator menko bidang perekonomian ...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PT SIER Beri Penghargaan untuk 50 Tenant Terba...</td>
+      <td>Ekonomi</td>
+      <td>14</td>
+      <td>0.522</td>
+      <td>dalam rangka memeriahkan hari jadi ke pt surab...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Prabowo Bakal Bentuk Kementerian Penerimaan Ne...</td>
+      <td>Ekonomi</td>
+      <td>41</td>
+      <td>0.856</td>
+      <td>wacana presiden prabowo subianto akan membentu...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Sinergi Kemenag &amp; BPJS Ketenagakerjaan Lindung...</td>
+      <td>Ekonomi</td>
+      <td>41</td>
+      <td>0.482</td>
+      <td>bpjs ketenagakerjaan dan kementerian agama kem...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Pemerintah Segera Bentuk Satgas PHK Usai Tetap...</td>
+      <td>Ekonomi</td>
+      <td>29</td>
+      <td>0.575</td>
+      <td>pemerintah akan segera membentuk satuan tugas ...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1495</th>
+      <td>Laporan Sebab Tabrakan Pesawat-Black Hawk Dita...</td>
+      <td>Internasional</td>
+      <td>46</td>
+      <td>0.416</td>
+      <td>anggota dewan keselamatan transportasi nasiona...</td>
+    </tr>
+    <tr>
+      <th>1496</th>
+      <td>Israel Bebaskan 110 Sandera Palestina, Diantar...</td>
+      <td>Internasional</td>
+      <td>24</td>
+      <td>0.545</td>
+      <td>israel telah membebaskan tahanan palestina pad...</td>
+    </tr>
+    <tr>
+      <th>1497</th>
+      <td>Hamas Konfirmasi Kematian Komandan Al Qassam M...</td>
+      <td>Internasional</td>
+      <td>15</td>
+      <td>0.448</td>
+      <td>hamas mengonfirmasi kematian kepala militernya...</td>
+    </tr>
+    <tr>
+      <th>1498</th>
+      <td>Black Box American Airlines Ditemukan Usai Tab...</td>
+      <td>Internasional</td>
+      <td>25</td>
+      <td>0.491</td>
+      <td>tim penyelam diduga menemukan satu dari dua bl...</td>
+    </tr>
+    <tr>
+      <th>1499</th>
+      <td>Trump Salahkan Biden soal Penurunan Standar Ke...</td>
+      <td>Internasional</td>
+      <td>47</td>
+      <td>0.631</td>
+      <td>presiden as donald trump menyalahkan pemerinta...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1500 rows × 5 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1a0c6266-ec0b-44f0-ab20-ca987af19072')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-1a0c6266-ec0b-44f0-ab20-ca987af19072 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-1a0c6266-ec0b-44f0-ab20-ca987af19072');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-ac8e9128-0ce0-4efa-995c-f9bdb3790ae6">
+      <button class="colab-df-quickchart" onclick="quickchart('df-ac8e9128-0ce0-4efa-995c-f9bdb3790ae6')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-ac8e9128-0ce0-4efa-995c-f9bdb3790ae6 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+</div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1979,6 +3177,9 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/5b0ec0edf0eae46b4857dc13b744493e88bf096fea4f205359a6a4a26dfad5ff.png" src="_images/5b0ec0edf0eae46b4857dc13b744493e88bf096fea4f205359a6a4a26dfad5ff.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1996,6 +3197,9 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6daaab478d679bf6d443750b19bc9d1bc449682510864b454ab2409b0a972169.png" src="_images/6daaab478d679bf6d443750b19bc9d1bc449682510864b454ab2409b0a972169.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2028,6 +3232,13 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data berhasil dibagi menggunakan fitur dari distribusi topik LDA.
+Bentuk X_train: (1200, 52)
+Bentuk X_test: (300, 52)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2038,6 +3249,11 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 <span class="n">y_pred_nb</span> <span class="o">=</span> <span class="n">nb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model Naive Bayes dilatih menggunakan fitur distribusi topik LDA.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model Naive Bayes dilatih menggunakan fitur distribusi topik LDA.
 </pre></div>
 </div>
 </div>
@@ -2069,6 +3285,29 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>### 🔍 Evaluasi Model Naive Bayes ###
+
+=== Evaluasi Model: Naive Bayes ===
+Accuracy : 0.7833333333333333
+Precision: 0.788869366806295
+Recall   : 0.7833333333333333
+
+Classification Report:
+                precision    recall  f1-score   support
+
+      Ekonomi       0.68      0.84      0.75        75
+Internasional       0.88      0.79      0.83        75
+     Nasional       0.65      0.57      0.61        75
+     Olahraga       0.95      0.93      0.94        75
+
+     accuracy                           0.78       300
+    macro avg       0.79      0.78      0.78       300
+ weighted avg       0.79      0.78      0.78       300
+</pre></div>
+</div>
+<img alt="_images/965131c6a0109dc943c574e618625eafb668ccda587e809113300284f92925b1.png" src="_images/965131c6a0109dc943c574e618625eafb668ccda587e809113300284f92925b1.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2090,6 +3329,11 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model SVM dilatih menggunakan fitur distribusi topik LDA.&quot;</span><span class="p">)</span>
 <span class="c1"># print(&quot;Model Softmax Regression dilatih menggunakan fitur distribusi topik LDA.&quot;) # Uncomment if using Softmax</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model SVM dilatih menggunakan fitur distribusi topik LDA.
 </pre></div>
 </div>
 </div>
@@ -2120,6 +3364,29 @@ Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.1
 <span class="n">evaluasi_model</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svm</span><span class="p">,</span> <span class="s2">&quot;SVM&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>### 🔍 Evaluasi Model SVM ###
+
+=== Evaluasi Model: SVM ===
+Accuracy : 0.7566666666666667
+Precision: 0.7720984968427423
+Recall   : 0.7566666666666667
+
+Classification Report:
+                precision    recall  f1-score   support
+
+      Ekonomi       0.67      0.83      0.74        75
+Internasional       0.89      0.75      0.81        75
+     Nasional       0.58      0.60      0.59        75
+     Olahraga       0.94      0.85      0.90        75
+
+     accuracy                           0.76       300
+    macro avg       0.77      0.76      0.76       300
+ weighted avg       0.77      0.76      0.76       300
+</pre></div>
+</div>
+<img alt="_images/122924b954ddf47824a753006c65717a4888277718e36c65eabe92ea78f0a8e2.png" src="_images/122924b954ddf47824a753006c65717a4888277718e36c65eabe92ea78f0a8e2.png" />
 </div>
 </div>
 </section>
