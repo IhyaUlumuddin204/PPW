@@ -362,7 +362,9 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: plotly in /home/codespace/.local/lib/python3.12/site-packages (6.2.0)
-Requirement already satisfied: narwhals&gt;=1.15.1 in /home/codespace/.local/lib/python3.12/site-packages (from plotly) (1.46.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: narwhals&gt;=1.15.1 in /home/codespace/.local/lib/python3.12/site-packages (from plotly) (1.46.0)
 Requirement already satisfied: packaging in /home/codespace/.local/lib/python3.12/site-packages (from plotly) (25.0)
 </pre></div>
 </div>
@@ -930,6 +932,28 @@ Searching topik dari 2 sampai 15...
     self._target(*self._args, **self._kwargs)
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  File &quot;/usr/local/python/3.12.1/lib/python3.12/multiprocessing/pool.py&quot;, line 109, in worker
+    initializer(*initargs)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  File &quot;/usr/local/python/3.12.1/lib/python3.12/site-packages/gensim/models/ldamulticore.py&quot;, line 346, in worker_e_step
+    worker_lda.do_estep(chunk)  # TODO: auto-tune alpha?
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  File &quot;/usr/local/python/3.12.1/lib/python3.12/site-packages/gensim/models/ldamodel.py&quot;, line 768, in do_estep
+    gamma, sstats = self.inference(chunk, collect_sstats=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  File &quot;/usr/local/python/3.12.1/lib/python3.12/site-packages/gensim/models/ldamodel.py&quot;, line 720, in inference
+    Elogthetad = dirichlet_expectation(gammad)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>KeyboardInterrupt
+</pre></div>
+</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">66</span>
@@ -994,44 +1018,36 @@ Searching topik dari 2 sampai 15...
 <span class="g g-Whitespace">    </span><span class="mi">318</span> <span class="k">if</span> <span class="n">reallen</span> <span class="o">!=</span> <span class="n">lencorpus</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">319</span>     <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;input corpus size changed during training (don&#39;t use generators as input)&quot;</span><span class="p">)</span>
 
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/gensim/models/ldamulticore.py:274,</span> in <span class="ni">LdaMulticore.update.&lt;locals&gt;.process_result_queue</span><span class="nt">(force)</span>
-<span class="g g-Whitespace">    </span><span class="mi">268</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">269</span><span class="sd"> Clear the result queue, merging all intermediate results, and update the</span>
-<span class="g g-Whitespace">    </span><span class="mi">270</span><span class="sd"> LDA model if necessary.</span>
-<span class="g g-Whitespace">    </span><span class="mi">271</span><span class="sd"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">272</span><span class="sd"> &quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">273</span> <span class="n">merged_new</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="ne">--&gt; </span><span class="mi">274</span> <span class="k">while</span> <span class="ow">not</span> <span class="n">result_queue</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
-<span class="g g-Whitespace">    </span><span class="mi">275</span>     <span class="n">other</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">result_queue</span><span class="o">.</span><span class="n">get</span><span class="p">())</span>
-<span class="g g-Whitespace">    </span><span class="mi">276</span>     <span class="n">queue_size</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/gensim/models/ldamulticore.py:283,</span> in <span class="ni">LdaMulticore.update.&lt;locals&gt;.process_result_queue</span><span class="nt">(force)</span>
+<span class="g g-Whitespace">    </span><span class="mi">281</span> <span class="n">other</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">282</span> <span class="k">if</span> <span class="n">eval_every</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="n">force</span> <span class="ow">or</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">num_updates</span> <span class="o">/</span> <span class="n">updateafter</span><span class="p">)</span> <span class="o">%</span> <span class="n">eval_every</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">283</span>     <span class="bp">self</span><span class="o">.</span><span class="n">log_perplexity</span><span class="p">(</span><span class="n">chunk</span><span class="p">,</span> <span class="n">total_docs</span><span class="o">=</span><span class="n">lencorpus</span><span class="p">)</span>
 
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/multiprocessing/queues.py:129,</span> in <span class="ni">Queue.empty</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">128</span> <span class="k">def</span><span class="w"> </span><span class="nf">empty</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">129</span>     <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_poll</span><span class="p">()</span>
+<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/gensim/models/ldamodel.py:847,</span> in <span class="ni">LdaModel.log_perplexity</span><span class="nt">(self, chunk, total_docs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">845</span> <span class="n">corpus_words</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cnt</span> <span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">chunk</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">cnt</span> <span class="ow">in</span> <span class="n">document</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">846</span> <span class="n">subsample_ratio</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">*</span> <span class="n">total_docs</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">847</span> <span class="n">perwordbound</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bound</span><span class="p">(</span><span class="n">chunk</span><span class="p">,</span> <span class="n">subsample_ratio</span><span class="o">=</span><span class="n">subsample_ratio</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">subsample_ratio</span> <span class="o">*</span> <span class="n">corpus_words</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">848</span> <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">849</span>     <span class="s2">&quot;</span><span class="si">%.3f</span><span class="s2"> per-word bound, </span><span class="si">%.1f</span><span class="s2"> perplexity estimate based on a held-out corpus of </span><span class="si">%i</span><span class="s2"> documents with </span><span class="si">%i</span><span class="s2"> words&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">850</span>     <span class="n">perwordbound</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">exp2</span><span class="p">(</span><span class="o">-</span><span class="n">perwordbound</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="p">),</span> <span class="n">corpus_words</span>
+<span class="g g-Whitespace">    </span><span class="mi">851</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">852</span> <span class="k">return</span> <span class="n">perwordbound</span>
 
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/multiprocessing/connection.py:257,</span> in <span class="ni">_ConnectionBase.poll</span><span class="nt">(self, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">255</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_closed</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">256</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_readable</span><span class="p">()</span>
-<span class="ne">--&gt; </span><span class="mi">257</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_poll</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/gensim/models/ldamodel.py:1113,</span> in <span class="ni">LdaModel.bound</span><span class="nt">(self, corpus, gamma, subsample_ratio)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1111</span>     <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;bound: at document #</span><span class="si">%i</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1112</span> <span class="k">if</span> <span class="n">gamma</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1113</span>     <span class="n">gammad</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inference</span><span class="p">([</span><span class="n">doc</span><span class="p">])</span>
+<span class="g g-Whitespace">   </span><span class="mi">1114</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1115</span>     <span class="n">gammad</span> <span class="o">=</span> <span class="n">gamma</span><span class="p">[</span><span class="n">d</span><span class="p">]</span>
 
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/multiprocessing/connection.py:440,</span> in <span class="ni">Connection._poll</span><span class="nt">(self, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">439</span> <span class="k">def</span><span class="w"> </span><span class="nf">_poll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timeout</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">440</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">wait</span><span class="p">([</span><span class="bp">self</span><span class="p">],</span> <span class="n">timeout</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">441</span>     <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/multiprocessing/connection.py:1135,</span> in <span class="ni">wait</span><span class="nt">(object_list, timeout)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1132</span>     <span class="n">deadline</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">monotonic</span><span class="p">()</span> <span class="o">+</span> <span class="n">timeout</span>
-<span class="g g-Whitespace">   </span><span class="mi">1134</span> <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1135</span>     <span class="n">ready</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1136</span>     <span class="k">if</span> <span class="n">ready</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1137</span>         <span class="k">return</span> <span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">fileobj</span> <span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">events</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ready</span><span class="p">]</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/selectors.py:415,</span> in <span class="ni">_PollLikeSelector.select</span><span class="nt">(self, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">413</span> <span class="n">ready</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="g g-Whitespace">    </span><span class="mi">414</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">415</span>     <span class="n">fd_event_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_selector</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">416</span> <span class="k">except</span> <span class="ne">InterruptedError</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">417</span>     <span class="k">return</span> <span class="n">ready</span>
+<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/gensim/models/ldamodel.py:714,</span> in <span class="ni">LdaModel.inference</span><span class="nt">(self, chunk, collect_sstats)</span>
+<span class="g g-Whitespace">    </span><span class="mi">711</span> <span class="n">phinorm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">expElogthetad</span><span class="p">,</span> <span class="n">expElogbetad</span><span class="p">)</span> <span class="o">+</span> <span class="n">epsilon</span>
+<span class="g g-Whitespace">    </span><span class="mi">713</span> <span class="c1"># Iterate between gamma and phi until convergence</span>
+<span class="ne">--&gt; </span><span class="mi">714</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">iterations</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">715</span>     <span class="n">lastgamma</span> <span class="o">=</span> <span class="n">gammad</span>
+<span class="g g-Whitespace">    </span><span class="mi">716</span>     <span class="c1"># We represent phi implicitly to save memory and time.</span>
+<span class="g g-Whitespace">    </span><span class="mi">717</span>     <span class="c1"># Substituting the value of the optimal phi back into</span>
+<span class="g g-Whitespace">    </span><span class="mi">718</span>     <span class="c1"># the update for gamma gives this update. Cf. Lee&amp;Seung 2001.</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -1042,136 +1058,168 @@ Searching topik dari 2 sampai 15...
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">KMeans</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">silhouette_score</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="c1"># Menemukan K Optimal dengan Silhouette Score</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- Mencari K Optimal dengan Silhouette Score (Metode Kuantitatif) ---&quot;</span><span class="p">)</span>
-<span class="n">K_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah baris df:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah baris X :&quot;</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️ Jumlah baris tidak sama, memperbaiki...&quot;</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Sekarang jumlah baris df =&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah baris sudah sama.&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># ================================</span>
+<span class="c1"># ✔️ Mencari K Optimal</span>
+<span class="c1"># ================================</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- Mencari K Optimal dengan Silhouette Score ---&quot;</span><span class="p">)</span>
+
+<span class="n">K_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)))</span>  <span class="c1"># aman untuk dataset kecil</span>
 <span class="n">silhouette_scores</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">K_range</span><span class="p">:</span>
-    <span class="n">kmeans_model</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-    <span class="n">score</span> <span class="o">=</span> <span class="n">silhouette_score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">kmeans_model</span><span class="o">.</span><span class="n">labels_</span><span class="p">)</span>
-    <span class="n">silhouette_scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Untuk K = </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">, Silhouette Score-nya adalah </span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># Visualisasikan hasilnya</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span> <span class="c1"># Ukuran plot disesuaikan</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">K_range</span><span class="p">,</span> <span class="n">silhouette_scores</span><span class="p">,</span> <span class="s1">&#39;ro-&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">K_range</span><span class="p">:</span>
+    <span class="n">kmeans_model</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="n">kmeans_model</span><span class="o">.</span><span class="n">labels_</span>
+    
+    <span class="c1"># Cek jika hanya 1 cluster unik → silhouette error</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;K = </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2"> dilewati (hanya 1 cluster)&quot;</span><span class="p">)</span>
+        <span class="n">silhouette_scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">continue</span>
+
+    <span class="n">score</span> <span class="o">=</span> <span class="n">silhouette_score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+    <span class="n">silhouette_scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Untuk K=</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">, Silhouette Score = </span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># ================================</span>
+<span class="c1"># ✔️ Plot Silhouette Score</span>
+<span class="c1"># ================================</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">K_range</span><span class="p">),</span> <span class="n">silhouette_scores</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Jumlah Cluster (k)&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Silhouette Score&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Silhouette Score untuk Setiap Nilai K&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-<span class="c1"># Jalankan K-Means dengan K Terbaik</span>
-<span class="c1"># Pilih K yang memberikan Silhouette Score TERTINGGI secara otomatis</span>
-<span class="n">optimal_k</span> <span class="o">=</span> <span class="n">K_range</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">silhouette_scores</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ Berdasarkan Silhouette Score, K terbaik adalah: </span><span class="si">{</span><span class="n">optimal_k</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># ================================</span>
+<span class="c1"># ✔️ Menentukan K Terbaik</span>
+<span class="c1"># ================================</span>
+
+<span class="n">optimal_k</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">K_range</span><span class="p">)[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">silhouette_scores</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🔥 Berdasarkan Silhouette Score, K terbaik adalah: </span><span class="si">{</span><span class="n">optimal_k</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
 
-<span class="c1"># Latih Model K-Means Final &amp; Analisis Hasil ---</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- Menjalankan K-Means final dengan K=</span><span class="si">{</span><span class="n">optimal_k</span><span class="si">}</span><span class="s2">... ---&quot;</span><span class="p">)</span>
-<span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">optimal_k</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span>
-<span class="c1"># Ganti &#39;df&#39; dengan nama DataFrame yang berisi data bersih Anda</span>
+<span class="c1"># ================================</span>
+<span class="c1"># ✔️ Latih Model Final</span>
+<span class="c1"># ================================</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- Menjalankan K-Means Final dengan K=</span><span class="si">{</span><span class="n">optimal_k</span><span class="si">}</span><span class="s2"> ---&quot;</span><span class="p">)</span>
+<span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">optimal_k</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;cluster&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
-<span class="c1"># Analisis Hasil Cluster ---</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Contoh email dari setiap cluster yang ditemukan:&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">optimal_k</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">----- CLUSTER </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> -----&quot;</span><span class="p">)</span>
-    <span class="n">sample_emails</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;cluster&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">][</span><span class="s1">&#39;Text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">email_text</span> <span class="ow">in</span> <span class="n">sample_emails</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">email_text</span><span class="p">)[:</span><span class="mi">250</span><span class="p">]</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cluster selesai dibuat!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;cluster&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ Proses clustering selesai.&quot;</span><span class="p">)</span>
+
+<span class="c1"># ================================</span>
+<span class="c1"># ✔️ Contoh Email tiap Cluster</span>
+<span class="c1"># ================================</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">==== Contoh Email Tiap Cluster ====&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">optimal_k</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== CLUSTER </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> ===&quot;</span><span class="p">)</span>
+    <span class="n">contoh</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;cluster&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">][</span><span class="s1">&#39;Text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">isi</span> <span class="ow">in</span> <span class="n">contoh</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">isi</span><span class="p">)[:</span><span class="mi">200</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;...&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--- Mencari K Optimal dengan Silhouette Score (Metode Kuantitatif) ---
-Untuk K = 2, Silhouette Score-nya adalah 0.0029
-Untuk K = 3, Silhouette Score-nya adalah 0.0040
-Untuk K = 4, Silhouette Score-nya adalah 0.0046
-Untuk K = 5, Silhouette Score-nya adalah 0.0060
-Untuk K = 6, Silhouette Score-nya adalah 0.0063
-Untuk K = 7, Silhouette Score-nya adalah 0.0090
-Untuk K = 8, Silhouette Score-nya adalah 0.0093
-Untuk K = 9, Silhouette Score-nya adalah 0.0101
-Untuk K = 10, Silhouette Score-nya adalah 0.0106
-Untuk K = 11, Silhouette Score-nya adalah 0.0116
-Untuk K = 12, Silhouette Score-nya adalah 0.0125
-Untuk K = 13, Silhouette Score-nya adalah 0.0130
-Untuk K = 14, Silhouette Score-nya adalah 0.0130
-Untuk K = 15, Silhouette Score-nya adalah 0.0139
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah baris df: 5573
+Jumlah baris X : 5570
+⚠️ Jumlah baris tidak sama, memperbaiki...
+✅ Sekarang jumlah baris df = 5570
+
+--- Mencari K Optimal dengan Silhouette Score ---
+Untuk K=2, Silhouette Score = 0.3051
+Untuk K=3, Silhouette Score = 0.3631
+Untuk K=4, Silhouette Score = 0.4085
 </pre></div>
 </div>
-<img alt="_images/132fa99b25ff5a41688b3cbb32098d00377ba6a61a7a13fac4ceba1a341816c1.png" src="_images/132fa99b25ff5a41688b3cbb32098d00377ba6a61a7a13fac4ceba1a341816c1.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>✅ Berdasarkan Silhouette Score, K terbaik adalah: 15
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Untuk K=5, Silhouette Score = 0.4440
+Untuk K=6, Silhouette Score = 0.4865
+Untuk K=7, Silhouette Score = 0.5213
+Untuk K=8, Silhouette Score = 0.4512
+Untuk K=9, Silhouette Score = 0.4545
+Untuk K=10, Silhouette Score = 0.4233
+Untuk K=11, Silhouette Score = 0.4278
+Untuk K=12, Silhouette Score = 0.4079
+Untuk K=13, Silhouette Score = 0.4102
+Untuk K=14, Silhouette Score = 0.4582
+Untuk K=15, Silhouette Score = 0.4585
+</pre></div>
+</div>
+<img alt="_images/fdeae5d4d9a306cfa0cc033828be351cf142d10912486806e49d00f2fc990ea8.png" src="_images/fdeae5d4d9a306cfa0cc033828be351cf142d10912486806e49d00f2fc990ea8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🔥 Berdasarkan Silhouette Score, K terbaik adalah: 7
 
---- Menjalankan K-Means final dengan K=15... ---
+--- Menjalankan K-Means Final dengan K=7 ---
 
-Contoh email dari setiap cluster yang ditemukan:
+Cluster selesai dibuat!
+cluster
+1    2053
+3     894
+6     636
+2     586
+5     567
+4     418
+0     416
+Name: count, dtype: int64
 
------ CLUSTER 0 -----
-- U dun say so early hor... U c already then say......
-- Nah I don&#39;t think he goes to usf, he lives around here though...
+==== Contoh Email Tiap Cluster ====
 
------ CLUSTER 1 -----
-- Oops, I&#39;ll let you know when my roommate&#39;s done...
-- Great! I hope you like your man well endowed. I am  &amp;lt;#&amp;gt;  inches......
-
------ CLUSTER 2 -----
-- Sorry, I&#39;ll call later in meeting....
-- Sorry, I&#39;ll call later...
-
------ CLUSTER 3 -----
-- WINNER!! As a valued network customer you have been selected to receivea å£900 prize reward! To claim call 09061701461. Claim code KL341. Valid 12 hours only....
-- URGENT! You have won a 1 week FREE membership in our å£100,000 Prize Jackpot! Txt the word: CLAIM to No: 81010 T&amp;C www.dbuk.net LCCLTD POBOX 4403LDNW1A7RW18...
-
------ CLUSTER 4 -----
-- Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat......
-- Yeah he got in at 2 and was v apologetic. n had fallen out and she was actin like spoilt child and he got caught up in that. Till 2! But we won&#39;t go there! Not doing too badly cheers. You? ...
-
------ CLUSTER 5 -----
-- FreeMsg Hey there darling it&#39;s been 3 week&#39;s now and no word back! I&#39;d like some fun you up for it still? Tb ok! XxX std chgs to send, å£1.50 to rcv...
-- SIX chances to win CASH! From 100 to 20,000 pounds txt&gt; CSH11 and send to 87575. Cost 150p/day, 6days, 16+ TsandCs apply Reply HL 4 info...
-
------ CLUSTER 6 -----
-- Umma my life and vava umma love you lot dear...
-- Dear, will call Tmorrow.pls accomodate....
-
------ CLUSTER 7 -----
-- I&#39;m gonna be home soon and i don&#39;t want to talk about this stuff anymore tonight, k? I&#39;ve cried enough today....
-- Wait that&#39;s still not all that clear, were you not sure about me being sarcastic or that that&#39;s why x doesn&#39;t want to live with us...
-
------ CLUSTER 8 -----
-- Did I forget to tell you ? I want you , I need you, I crave you ... But most of all ... I love you my sweet Arabian steed ... Mmmmmm ... Yummy...
-- For real when u getting on yo? I only need 2 more tickets and one more jacket and I&#39;m done. I already used all my multis....
-
------ CLUSTER 9 -----
-- Ok lar... Joking wif u oni......
-- Sorry my roommates took forever, it ok if I come by now?...
-
------ CLUSTER 10 -----
-- Just forced myself to eat a slice. I&#39;m really not hungry tho. This sucks. Mark is getting worried. He knows I&#39;m sick when I turn down pizza. Lol...
-- I&#39;m back &amp;amp; we&#39;re packing the car now, I&#39;ll let you know if there&#39;s room...
-
------ CLUSTER 11 -----
-- Did you hear about the new \Divorce Barbie\&quot;? It comes with all of Ken&#39;s stuff!&quot;...
-- I&#39;m ok wif it cos i like 2 try new things. But i scared u dun like mah. Cos u said not too loud....
-
------ CLUSTER 12 -----
+=== CLUSTER 0 ===
+- XXXMobileMovieClub: To use your credit, click the WAP link in the next txt message or click here&gt;&gt; http://wap. xxxmobilemovieclub.com?n=QJKGIGHJJGCBL...
+- Is that seriously how you spell his name?...
 - IÛ÷m going to try for 2 months ha ha only joking...
-- So Ì_ pay first lar... Then when is da stock comin......
 
------ CLUSTER 13 -----
-- Sir, Waiting for your mail....
-- Call Germany for only 1 pence per minute! Call from a fixed line via access number 0844 861 85 85. No prepayment. Direct access!...
+=== CLUSTER 1 ===
+- Nah I don&#39;t think he goes to usf, he lives around here though...
+- FreeMsg Hey there darling it&#39;s been 3 week&#39;s now and no word back! I&#39;d like some fun you up for it still? Tb ok! XxX std chgs to send, å£1.50 to rcv...
+- Even my brother is not like to speak with me. They treat me like aids patent....
 
------ CLUSTER 14 -----
+=== CLUSTER 2 ===
+- I&#39;ve been searching for the right words to thank you for this breather. I promise i wont take your help for granted and will fulfil my promise. You have been wonderful and a blessing at all times....
+- I HAVE A DATE ON SUNDAY WITH WILL!!...
+- Thanks for your subscription to Ringtone UK your mobile will be charged å£5/month Please confirm by replying YES or NO. If you reply NO you will not be charged...
+
+=== CLUSTER 3 ===
+- Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat......
+- Ok lar... Joking wif u oni......
+- U dun say so early hor... U c already then say......
+
+=== CLUSTER 4 ===
 - Text...
 - Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&amp;C&#39;s apply 08452810075over18&#39;s...
+- WINNER!! As a valued network customer you have been selected to receivea å£900 prize reward! To claim call 09061701461. Claim code KL341. Valid 12 hours only....
 
-✅ Proses clustering selesai.
+=== CLUSTER 5 ===
+- As per your request &#39;Melle Melle (Oru Minnaminunginte Nurungu Vettam)&#39; has been set as your callertune for all Callers. Press *9 to copy your friends Callertune...
+- Eh u remember how 2 spell his name... Yes i did. He v naughty make until i v wet....
+- Just forced myself to eat a slice. I&#39;m really not hungry tho. This sucks. Mark is getting worried. He knows I&#39;m sick when I turn down pizza. Lol...
+
+=== CLUSTER 6 ===
+- I see the letter B on my car...
+- A gram usually runs like  &amp;lt;#&amp;gt; , a half eighth is smarter though and gets you almost a whole second gram for  &amp;lt;#&amp;gt;...
+- Its a part of checking IQ...
 </pre></div>
 </div>
 </div>
