@@ -1,0 +1,4308 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>DATA NASA Final &#8212; Pencarian &amp; Penambangan Web</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'DataNasafinal';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="DATA NASA" href="DataNasa.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/ftprofile.jpg" class="logo__image only-light" alt="Pencarian & Penambangan Web - Home"/>
+    <script>document.write(`<img src="_static/ftprofile.jpg" class="logo__image only-dark" alt="Pencarian & Penambangan Web - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Profile
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pengantarwebmining.html">Pengantar Web Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="webcrawling.html">Web Crawling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IhyaUlumuddin_CrawlingPPW.html">Tugas Crawling PTA dan Berita</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="Tugastoken_ihya.html">Tugas Tokenisasi abstrak</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tf_idf.html">TF-IDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klassifikasi_berita.html">Klasifikasi Dengan LDA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klassifikasi_berita_svm_dan_Naivbayes.html">Klasifikasi Dengan SVM , Naifbayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kluastering_email.html">klastering email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ChallengeA.html">ChallengeA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DataNasa.html">DATA NASA</a></li>
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">DATA NASA Final</a></li>
+
+
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/DataNasafinal.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>DATA NASA Final</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">DATA NASA Final</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-di-ambil-yang-200">Filter di ambil yang 200</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-ambil-yang-get">Filter ambil yang GET</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ubah-tanggal-dan-waktu-ke-dmy">Ubah tanggal dan waktu ke DMY</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-berdasarkan-ip-addres">Filter berdasarkan IP addres</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#final-filter">Final filter</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-abjad-berdasarkan-html-unik">Buat Abjad berdasarkan html unik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kunjungan-tiap-host">Tabel Kunjungan Tiap host</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kesimpulan">Tabel Kesimpulan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kunjungan-host">Kunjungan Host</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="data-nasa-final">
+<h1>DATA NASA Final<a class="headerlink" href="#data-nasa-final" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Nama file input</span>
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;datanasa.csv&quot;</span>
+
+<span class="c1"># 1. Muat dataset</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+<span class="c1"># DIUBAH: Tambahkan sep=&#39;;&#39; karena file Anda menggunakan titik koma</span>
+<span class="c1"># DIUBAH: Tambahkan index_col=0 karena kolom pertama adalah indeks</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+<span class="c1"># 3. Tampilkan beberapa baris pertama data asli (opsional)</span>
+<span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;datanasa.csv&quot;</span>
+<span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama data awal dengan display():&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="c1"># 4. Tentukan kolom target</span>
+<span class="c1"># DIUBAH: Kita mencari .html di kolom &#39;url&#39;, bukan &#39;host&#39;</span>
+<span class="n">target_column</span> <span class="o">=</span> <span class="s2">&quot;url&quot;</span>
+
+<span class="c1"># 5. Periksa apakah kolom target ada</span>
+<span class="k">if</span> <span class="n">target_column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: Kolom &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; tidak ditemukan di CSV.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># 6. Filter baris</span>
+    <span class="c1">#    Logika ini sekarang akan diterapkan pada kolom &#39;url&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Memfilter data untuk baris di mana &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; diakhiri dengan &#39;.html&#39;...&quot;</span><span class="p">)</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">target_column</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.html&#39;</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="c1"># 7. Simpan data yang telah difilter ke file CSV baru</span>
+    <span class="n">output_filename</span> <span class="o">=</span> <span class="s2">&quot;html_requests_only_NASA.csv&quot;</span>
+    <span class="c1"># DIUBAH: Tambahkan sep=&#39;;&#39; saat menyimpan agar konsisten</span>
+    <span class="n">filtered_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+    <span class="c1"># 8. Cetak pesan sukses dan pratinjau data yang telah difilter</span>
+    <span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;html_requests_only_NASA.csv&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+    <span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari datanasa.csv...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_5214/705309671.py:10: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_name, sep=&#39;;&#39;, index_col=0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama data awal dengan display():
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_5214/705309671.py:15: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  df_to_display = pd.read_csv(file_name_to_display, sep=&#39;;&#39;)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>805465031.0</td>
+      <td>GET</td>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>200.0</td>
+      <td>5866.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>***.novo.dk</td>
+      <td>805465051.0</td>
+      <td>GET</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>200.0</td>
+      <td>363.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>***.novo.dk</td>
+      <td>805465053.0</td>
+      <td>GET</td>
+      <td>/images/USA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>234.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>***.novo.dk</td>
+      <td>805465054.0</td>
+      <td>GET</td>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>786.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memfilter data untuk baris di mana &#39;url&#39; diakhiri dengan &#39;.html&#39;...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari html_requests_only_NASA.csv untuk ditampilkan...
+
+Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_5214/705309671.py:40: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  df_to_display = pd.read_csv(file_name_to_display, sep=&#39;;&#39;)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6</td>
+      <td>***.novo.dk</td>
+      <td>805465068.0</td>
+      <td>GET</td>
+      <td>/shuttle/missions/missions.html</td>
+      <td>200.0</td>
+      <td>8678.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12</td>
+      <td>***.novo.dk</td>
+      <td>805465381.0</td>
+      <td>GET</td>
+      <td>/shuttle/resources/orbiters/columbia.html</td>
+      <td>200.0</td>
+      <td>6922.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>13</td>
+      <td>***.novo.dk</td>
+      <td>807951768.0</td>
+      <td>GET</td>
+      <td>/shuttle/missions/sts-69/mission-sts-69.html</td>
+      <td>200.0</td>
+      <td>11264.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>23</td>
+      <td>***.novo.dk</td>
+      <td>807951938.0</td>
+      <td>GET</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+      <td>200.0</td>
+      <td>4665.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+<span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+<span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;html_requests_only_NASA.csv&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+<span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari html_requests_only_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_5214/38546358.py:6: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  df_to_display = pd.read_csv(file_name_to_display, sep=&#39;;&#39;)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6</td>
+      <td>***.novo.dk</td>
+      <td>805465068.0</td>
+      <td>GET</td>
+      <td>/shuttle/missions/missions.html</td>
+      <td>200.0</td>
+      <td>8678.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12</td>
+      <td>***.novo.dk</td>
+      <td>805465381.0</td>
+      <td>GET</td>
+      <td>/shuttle/resources/orbiters/columbia.html</td>
+      <td>200.0</td>
+      <td>6922.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>13</td>
+      <td>***.novo.dk</td>
+      <td>807951768.0</td>
+      <td>GET</td>
+      <td>/shuttle/missions/sts-69/mission-sts-69.html</td>
+      <td>200.0</td>
+      <td>11264.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>23</td>
+      <td>***.novo.dk</td>
+      <td>807951938.0</td>
+      <td>GET</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+      <td>200.0</td>
+      <td>4665.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="filter-di-ambil-yang-200">
+<h1>Filter di ambil yang 200<a class="headerlink" href="#filter-di-ambil-yang-200" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Nama file input (file dari langkah sebelumnya)</span>
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;html_requests_only_NASA.csv&quot;</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+<span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+<span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;html_requests_only_NASA.csv&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+<span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+
+<span class="c1"># 2. Tentukan kolom target</span>
+<span class="n">target_column</span> <span class="o">=</span> <span class="s2">&quot;response&quot;</span>
+
+<span class="c1"># 3. Periksa apakah kolom target ada</span>
+<span class="k">if</span> <span class="n">target_column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: Kolom &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; tidak ditemukan di CSV.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># 4. Periksa apakah kolomnya numerik (sekarang seharusnya berhasil)</span>
+    <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">is_numeric_dtype</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">target_column</span><span class="p">]):</span>
+
+        <span class="c1"># 5. Filter baris di mana &#39;response&#39; sama dengan 200</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Memfilter data untuk baris di mana &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; adalah 200...&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Ini adalah baris filter utama (logika Anda sudah benar)</span>
+        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">target_column</span><span class="p">]</span> <span class="o">==</span> <span class="mi">200</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="c1"># 6. Simpan data yang telah difilter ke file CSV baru</span>
+        <span class="n">output_filename</span> <span class="o">=</span> <span class="s2">&quot;status_200_only_NASA.csv&quot;</span>
+        <span class="c1"># DIUBAH: Tambahkan sep=&#39;;&#39; agar konsisten saat menyimpan</span>
+        <span class="n">filtered_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+
+
+        <span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+        <span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;status_200_only_NASA.csv&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+        <span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari html_requests_only_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_5214/4186569879.py:11: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  df_to_display = pd.read_csv(file_name_to_display, sep=&#39;;&#39;)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6</td>
+      <td>***.novo.dk</td>
+      <td>805465068.0</td>
+      <td>GET</td>
+      <td>/shuttle/missions/missions.html</td>
+      <td>200.0</td>
+      <td>8678.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>12</td>
+      <td>***.novo.dk</td>
+      <td>805465381.0</td>
+      <td>GET</td>
+      <td>/shuttle/resources/orbiters/columbia.html</td>
+      <td>200.0</td>
+      <td>6922.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>13</td>
+      <td>***.novo.dk</td>
+      <td>807951768.0</td>
+      <td>GET</td>
+      <td>/shuttle/missions/sts-69/mission-sts-69.html</td>
+      <td>200.0</td>
+      <td>11264.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>23</td>
+      <td>***.novo.dk</td>
+      <td>807951938.0</td>
+      <td>GET</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+      <td>200.0</td>
+      <td>4665.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memfilter data untuk baris di mana &#39;response&#39; adalah 200...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari status_200_only_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>***.novo.dk</td>
+      <td>805465031.0</td>
+      <td>GET</td>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>200.0</td>
+      <td>5866.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>***.novo.dk</td>
+      <td>805465051.0</td>
+      <td>GET</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>200.0</td>
+      <td>363.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>***.novo.dk</td>
+      <td>805465053.0</td>
+      <td>GET</td>
+      <td>/images/USA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>234.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>***.novo.dk</td>
+      <td>805465054.0</td>
+      <td>GET</td>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>786.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="filter-ambil-yang-get">
+<h1>Filter ambil yang GET<a class="headerlink" href="#filter-ambil-yang-get" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Nama file input (file dari langkah sebelumnya)</span>
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;status_200_only_NASA.csv&quot;</span>
+<span class="n">filter_value</span> <span class="o">=</span> <span class="s2">&quot;GET&quot;</span>
+<span class="c1"># DIUBAH: Nama kolom yang benar adalah &#39;method&#39;, bukan &#39;Request method&#39;</span>
+<span class="n">target_column</span> <span class="o">=</span> <span class="s2">&quot;method&quot;</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+<span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+<span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;status_200_only_NASA.csv&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+<span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+
+
+<span class="c1"># 2. Periksa apakah kolom target ada</span>
+<span class="k">if</span> <span class="n">target_column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: Kolom &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; tidak ditemukan di CSV.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># 3. Filter baris di mana &#39;method&#39; sama dengan &#39;GET&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Memfilter data untuk baris di mana &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; adalah &#39;</span><span class="si">{</span><span class="n">filter_value</span><span class="si">}</span><span class="s2">&#39;...&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Ini adalah baris filter utama (Logika Anda sudah benar)</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">target_column</span><span class="p">]</span> <span class="o">==</span> <span class="n">filter_value</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="c1"># 4. Simpan data yang telah difilter ke file CSV baru</span>
+    <span class="n">output_filename</span> <span class="o">=</span> <span class="s2">&quot;method_get_only_NASA.csv&quot;</span>
+    <span class="c1"># DIUBAH: Tambahkan sep=&#39;;&#39; agar konsisten saat menyimpan</span>
+    <span class="n">filtered_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+<span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;method_get_only_NASA.csv&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+<span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari status_200_only_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>***.novo.dk</td>
+      <td>805465031.0</td>
+      <td>GET</td>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>200.0</td>
+      <td>5866.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>***.novo.dk</td>
+      <td>805465051.0</td>
+      <td>GET</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>200.0</td>
+      <td>363.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>***.novo.dk</td>
+      <td>805465053.0</td>
+      <td>GET</td>
+      <td>/images/USA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>234.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>***.novo.dk</td>
+      <td>805465054.0</td>
+      <td>GET</td>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>786.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memfilter data untuk baris di mana &#39;method&#39; adalah &#39;GET&#39;...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari method_get_only_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>***.novo.dk</td>
+      <td>805465031.0</td>
+      <td>GET</td>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>200.0</td>
+      <td>5866.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>***.novo.dk</td>
+      <td>805465051.0</td>
+      <td>GET</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>200.0</td>
+      <td>363.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>***.novo.dk</td>
+      <td>805465053.0</td>
+      <td>GET</td>
+      <td>/images/USA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>234.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>***.novo.dk</td>
+      <td>805465054.0</td>
+      <td>GET</td>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>786.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="ubah-tanggal-dan-waktu-ke-dmy">
+<h1>Ubah tanggal dan waktu ke DMY<a class="headerlink" href="#ubah-tanggal-dan-waktu-ke-dmy" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># DIUBAH: Nama file input yang benar</span>
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;method_get_only_NASA.csv&quot;</span>
+<span class="c1"># DIUBAH: Nama kolom target yang benar</span>
+<span class="n">target_column</span> <span class="o">=</span> <span class="s2">&quot;time&quot;</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+<span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+<span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;method_get_only_NASA.csv&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+<span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="c1"># 2. Periksa apakah kolom target ada</span>
+<span class="k">if</span> <span class="n">target_column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: Kolom &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; tidak ditemukan di CSV.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># 3. Tampilkan contoh format asli (ini adalah Angka/Timestamp)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Format asli (baris pertama): </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="n">target_column</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># 4. Lakukan transformasi:</span>
+    <span class="c1">#    Kita tidak mengganti &#39;T&#39; atau &#39;Z&#39; karena data aslinya adalah angka (Unix timestamp).</span>
+    <span class="c1">#    Kita akan MENGONVERSI timestamp itu ke format datetime yang mudah dibaca.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mengonversi kolom &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; (Unix timestamp) ke format Datetime...&quot;</span><span class="p">)</span>
+
+    <span class="c1"># pd.to_datetime mengonversi angka timestamp (unit=&#39;s&#39; berarti &#39;seconds&#39;)</span>
+    <span class="c1"># Kita buat kolom baru &#39;datetime_readable&#39; agar data asli tidak hilang</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;datetime_readable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">target_column</span><span class="p">],</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+
+    <span class="c1"># 5. Simpan data yang telah diubah ke file CSV baru</span>
+    <span class="n">output_filename</span> <span class="o">=</span> <span class="s2">&quot;time_converted_NASA.csv&quot;</span>
+    <span class="c1"># DIUBAH: Tambahkan sep=&#39;;&#39; agar konsisten</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+<span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;time_converted_NASA.csv&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+<span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari method_get_only_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>***.novo.dk</td>
+      <td>805465031.0</td>
+      <td>GET</td>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>200.0</td>
+      <td>5866.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>***.novo.dk</td>
+      <td>805465051.0</td>
+      <td>GET</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>200.0</td>
+      <td>363.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>***.novo.dk</td>
+      <td>805465053.0</td>
+      <td>GET</td>
+      <td>/images/USA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>234.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>***.novo.dk</td>
+      <td>805465054.0</td>
+      <td>GET</td>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>786.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Format asli (baris pertama): 805465029.0
+Mengonversi kolom &#39;time&#39; (Unix timestamp) ke format Datetime...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari time_converted_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+      <th>datetime_readable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+      <td>1995-07-11 12:17:09</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>***.novo.dk</td>
+      <td>805465031.0</td>
+      <td>GET</td>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>200.0</td>
+      <td>5866.0</td>
+      <td>1995-07-11 12:17:11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>***.novo.dk</td>
+      <td>805465051.0</td>
+      <td>GET</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>200.0</td>
+      <td>363.0</td>
+      <td>1995-07-11 12:17:31</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>***.novo.dk</td>
+      <td>805465053.0</td>
+      <td>GET</td>
+      <td>/images/USA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>234.0</td>
+      <td>1995-07-11 12:17:33</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>***.novo.dk</td>
+      <td>805465054.0</td>
+      <td>GET</td>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>786.0</td>
+      <td>1995-07-11 12:17:34</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="filter-berdasarkan-ip-addres">
+<h1>Filter berdasarkan IP addres<a class="headerlink" href="#filter-berdasarkan-ip-addres" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># 1. Tentukan file input (file yang memiliki &#39;datetime_readable&#39;)</span>
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;time_converted_NASA.csv&quot;</span>
+
+<span class="c1"># 2. Tentukan kolom-kolom yang akan kita gunakan</span>
+<span class="n">col_ip</span> <span class="o">=</span> <span class="s2">&quot;host&quot;</span>               <span class="c1"># Kolom untuk mengelompokkan sesi</span>
+<span class="n">col_time</span> <span class="o">=</span> <span class="s2">&quot;datetime_readable&quot;</span> <span class="c1"># Kolom untuk mengurutkan sesi</span>
+<span class="n">new_col_name</span> <span class="o">=</span> <span class="s2">&quot;SESSION&quot;</span>      <span class="c1"># Nama kolom sesi baru</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="c1"># 3. Muat dataset</span>
+    <span class="c1"># PENTING: Kita gunakan parse_dates=[col_time]</span>
+    <span class="c1"># agar pandas langsung membacanya sebagai objek datetime</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="n">col_time</span><span class="p">])</span>
+<span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: File </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2"> tidak ditemukan.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pastikan Anda sudah menjalankan skrip konversi &#39;time&#39; sebelumnya.&quot;</span><span class="p">)</span>
+    <span class="n">exit</span><span class="p">()</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error saat membaca </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">. Cek kolom &#39;</span><span class="si">{</span><span class="n">col_time</span><span class="si">}</span><span class="s2">&#39;.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Detail: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">exit</span><span class="p">()</span>
+
+
+<span class="c1"># 4. Periksa apakah kolom yang diperlukan ada</span>
+<span class="k">if</span> <span class="n">col_ip</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="ow">and</span> <span class="n">col_time</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+
+    <span class="c1"># 5. BUAT KOLOM SESSION (Logika yang sama seperti sebelumnya)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Membuat kolom &#39;</span><span class="si">{</span><span class="n">new_col_name</span><span class="si">}</span><span class="s2">&#39; berdasarkan &#39;</span><span class="si">{</span><span class="n">col_ip</span><span class="si">}</span><span class="s2">&#39; unik...&quot;</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">new_col_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col_ip</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">codes</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="c1"># 6. Urutkan data berdasarkan SESSION, lalu WAKTU</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mengurutkan data berdasarkan &#39;</span><span class="si">{</span><span class="n">new_col_name</span><span class="si">}</span><span class="s2">&#39; dan &#39;</span><span class="si">{</span><span class="n">col_time</span><span class="si">}</span><span class="s2">&#39;...&quot;</span><span class="p">)</span>
+    <span class="n">df_sorted</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="n">new_col_name</span><span class="p">,</span> <span class="n">col_time</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># 7. Hapus kolom &#39;time&#39; (timestamp angka) yang asli agar rapi</span>
+    <span class="k">if</span> <span class="s1">&#39;time&#39;</span> <span class="ow">in</span> <span class="n">df_sorted</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menghapus kolom &#39;time&#39; (timestamp unix) asli...&quot;</span><span class="p">)</span>
+        <span class="n">df_sorted</span> <span class="o">=</span> <span class="n">df_sorted</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">])</span>
+
+    <span class="c1"># 8. Simpan DataFrame LENGKAP yang sudah diurutkan</span>
+    <span class="n">output_filename</span> <span class="o">=</span> <span class="s2">&quot;session_data_full_NASA.csv&quot;</span>
+
+    <span class="c1"># --- INI YANG DIUBAH ---</span>
+    <span class="c1"># Kita ubah sep=&#39;;&#39; (titik-koma) menjadi sep=&#39;,&#39; (koma)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Menyimpan data ke </span><span class="si">{</span><span class="n">output_filename</span><span class="si">}</span><span class="s2"> dengan pemisah KOMA (&#39;,&#39;)...&quot;</span><span class="p">)</span>
+    <span class="n">df_sorted</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+    <span class="c1"># -------------------------</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Berhasil! Kolom &#39;</span><span class="si">{</span><span class="n">new_col_name</span><span class="si">}</span><span class="s2">&#39; telah ditambahkan.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;File baru disimpan sebagai: </span><span class="si">{</span><span class="n">output_filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Pratinjau data baru (menampilkan kolom yang Anda minta):&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Tampilkan pratinjau hanya dengan kolom yang diminta agar mudah dilihat</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+    <span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+    <span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;status_200_only_NASA.csv&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+    <span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari time_converted_NASA.csv...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Membuat kolom &#39;SESSION&#39; berdasarkan &#39;host&#39; unik...
+Mengurutkan data berdasarkan &#39;SESSION&#39; dan &#39;datetime_readable&#39;...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menghapus kolom &#39;time&#39; (timestamp unix) asli...
+Menyimpan data ke session_data_full_NASA.csv dengan pemisah KOMA (&#39;,&#39;)...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Berhasil! Kolom &#39;SESSION&#39; telah ditambahkan.
+File baru disimpan sebagai: session_data_full_NASA.csv
+
+Pratinjau data baru (menampilkan kolom yang Anda minta):
+Memuat data dari status_200_only_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>time</th>
+      <th>method</th>
+      <th>url</th>
+      <th>response</th>
+      <th>bytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>805465029.0</td>
+      <td>GET</td>
+      <td>/ksc.html</td>
+      <td>200.0</td>
+      <td>7067.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>***.novo.dk</td>
+      <td>805465031.0</td>
+      <td>GET</td>
+      <td>/images/ksclogo-medium.gif</td>
+      <td>200.0</td>
+      <td>5866.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>***.novo.dk</td>
+      <td>805465051.0</td>
+      <td>GET</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+      <td>200.0</td>
+      <td>363.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>***.novo.dk</td>
+      <td>805465053.0</td>
+      <td>GET</td>
+      <td>/images/USA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>234.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>***.novo.dk</td>
+      <td>805465054.0</td>
+      <td>GET</td>
+      <td>/images/NASA-logosmall.gif</td>
+      <td>200.0</td>
+      <td>786.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># 1. Tentukan file input (file yang memiliki &#39;datetime_readable&#39;)</span>
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;time_converted_NASA.csv&quot;</span>
+
+<span class="c1"># 2. Tentukan kolom-kolom yang akan kita gunakan</span>
+<span class="n">col_ip</span> <span class="o">=</span> <span class="s2">&quot;host&quot;</span>               <span class="c1"># Kolom untuk mengelompokkan sesi</span>
+<span class="n">col_time</span> <span class="o">=</span> <span class="s2">&quot;datetime_readable&quot;</span> <span class="c1"># Kolom untuk mengurutkan sesi</span>
+<span class="n">new_col_name</span> <span class="o">=</span> <span class="s2">&quot;SESSION&quot;</span>      <span class="c1"># Nama kolom sesi baru</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="c1"># 3. Muat dataset (pemisah asli adalah &#39;;&#39;)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="n">col_time</span><span class="p">])</span>
+<span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: File </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2"> tidak ditemukan.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pastikan Anda sudah menjalankan skrip konversi &#39;time&#39; sebelumnya.&quot;</span><span class="p">)</span>
+    <span class="n">exit</span><span class="p">()</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error saat membaca </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">. Cek kolom &#39;</span><span class="si">{</span><span class="n">col_time</span><span class="si">}</span><span class="s2">&#39;.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Detail: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">exit</span><span class="p">()</span>
+
+
+<span class="c1"># 4. Periksa apakah kolom yang diperlukan ada</span>
+<span class="k">if</span> <span class="n">col_ip</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="ow">and</span> <span class="n">col_time</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+
+    <span class="c1"># 5. BUAT KOLOM SESSION (Logika yang sama seperti sebelumnya)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Membuat kolom &#39;</span><span class="si">{</span><span class="n">new_col_name</span><span class="si">}</span><span class="s2">&#39; berdasarkan &#39;</span><span class="si">{</span><span class="n">col_ip</span><span class="si">}</span><span class="s2">&#39; unik...&quot;</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">new_col_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col_ip</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">codes</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="c1"># 6. Urutkan data berdasarkan SESSION, lalu WAKTU</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mengurutkan data berdasarkan &#39;</span><span class="si">{</span><span class="n">new_col_name</span><span class="si">}</span><span class="s2">&#39; dan &#39;</span><span class="si">{</span><span class="n">col_time</span><span class="si">}</span><span class="s2">&#39;...&quot;</span><span class="p">)</span>
+    <span class="n">df_sorted</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="n">new_col_name</span><span class="p">,</span> <span class="n">col_time</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># 7. (Langkah menghapus &#39;time&#39; tidak diperlukan lagi)</span>
+
+    <span class="c1"># --- DIUBAH DI SINI ---</span>
+
+    <span class="c1"># 8. Tentukan kolom yang ingin disimpan (sesuai permintaan Anda)</span>
+    <span class="c1">#    Kita tambahkan &#39;SESSION&#39; ke daftar ini</span>
+    <span class="n">columns_to_keep</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SESSION&#39;</span><span class="p">,</span> <span class="s1">&#39;host&#39;</span><span class="p">,</span> <span class="s1">&#39;datetime_readable&#39;</span><span class="p">,</span> <span class="s1">&#39;url&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Buat DataFrame baru HANYA dengan 4 kolom tersebut</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Memfilter data untuk HANYA menyimpan kolom: </span><span class="si">{</span><span class="n">columns_to_keep</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+    <span class="n">df_final_output</span> <span class="o">=</span> <span class="n">df_sorted</span><span class="p">[</span><span class="n">columns_to_keep</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="c1"># 9. Simpan DataFrame yang SUDAH DIFILTER</span>
+    <span class="n">output_filename</span> <span class="o">=</span> <span class="s2">&quot;session_host_time_url_NASA.csv&quot;</span> <span class="c1"># Nama file baru</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Menyimpan data ke </span><span class="si">{</span><span class="n">output_filename</span><span class="si">}</span><span class="s2"> dengan pemisah KOMA (&#39;,&#39;)...&quot;</span><span class="p">)</span>
+    <span class="n">df_final_output</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+    <span class="c1"># -------------------------</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Berhasil! File baru disimpan sebagai: </span><span class="si">{</span><span class="n">output_filename</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Pratinjau data baru (sekarang dengan 4 kolom):&quot;</span><span class="p">)</span>
+
+    <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+    <span class="c1"># Memuat kembali data yang sudah difilter untuk demonstrasi</span>
+    <span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;session_host_time_url_NASA.csv&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+    <span class="c1"># DIUBAH: Menggunakan sep=&#39;,&#39; karena file disimpan dengan separator koma</span>
+    <span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari time_converted_NASA.csv...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Membuat kolom &#39;SESSION&#39; berdasarkan &#39;host&#39; unik...
+Mengurutkan data berdasarkan &#39;SESSION&#39; dan &#39;datetime_readable&#39;...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memfilter data untuk HANYA menyimpan kolom: [&#39;SESSION&#39;, &#39;host&#39;, &#39;datetime_readable&#39;, &#39;url&#39;]...
+Menyimpan data ke session_host_time_url_NASA.csv dengan pemisah KOMA (&#39;,&#39;)...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Berhasil! File baru disimpan sebagai: session_host_time_url_NASA.csv.
+
+Pratinjau data baru (sekarang dengan 4 kolom):
+Memuat data dari session_host_time_url_NASA.csv untuk ditampilkan...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SESSION</th>
+      <th>host</th>
+      <th>datetime_readable</th>
+      <th>url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:09</td>
+      <td>/ksc.html</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:11</td>
+      <td>/images/ksclogo-medium.gif</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:31</td>
+      <td>/images/MOSAIC-logosmall.gif</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:33</td>
+      <td>/images/USA-logosmall.gif</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:34</td>
+      <td>/images/NASA-logosmall.gif</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:38</td>
+      <td>/images/WORLD-logosmall.gif</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:48</td>
+      <td>/shuttle/missions/missions.html</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:51</td>
+      <td>/images/launchmedium.gif</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:19:13</td>
+      <td>/images/KSC-logosmall.gif</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:19:17</td>
+      <td>/images/NASA-logosmall.gif</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:22:03</td>
+      <td>/images/launch-logo.gif</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:22:08</td>
+      <td>/history/apollo/images/apollo-logo1.gif</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:23:01</td>
+      <td>/shuttle/resources/orbiters/columbia.html</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:02:48</td>
+      <td>/shuttle/missions/sts-69/mission-sts-69.html</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:02:55</td>
+      <td>/shuttle/missions/sts-69/sts-69-patch-small.gif</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:03:02</td>
+      <td>/images/KSC-logosmall.gif</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:03:06</td>
+      <td>/images/launch-logo.gif</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:03:12</td>
+      <td>/history/apollo/images/apollo-logo1.gif</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:03:52</td>
+      <td>/shuttle/countdown/</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:04:08</td>
+      <td>/shuttle/missions/sts-69/count69.gif</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:04:24</td>
+      <td>/images/NASA-logosmall.gif</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:05:07</td>
+      <td>/htbin/cdt_main.pl</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:05:14</td>
+      <td>/shuttle/countdown/images/countclock.gif</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:05:38</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:06:21</td>
+      <td>/shuttle/countdown/video/livevideo2.gif</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:07:24</td>
+      <td>/htbin/cdt_clock.pl</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:07:40</td>
+      <td>/shuttle/countdown/lps/fr.html</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:07:58</td>
+      <td>/shuttle/countdown/lps/fr.gif</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:08:22</td>
+      <td>/shuttle/countdown/lps/back.gif</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>2</td>
+      <td>001.msy4.communique.net</td>
+      <td>1995-08-30 06:55:47</td>
+      <td>/software/winvn/winvn.html</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="final-filter">
+<h1>Final filter<a class="headerlink" href="#final-filter" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Nama file input</span>
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;session_host_time_url_NASA.csv&quot;</span>
+
+<span class="c1"># 1. Muat dataset</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+
+<span class="c1"># PERBAIKAN PENTING:</span>
+<span class="c1"># File ini DISIMPAN dengan koma (&#39;,&#39;) → maka bacanya juga harus sep=&#39;,&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+<span class="c1"># 4. Tentukan kolom target</span>
+<span class="n">target_column</span> <span class="o">=</span> <span class="s2">&quot;url&quot;</span>
+
+<span class="c1"># 5. Periksa apakah kolom target ada</span>
+<span class="k">if</span> <span class="n">target_column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: Kolom &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; tidak ditemukan di CSV.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># 6. Filter baris berdasarkan URL yang diakhiri &quot;.html&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Memfilter data untuk baris di mana &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; diakhiri dengan &#39;.html&#39;...&quot;</span><span class="p">)</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">target_column</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.html&#39;</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="c1"># 7. Simpan data yang telah difilter ke file CSV baru</span>
+    <span class="n">output_filename</span> <span class="o">=</span> <span class="s2">&quot;final_filter_data_NASA.csv&quot;</span>
+
+    <span class="c1"># Simpan tetap pakai koma biar konsisten</span>
+    <span class="n">filtered_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+    <span class="c1"># Memuat kembali data yang sudah difilter untuk ditampilkan</span>
+    <span class="n">file_name_to_display</span> <span class="o">=</span> <span class="s2">&quot;final_filter_data_NASA.csv&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name_to_display</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+
+    <span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name_to_display</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari session_host_time_url_NASA.csv...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memfilter data untuk baris di mana &#39;url&#39; diakhiri dengan &#39;.html&#39;...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari final_filter_data_NASA.csv untuk ditampilkan...
+
+Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SESSION</th>
+      <th>host</th>
+      <th>datetime_readable</th>
+      <th>url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:09</td>
+      <td>/ksc.html</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:48</td>
+      <td>/shuttle/missions/missions.html</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:23:01</td>
+      <td>/shuttle/resources/orbiters/columbia.html</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:02:48</td>
+      <td>/shuttle/missions/sts-69/mission-sts-69.html</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:05:38</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:07:40</td>
+      <td>/shuttle/countdown/lps/fr.html</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2</td>
+      <td>001.msy4.communique.net</td>
+      <td>1995-08-30 06:55:47</td>
+      <td>/software/winvn/winvn.html</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:24:28</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:28:35</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:37:44</td>
+      <td>/shuttle/missions/sts-71/images/images.html</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 23:23:26</td>
+      <td>/shuttle/countdown/tour.html</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-05 11:36:59</td>
+      <td>/shuttle/missions/sts-71/movies/movies.html</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-10 12:18:27</td>
+      <td>/history/history.html</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-10 12:18:57</td>
+      <td>/shuttle/missions/missions.html</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-12 09:33:34</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-27 21:02:24</td>
+      <td>/ksc.html</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:08:50</td>
+      <td>/shuttle/countdown/countdown.html</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:12:59</td>
+      <td>/shuttle/countdown/count.html</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:18:34</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:36:38</td>
+      <td>/shuttle/countdown/lps/fr.html</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:37:22</td>
+      <td>/facilities/lcc.html</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:37:41</td>
+      <td>/facilities/tour.html</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>5</td>
+      <td>01.ts01.zircon.net.au</td>
+      <td>1995-08-21 08:46:06</td>
+      <td>/facts/faq04.html</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>6</td>
+      <td>02-17-05.comsvc.calpoly.edu</td>
+      <td>1995-08-28 15:03:26</td>
+      <td>/shuttle/missions/sts-65/mission-sts-65.html</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>7</td>
+      <td>02-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-07 11:59:10</td>
+      <td>/shuttle/missions/sts-68/ksc-srl-image.html</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>8</td>
+      <td>023.msy4.communique.net</td>
+      <td>1995-08-25 02:10:35</td>
+      <td>/shuttle/missions/sts-64/mission-sts-64.html</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:33:06</td>
+      <td>/shuttle/missions/sts-70/mission-sts-70.html</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:33:23</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:36:10</td>
+      <td>/shuttle/missions/sts-71/movies/movies.html</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-20 23:02:17</td>
+      <td>/shuttle/missions/sts-70/mission-sts-70.html</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>#Sesi</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Nama file input</span>
+<span class="n">file_name</span> <span class="o">=</span> <span class="s2">&quot;session_host_time_url_NASA.csv&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+<span class="c1"># 1. Hanya ambil baris dengan url berakhir .html</span>
+<span class="n">target_column</span> <span class="o">=</span> <span class="s2">&quot;url&quot;</span>
+
+<span class="k">if</span> <span class="n">target_column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: Kolom &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; tidak ditemukan di CSV.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Memfilter data untuk baris di mana &#39;</span><span class="si">{</span><span class="n">target_column</span><span class="si">}</span><span class="s2">&#39; diakhiri dengan &#39;.html&#39;...&quot;</span><span class="p">)</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">target_column</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.html&#39;</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="c1"># 2. Ubah kolom waktu ke datetime</span>
+    <span class="c1">#    Sesuaikan nama kolom kalau beda (di screenshot: &#39;datetime_readable&#39;)</span>
+    <span class="n">filtered_df</span><span class="p">[</span><span class="s2">&quot;datetime_readable&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">[</span><span class="s2">&quot;datetime_readable&quot;</span><span class="p">])</span>
+
+    <span class="c1"># 3. Urutkan dulu berdasarkan host dan waktu</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;datetime_readable&quot;</span><span class="p">])</span>
+
+    <span class="c1"># 4. Buat kolom SESSION baru berdasarkan jeda &gt; 1 menit per host</span>
+    <span class="n">session_threshold</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># diff() = selisih waktu dengan baris sebelumnya (untuk host yang sama)</span>
+    <span class="n">filtered_df</span><span class="p">[</span><span class="s2">&quot;Sesi Login&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">filtered_df</span>
+        <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;host&quot;</span><span class="p">)[</span><span class="s2">&quot;datetime_readable&quot;</span><span class="p">]</span>
+        <span class="o">.</span><span class="n">diff</span><span class="p">()</span>                          <span class="c1"># selisih waktu dengan baris sebelumnya</span>
+        <span class="o">.</span><span class="n">gt</span><span class="p">(</span><span class="n">session_threshold</span><span class="p">)</span>           <span class="c1"># True kalau selisih &gt; 1 menit</span>
+        <span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>                    <span class="c1"># baris pertama tiap host dianggap sesi baru</span>
+        <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">[</span><span class="s2">&quot;host&quot;</span><span class="p">])</span>    <span class="c1"># hitung kumulatif per host</span>
+        <span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>                        <span class="c1"># 1,2,3,... per host</span>
+        <span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Kalau kamu mau pakai nama kolom &#39;SESSION&#39; saja (overwrite yang lama), bisa:</span>
+    <span class="c1"># filtered_df.rename(columns={&quot;SESSION_BARU&quot;: &quot;SESSION&quot;}, inplace=True)</span>
+
+    <span class="c1"># 5. Simpan hasilnya</span>
+    <span class="n">output_filename</span> <span class="o">=</span> <span class="s2">&quot;final_filter_data_NASA_with_session.csv&quot;</span>
+    <span class="n">filtered_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Memuat data dari </span><span class="si">{</span><span class="n">output_filename</span><span class="si">}</span><span class="s2"> untuk ditampilkan...&quot;</span><span class="p">)</span>
+    <span class="n">df_to_display</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan display():&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df_to_display</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari session_host_time_url_NASA.csv...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memfilter data untuk baris di mana &#39;url&#39; diakhiri dengan &#39;.html&#39;...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Memuat data dari final_filter_data_NASA_with_session.csv untuk ditampilkan...
+
+Menampilkan beberapa baris pertama dengan display():
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SESSION</th>
+      <th>host</th>
+      <th>datetime_readable</th>
+      <th>url</th>
+      <th>Sesi Login</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:09</td>
+      <td>/ksc.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:48</td>
+      <td>/shuttle/missions/missions.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:23:01</td>
+      <td>/shuttle/resources/orbiters/columbia.html</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:02:48</td>
+      <td>/shuttle/missions/sts-69/mission-sts-69.html</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:05:38</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:07:40</td>
+      <td>/shuttle/countdown/lps/fr.html</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2</td>
+      <td>001.msy4.communique.net</td>
+      <td>1995-08-30 06:55:47</td>
+      <td>/software/winvn/winvn.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:24:28</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:28:35</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:37:44</td>
+      <td>/shuttle/missions/sts-71/images/images.html</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 23:23:26</td>
+      <td>/shuttle/countdown/tour.html</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-05 11:36:59</td>
+      <td>/shuttle/missions/sts-71/movies/movies.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-10 12:18:27</td>
+      <td>/history/history.html</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-10 12:18:57</td>
+      <td>/shuttle/missions/missions.html</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-12 09:33:34</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-27 21:02:24</td>
+      <td>/ksc.html</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:08:50</td>
+      <td>/shuttle/countdown/countdown.html</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:12:59</td>
+      <td>/shuttle/countdown/count.html</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:18:34</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:36:38</td>
+      <td>/shuttle/countdown/lps/fr.html</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:37:22</td>
+      <td>/facilities/lcc.html</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:37:41</td>
+      <td>/facilities/tour.html</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>5</td>
+      <td>01.ts01.zircon.net.au</td>
+      <td>1995-08-21 08:46:06</td>
+      <td>/facts/faq04.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>6</td>
+      <td>02-17-05.comsvc.calpoly.edu</td>
+      <td>1995-08-28 15:03:26</td>
+      <td>/shuttle/missions/sts-65/mission-sts-65.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>7</td>
+      <td>02-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-07 11:59:10</td>
+      <td>/shuttle/missions/sts-68/ksc-srl-image.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>8</td>
+      <td>023.msy4.communique.net</td>
+      <td>1995-08-25 02:10:35</td>
+      <td>/shuttle/missions/sts-64/mission-sts-64.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:33:06</td>
+      <td>/shuttle/missions/sts-70/mission-sts-70.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:33:23</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:36:10</td>
+      <td>/shuttle/missions/sts-71/movies/movies.html</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-20 23:02:17</td>
+      <td>/shuttle/missions/sts-70/mission-sts-70.html</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="buat-abjad-berdasarkan-html-unik">
+<h1>Buat Abjad berdasarkan html unik<a class="headerlink" href="#buat-abjad-berdasarkan-html-unik" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">string</span><span class="w"> </span><span class="kn">import</span> <span class="n">ascii_uppercase</span>
+
+<span class="c1"># daftar huruf A-Z</span>
+<span class="n">letters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ascii_uppercase</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">assign_letter_per_host</span><span class="p">(</span><span class="n">group</span><span class="p">):</span>
+    <span class="c1"># Ambil URL unik per host, urut sesuai kemunculan pertama</span>
+    <span class="n">unique_urls</span> <span class="o">=</span> <span class="n">group</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">unique_urls</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">letters</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Peringatan: host </span><span class="si">{</span><span class="n">group</span><span class="p">[</span><span class="s1">&#39;host&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> punya lebih dari 26 halaman unik. &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;Hanya 26 pertama yang akan diberi huruf A-Z.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Buat mapping: url -&gt; huruf (A, B, C, ...)</span>
+    <span class="n">url_to_letter</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">url</span><span class="p">:</span> <span class="n">letters</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">url</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_urls</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">letters</span><span class="p">)</span>              <span class="c1"># jaga-jaga kalau &gt;26</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Tambahkan kolom baru berisi huruf</span>
+    <span class="n">group</span><span class="p">[</span><span class="s2">&quot;url_code&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">group</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">url_to_letter</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">group</span>
+
+<span class="c1"># Terapkan per host</span>
+<span class="n">filtered_df</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">filtered_df</span>
+    <span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;datetime_readable&quot;</span><span class="p">])</span>     <span class="c1"># pastikan terurut dulu</span>
+    <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="n">group_keys</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">assign_letter_per_host</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Kalau mau, kamu bisa drop kolom &#39;url&#39; lama dan ganti jadi huruf,</span>
+<span class="c1"># tapi biasanya lebih aman disimpan dua-duanya.</span>
+<span class="c1"># Misalnya:</span>
+<span class="c1"># filtered_df[&quot;url_asli&quot;] = filtered_df[&quot;url&quot;]</span>
+<span class="c1"># filtered_df[&quot;url&quot;] = filtered_df[&quot;url_code&quot;]</span>
+
+<span class="c1"># Simpan ke file baru</span>
+<span class="n">output_with_letters</span> <span class="o">=</span> <span class="s2">&quot;final_filter_data_NASA_with_session_and_letters.csv&quot;</span>
+<span class="n">filtered_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_with_letters</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Menampilkan beberapa baris pertama dengan kode huruf per host:&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">filtered_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 128.115.70.241 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.158.54.14 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.159.123.58 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 128.159.76.128 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.163.196.12 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.176.0.7 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 128.217.62.2 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.217.62.224 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.217.62.81 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.220.116.211 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.230.4.244 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.252.178.177 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 128.253.187.17 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 129.188.154.200 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 129.30.54.148 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 129.50.20.10 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 129.89.71.246 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 130.103.48.217 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 130.109.116.175 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 130.110.74.81 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 130.132.25.94 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 131.115.64.91 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 131.158.54.104 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 131.182.28.171 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 131.235.106.201 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 133.53.64.33 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 134.186.196.66 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 134.39.177.135 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 136.205.215.176 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 137.226.108.22 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 137.78.253.187 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 140.229.116.37 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 141.102.80.167 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 142.12.9.52 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 142.139.26.142 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 144.252.16.54 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 147.147.191.43 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 147.151.1.168 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 149.23.173.12 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 150.18.48.11 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.11.249.48 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 152.163.192.3 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.35 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.36 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.38 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.5 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.66 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.67 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.7 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.70 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.163.192.71 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.52.6.79 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 152.85.3.3 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 153.103.3.51 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 155.218.56.241 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 156.63.85.190 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 158.152.1.40 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 158.27.59.88 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 160.205.119.27 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 161.187.78.21 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 161.40.39.49 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 162.41.101.6 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 163.205.1.19 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 163.205.1.45 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 163.205.12.166 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 163.205.180.17 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 163.206.137.21 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 163.206.140.4 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 163.206.89.4 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 163.234.140.22 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 164.156.73.54 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 164.71.1.130 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 165.103.5.123 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 165.113.8.96 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 165.152.162.26 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 165.79.84.43 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 168.239.2.116 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 192.160.116.130 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 192.167.190.49 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 192.203.159.146 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 192.223.3.88 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 192.58.206.21 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 192.71.102.2 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 192.77.52.12 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 193.132.114.242 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 193.178.53.180 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 193.88.52.137 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 194.81.170.1 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 196.7.2.49 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.102.88.3 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.133.29.18 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.14.55.105 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.213.130.39 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 198.72.41.51 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.76.200.3 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.83.19.40 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.83.19.42 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.83.19.43 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.83.19.44 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.83.19.47 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 198.93.136.116 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 199-186.ico.att.net punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 199.1.50.225 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 199.1.60.95 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 199.10.135.154 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 199.125.188.19 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 199.17.85.174 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 199.201.186.102 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 199.201.186.103 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 199.201.186.105 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 199.75.171.163 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 199.93.170.211 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 202.239.48.3 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 202.49.41.122 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 203.255.208.24 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 204.148.101.58 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 204.158.58.1 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 204.179.186.33 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 204.181.236.201 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 204.62.245.32 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 204.69.0.27 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 205.139.153.28 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 205.184.202.5 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 205.206.73.149 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 205.216.162.12 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host 206.23.2.202 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 206.27.25.1 punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host 400gtw.nl punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host a2014.dial.tip.net punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host abadon.stm.it punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host abrams-lr-kfps-dynamic-87.stanford.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host abyss.sni-usa.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host acmex.gatech.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host ad02-010.compuserve.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host ad03-022.compuserve.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host ad09-019.compuserve.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host adinet.analog.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host advantis.vnet.ibm.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host aero.snds.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host agora.carleton.ca punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host aheil_pc.orem.novell.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host ainet.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host algol.ksc.nasa.gov punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host alianza.letts.american.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host alice-thurman.tenet.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host alize.ere.umontreal.ca punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host allisontp.laafb.af.mil punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host alyssa.prodigy.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host amdext.amd.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host annex6-61.dial.umd.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host anomaly.bu.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host anonymous.chevron.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host apci.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host apxtg01.apex.dg.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host arc.dental.upenn.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host arcada.arcada.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host arctic.nad.northrop.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host arena.carleton.ca punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host ariel.earth.nwu.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host aristotle.algonet.se punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host art.mindspring.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host arthur.intel.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host artsnew21.usask.ca punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host asbestos.cacd.rockwell.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host aset.rsoc.rockwell.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host asgard.aecl.ntt.jp punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host asky.picky.or.jp punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host asp.erinet.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host astarte.mch.sni.de punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host astro.ocis.temple.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host atc.eag.unisysgsg.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host ath-gw7.hol.gr punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host athos.astro.sp-agency.ca punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host atlas.fiu.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host atluw02.dbsoftware.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host atropos.jf.intel.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host auriga.db.erau.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host aztec.asu.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host badboy.iprolink.ch punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host bagan.srce.hr punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host bairdsun1.gatech.edu punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host baloo.dc.luth.se punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host bam.nuri.net punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host bambi.te.rl.ac.uk punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host barb.wchat.on.ca punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host basfegw.basf-corp.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host bass.hooked.net punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host bastion.fdic.gov punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+Peringatan: host bastion1.dbisna.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Peringatan: host bbuig150.unisys.com punya lebih dari 26 halaman unik. Hanya 26 pertama yang akan diberi huruf A-Z.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_5214/432126890.py:31: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(assign_letter_per_host)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Menampilkan beberapa baris pertama dengan kode huruf per host:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SESSION</th>
+      <th>host</th>
+      <th>datetime_readable</th>
+      <th>url</th>
+      <th>Sesi Login</th>
+      <th>url_code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:09</td>
+      <td>/ksc.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:17:48</td>
+      <td>/shuttle/missions/missions.html</td>
+      <td>0</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-07-11 12:23:01</td>
+      <td>/shuttle/resources/orbiters/columbia.html</td>
+      <td>1</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:02:48</td>
+      <td>/shuttle/missions/sts-69/mission-sts-69.html</td>
+      <td>2</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:05:38</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+      <td>3</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>1</td>
+      <td>***.novo.dk</td>
+      <td>1995-08-09 07:07:40</td>
+      <td>/shuttle/countdown/lps/fr.html</td>
+      <td>4</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>2</td>
+      <td>001.msy4.communique.net</td>
+      <td>1995-08-30 06:55:47</td>
+      <td>/software/winvn/winvn.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:24:28</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:28:35</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+      <td>1</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 21:37:44</td>
+      <td>/shuttle/missions/sts-71/images/images.html</td>
+      <td>2</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>3</td>
+      <td>007.thegap.com</td>
+      <td>1995-07-06 23:23:26</td>
+      <td>/shuttle/countdown/tour.html</td>
+      <td>3</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-05 11:36:59</td>
+      <td>/shuttle/missions/sts-71/movies/movies.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-10 12:18:27</td>
+      <td>/history/history.html</td>
+      <td>1</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-10 12:18:57</td>
+      <td>/shuttle/missions/missions.html</td>
+      <td>1</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-12 09:33:34</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+      <td>2</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-27 21:02:24</td>
+      <td>/ksc.html</td>
+      <td>3</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:08:50</td>
+      <td>/shuttle/countdown/countdown.html</td>
+      <td>4</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:12:59</td>
+      <td>/shuttle/countdown/count.html</td>
+      <td>5</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:18:34</td>
+      <td>/shuttle/countdown/liftoff.html</td>
+      <td>6</td>
+      <td>H</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:36:38</td>
+      <td>/shuttle/countdown/lps/fr.html</td>
+      <td>7</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:37:22</td>
+      <td>/facilities/lcc.html</td>
+      <td>7</td>
+      <td>J</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>4</td>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1995-08-28 00:37:41</td>
+      <td>/facilities/tour.html</td>
+      <td>7</td>
+      <td>K</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>5</td>
+      <td>01.ts01.zircon.net.au</td>
+      <td>1995-08-21 08:46:06</td>
+      <td>/facts/faq04.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>6</td>
+      <td>02-17-05.comsvc.calpoly.edu</td>
+      <td>1995-08-28 15:03:26</td>
+      <td>/shuttle/missions/sts-65/mission-sts-65.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>7</td>
+      <td>02-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-07 11:59:10</td>
+      <td>/shuttle/missions/sts-68/ksc-srl-image.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>8</td>
+      <td>023.msy4.communique.net</td>
+      <td>1995-08-25 02:10:35</td>
+      <td>/shuttle/missions/sts-64/mission-sts-64.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:33:06</td>
+      <td>/shuttle/missions/sts-70/mission-sts-70.html</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:33:23</td>
+      <td>/shuttle/missions/sts-71/mission-sts-71.html</td>
+      <td>0</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-04 16:36:10</td>
+      <td>/shuttle/missions/sts-71/movies/movies.html</td>
+      <td>1</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>9</td>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1995-07-20 23:02:17</td>
+      <td>/shuttle/missions/sts-70/mission-sts-70.html</td>
+      <td>2</td>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tabel-kunjungan-tiap-host">
+<h1>Tabel Kunjungan Tiap host<a class="headerlink" href="#tabel-kunjungan-tiap-host" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># pakai dataframe yang sudah ada url_code &amp; sesi</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># --- 1. Nama kolom sesi (ganti kalau beda) ---</span>
+<span class="n">session_col</span> <span class="o">=</span> <span class="s2">&quot;Sesi Login&quot;</span>   <span class="c1"># kalau punyamu &#39;SESSION&#39;, ganti ke &quot;SESSION&quot;</span>
+
+<span class="c1"># --- 2. Tambah kolom &#39;visited&#39; berisi 1 ---</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;visited&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># --- 3. Pivot: 1 baris = host + sesi ---</span>
+<span class="n">wide_df</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">df</span>
+    <span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="n">session_col</span><span class="p">],</span>   <span class="c1"># baris: per host per sesi</span>
+        <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;url_code&quot;</span><span class="p">,</span>            <span class="c1"># kolom: A, B, C, ...</span>
+        <span class="n">values</span><span class="o">=</span><span class="s2">&quot;visited&quot;</span><span class="p">,</span>
+        <span class="n">aggfunc</span><span class="o">=</span><span class="s2">&quot;max&quot;</span><span class="p">,</span>                 <span class="c1"># kalau ada beberapa baris, tetap 1</span>
+        <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span>                   <span class="c1"># yang tidak dikunjungi → 0</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="c1"># hilangkan nama level kolom bawaan pivot_table</span>
+<span class="n">wide_df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="c1"># --- 4. Simpan ke CSV baru ---</span>
+<span class="n">output_wide</span> <span class="o">=</span> <span class="s2">&quot;tabel_sesi_per_host.csv&quot;</span>
+<span class="n">wide_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_wide</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Beberapa baris pertama tabel sesi-per-host:&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">wide_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Beberapa baris pertama tabel sesi-per-host:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>Sesi Login</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>...</th>
+      <th>Q</th>
+      <th>R</th>
+      <th>S</th>
+      <th>T</th>
+      <th>U</th>
+      <th>V</th>
+      <th>W</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>***.novo.dk</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>***.novo.dk</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>***.novo.dk</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>***.novo.dk</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>001.msy4.communique.net</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>007.thegap.com</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>007.thegap.com</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>007.thegap.com</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>007.thegap.com</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 28 columns</p>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tabel-kesimpulan">
+<h1>Tabel Kesimpulan<a class="headerlink" href="#tabel-kesimpulan" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># wide_df = tabel host + Sesi Login + kolom2 A..Z</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">wide_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># 1. Tentukan kolom fitur (A,B,C,...)</span>
+<span class="n">feature_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;Sesi Login&quot;</span><span class="p">]]</span>
+
+<span class="c1"># 2. Hitung berapa banyak halaman (A..Z) yang dikunjungi di tiap sesi</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;total_visited&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">feature_cols</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 3. Untuk tiap host, pilih sesi yang:</span>
+<span class="c1">#    - total_visited paling besar (kunjungan terbanyak)</span>
+<span class="c1">#    - kalau seri (imbang), ambil Sesi Login terkecil (paling awal)</span>
+<span class="n">best_sessions</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">df</span>
+    <span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;total_visited&quot;</span><span class="p">,</span> <span class="s2">&quot;Sesi Login&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">])</span>
+    <span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s2">&quot;host&quot;</span><span class="p">)</span>   <span class="c1"># sisain 1 sesi terbaik per host</span>
+<span class="p">)</span>
+
+<span class="c1"># 4. Ambil hanya host + pola A..Z</span>
+<span class="n">summary_df</span> <span class="o">=</span> <span class="n">best_sessions</span><span class="p">[[</span><span class="s2">&quot;host&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">feature_cols</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># 5. Simpan ke CSV</span>
+<span class="n">output_summary</span> <span class="o">=</span> <span class="s2">&quot;tabel_host_sesi_dominan.csv&quot;</span>
+<span class="n">summary_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_summary</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tabel host dengan sesi paling dominan (jumlah kunjungan terbanyak):&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">summary_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tabel host dengan sesi paling dominan (jumlah kunjungan terbanyak):
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>I</th>
+      <th>...</th>
+      <th>Q</th>
+      <th>R</th>
+      <th>S</th>
+      <th>T</th>
+      <th>U</th>
+      <th>V</th>
+      <th>W</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>001.msy4.communique.net</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>007.thegap.com</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>01.ts01.zircon.net.au</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>02-17-05.comsvc.calpoly.edu</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>02-dynamic-c.wokingham.luna.net</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>023.msy4.communique.net</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0321jona.jon.rpslmc.edu</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 27 columns</p>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="kunjungan-host">
+<h1>Kunjungan Host<a class="headerlink" href="#kunjungan-host" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># pakai dataframe yang sudah ada kolom &#39;host&#39; dan &#39;url_code&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># 1. Anggap setiap baris = 1 kunjungan</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;visited&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># 2. Hilangkan duplikat host+url_code (biar tiap host-url_code cuma sekali)</span>
+<span class="n">df_unique</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;url_code&quot;</span><span class="p">])</span>
+
+<span class="c1"># 3. Pivot: 1 baris = 1 host, kolom = A,B,C,... berisi 1/0</span>
+<span class="n">host_summary</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">df_unique</span>
+    <span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="s2">&quot;host&quot;</span><span class="p">,</span>          <span class="c1"># baris: per host</span>
+        <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;url_code&quot;</span><span class="p">,</span>    <span class="c1"># kolom: A, B, C, ...</span>
+        <span class="n">values</span><span class="o">=</span><span class="s2">&quot;visited&quot;</span><span class="p">,</span>
+        <span class="n">aggfunc</span><span class="o">=</span><span class="s2">&quot;max&quot;</span><span class="p">,</span>         <span class="c1"># kalau ada, jadinya 1</span>
+        <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span>           <span class="c1"># kalau tidak ada, 0</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="c1"># Bersihkan nama level kolom bawaan pivot_table</span>
+<span class="n">host_summary</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="c1"># 4. Simpan ke CSV</span>
+<span class="n">output_host</span> <span class="o">=</span> <span class="s2">&quot;tabel_total_kunjungan_per_host.csv&quot;</span>
+<span class="n">host_summary</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_host</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Beberapa baris pertama total kunjungan per host:&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">host_summary</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Beberapa baris pertama total kunjungan per host:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>host</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>I</th>
+      <th>...</th>
+      <th>Q</th>
+      <th>R</th>
+      <th>S</th>
+      <th>T</th>
+      <th>U</th>
+      <th>V</th>
+      <th>W</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>***.novo.dk</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>001.msy4.communique.net</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>007.thegap.com</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>01-dynamic-c.wokingham.luna.net</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>01.ts01.zircon.net.au</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>02-17-05.comsvc.calpoly.edu</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>02-dynamic-c.wokingham.luna.net</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>023.msy4.communique.net</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>03-dynamic-c.wokingham.luna.net</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0321jona.jon.rpslmc.edu</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 27 columns</p>
+</div></div></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="DataNasa.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">DATA NASA</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">DATA NASA Final</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-di-ambil-yang-200">Filter di ambil yang 200</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-ambil-yang-get">Filter ambil yang GET</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ubah-tanggal-dan-waktu-ke-dmy">Ubah tanggal dan waktu ke DMY</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-berdasarkan-ip-addres">Filter berdasarkan IP addres</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#final-filter">Final filter</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-abjad-berdasarkan-html-unik">Buat Abjad berdasarkan html unik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kunjungan-tiap-host">Tabel Kunjungan Tiap host</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tabel-kesimpulan">Tabel Kesimpulan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kunjungan-host">Kunjungan Host</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 22-038 Ihya' Ulumuddin
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
