@@ -1,0 +1,3480 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Crawling data RE &lt;&gt;1000 &#8212; Pencarian &amp; Penambangan Web</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Crawling_RE';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="DATA NASA Final" href="DataNasafinal.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/ftprofile.jpg" class="logo__image only-light" alt="Pencarian & Penambangan Web - Home"/>
+    <script>document.write(`<img src="_static/ftprofile.jpg" class="logo__image only-dark" alt="Pencarian & Penambangan Web - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Profile
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pengantarwebmining.html">Pengantar Web Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="webcrawling.html">Web Crawling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IhyaUlumuddin_CrawlingPPW.html">Tugas Crawling PTA dan Berita</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="Tugastoken_ihya.html">Tugas Tokenisasi abstrak</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tf_idf.html">TF-IDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klassifikasi_berita.html">Klasifikasi Dengan LDA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klassifikasi_berita_svm_dan_Naivbayes.html">Klasifikasi Dengan SVM , Naifbayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kluastering_email.html">klastering email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pagerank%20%281%29.html">Page Rank</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ChallengeA.html">ChallengeA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DataNasa.html">DATA NASA</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="DataNasafinal.html">DATA NASA Final</a></li>
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Crawling data RE &lt;&gt;1000</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Crawling_RE.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Crawling data RE <>1000</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Crawling data RE &lt;&gt;1000</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pagerank">PageRank</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="crawling-data-re-1000">
+<h1>Crawling data RE &lt;&gt;1000<a class="headerlink" href="#crawling-data-re-1000" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Twitter Auth Token</span>
+
+<span class="n">twitter_auth_token</span> <span class="o">=</span> <span class="s1">&#39;13a9adcf52a301a5b6b74de897fa39cf6a7f9819&#39;</span> <span class="c1"># change this auth token</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import required Python package</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>pandas
+
+<span class="c1"># Install Node.js (because tweet-harvest built using Node.js)</span>
+<span class="o">!</span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<span class="o">!</span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>ca-certificates<span class="w"> </span>curl<span class="w"> </span>gnupg
+<span class="o">!</span>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/etc/apt/keyrings
+<span class="o">!</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>-o<span class="w"> </span>/etc/apt/keyrings/nodesource.gpg
+
+<span class="o">!</span><span class="nv">NODE_MAJOR</span><span class="o">=</span><span class="m">20</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_</span><span class="nv">$NODE_MAJOR</span><span class="s2">.x nodistro main&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/nodesource.list
+
+<span class="o">!</span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<span class="o">!</span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>nodejs<span class="w"> </span>-y
+
+<span class="o">!</span>node<span class="w"> </span>-v
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pandas in /home/codespace/.local/lib/python3.12/site-packages (2.3.1)
+Requirement already satisfied: numpy&gt;=1.26.0 in /usr/local/python/3.12.1/lib/python3.12/site-packages (from pandas) (1.26.4)
+Requirement already satisfied: python-dateutil&gt;=2.8.2 in /home/codespace/.local/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz&gt;=2020.1 in /home/codespace/.local/lib/python3.12/site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata&gt;=2022.7 in /home/codespace/.local/lib/python3.12/site-packages (from pandas) (2025.2)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: six&gt;=1.5 in /home/codespace/.local/lib/python3.12/site-packages (from python-dateutil&gt;=2.8.2-&gt;pandas) (1.17.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">25.1.1</span> -&gt; <span class=" -Color -Color-Green">25.3</span>
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">python3 -m pip install --upgrade pip</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Working]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            
+Get:1 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease [3600 B]
+
+0% [Waiting for headers] [1 InRelease 0 B/3600 B 0%] [Connecting to archive.ubu
+0% [Waiting for headers] [Connecting to archive.ubuntu.com] [Connecting to secu
+                                                                               
+Get:2 https://dl.yarnpkg.com/debian stable InRelease
+
+0% [Waiting for headers] [Connecting to archive.ubuntu.com] [Connecting to secu
+0% [Waiting for headers] [Connecting to archive.ubuntu.com] [Connecting to secu
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:3 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease [3961 B]
+
+                                                                               
+0% [Connecting to archive.ubuntu.com] [Connecting to security.ubuntu.com]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Connecting to archive.ubuntu.com] [Connecting to security.ubuntu.com]
+                                                                         
+Get:4 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main all Packages [643 B]
+
+0% [Connecting to archive.ubuntu.com] [Connecting to security.ubuntu.com]
+0% [4 Packages store 0 B] [Waiting for headers] [Connecting to archive.ubuntu.c
+0% [Waiting for headers] [Connecting to archive.ubuntu.com] [Connecting to secu
+                                                                               
+Get:5 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main amd64 Packages [73.5 kB]
+
+0% [5 Packages 0 B/73.5 kB 0%] [Connecting to archive.ubuntu.com] [Connecting t
+                                                                               
+0% [Connecting to archive.ubuntu.com] [Connecting to security.ubuntu.com]
+0% [5 Packages store 0 B] [Connecting to archive.ubuntu.com] [Connecting to sec
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+0% [Connecting to archive.ubuntu.com] [Connecting to security.ubuntu.com]
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+                                                                               
+Get:6 https://dl.yarnpkg.com/debian stable/main amd64 Packages [11.8 kB]
+
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+0% [6 Packages store 0 B] [Connecting to archive.ubuntu.com (91.189.91.82)] [Co
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:7 https://dl.yarnpkg.com/debian stable/main all Packages [11.8 kB]
+
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+0% [7 Packages store 0 B] [Connecting to archive.ubuntu.com (91.189.91.82)] [Co
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:8 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable/main amd64 Packages [4557 B]
+
+0% [8 Packages 1709 B/4557 B 38%] [Connecting to archive.ubuntu.com (91.189.91.
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+0% [8 Packages store 0 B] [Connecting to archive.ubuntu.com (91.189.91.82)] [Co
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Connecting to security.ub
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:9 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+
+                                                                               
+0% [9 InRelease 14.0 kB/256 kB 5%] [Waiting for headers]
+                                                        
+Get:10 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+
+0% [9 InRelease 14.0 kB/256 kB 5%] [10 InRelease 6832 B/126 kB 5%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [9 InRelease 56.8 kB/256 kB 22%] [10 InRelease 54.0 kB/126 kB 43%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                     
+0% [9 InRelease 135 kB/256 kB 53%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [9 InRelease 155 kB/256 kB 61%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Waiting for headers] [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                              
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1182 kB]
+
+0% [Waiting for headers] [11 Packages 2615 B/1182 kB 0%]
+0% [Waiting for headers] [11 Packages 5471 B/1182 kB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                        
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+
+0% [12 InRelease 2548 B/126 kB 2%] [11 Packages 131 kB/1182 kB 11%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                   
+0% [Waiting for headers] [11 Packages 167 kB/1182 kB 14%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Waiting for headers] [11 Packages 204 kB/1182 kB 17%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                         
+Get:13 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+
+0% [13 InRelease 2548 B/126 kB 2%] [11 Packages 371 kB/1182 kB 31%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                   
+0% [11 Packages 520 kB/1182 kB 44%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>17% [Waiting for headers] [11 Packages 612 kB/1182 kB 52%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                          
+Get:14 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+
+18% [14 Packages 2617 B/117 kB 2%] [11 Packages 1048 kB/1182 kB 89%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                    
+18% [14 Packages 55.5 kB/117 kB 47%]
+18% [11 Packages store 0 B] [14 Packages 55.5 kB/117 kB 47%] [Waiting for heade
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+19% [14 Packages 117 kB/117 kB 100%] [Waiting for headers]
+                                                          
+19% [Waiting for headers] [Waiting for headers]
+                                               
+Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+
+19% [15 Packages 2067 B/1808 kB 0%] [Waiting for headers]
+19% [14 Packages store 0 B] [15 Packages 2067 B/1808 kB 0%] [Waiting for header
+                                                                               
+19% [15 Packages 7779 B/1808 kB 0%] [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                         
+Get:16 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [33.1 kB]
+
+20% [15 Packages 282 kB/1808 kB 16%] [16 Packages 6903 B/33.1 kB 21%]
+                                                                     
+20% [15 Packages 285 kB/1808 kB 16%] [Waiting for headers]
+                                                          
+Get:17 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2796 kB]
+
+20% [15 Packages 288 kB/1808 kB 16%] [17 Packages 3557 B/2796 kB 0%]
+20% [16 Packages store 0 B] [15 Packages 288 kB/1808 kB 16%] [17 Packages 3557 
+                                                                               
+21% [15 Packages 288 kB/1808 kB 16%] [17 Packages 17.8 kB/2796 kB 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                     
+Get:18 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1700 kB]
+
+30% [15 Packages 1546 kB/1808 kB 85%] [18 Packages 10.7 kB/1700 kB 1%]
+30% [17 Packages store 0 B] [15 Packages 1550 kB/1808 kB 86%] [18 Packages 10.7
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+32% [17 Packages store 0 B] [18 Packages 496 kB/1700 kB 29%]
+                                                            
+Get:19 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+
+32% [17 Packages store 0 B] [19 Packages 0 B/19.3 MB 0%] [18 Packages 532 kB/17
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+35% [19 Packages 466 kB/19.3 MB 2%] [18 Packages 1439 kB/1700 kB 85%]
+35% [15 Packages store 0 B] [19 Packages 466 kB/19.3 MB 2%] [18 Packages 1439 k
+                                                                               
+36% [15 Packages store 0 B] [19 Packages 621 kB/19.3 MB 3%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                           
+38% [19 Packages 1040 kB/19.3 MB 5%]
+38% [18 Packages store 0 B] [19 Packages 1040 kB/19.3 MB 5%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                            
+39% [19 Packages 1577 kB/19.3 MB 8%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>60% [19 Packages 10.6 MB/19.3 MB 55%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                     
+Get:20 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+
+                                     
+80% [20 Packages 131 kB/331 kB 40%]
+80% [19 Packages store 0 B] [20 Packages 131 kB/331 kB 40%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                           
+80% [19 Packages store 0 B]
+                           
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2929 kB]
+
+80% [19 Packages store 0 B] [21 Packages 0 B/2929 kB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                        
+87% [19 Packages store 0 B]
+                           
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [35.9 kB]
+
+87% [19 Packages store 0 B] [22 Packages 22.5 kB/35.9 kB 63%]
+87% [19 Packages store 0 B] [Connecting to archive.ubuntu.com (185.125.190.83)]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2059 kB]
+
+                                                                               
+87% [19 Packages store 0 B] [23 Packages 0 B/2059 kB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                        
+88% [23 Packages 14.0 kB/2059 kB 1%]
+88% [20 Packages store 0 B] [23 Packages 14.0 kB/2059 kB 1%]
+                                                            
+88% [23 Packages 14.0 kB/2059 kB 1%]
+88% [21 Packages store 0 B] [23 Packages 14.0 kB/2059 kB 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                            
+89% [23 Packages 25.5 kB/2059 kB 1%]
+89% [22 Packages store 0 B] [23 Packages 25.5 kB/2059 kB 1%]
+                                                            
+89% [23 Packages 25.5 kB/2059 kB 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                    
+89% [23 Packages 117 kB/2059 kB 6%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>90% [23 Packages 482 kB/2059 kB 23%]                               4913 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>94% [Connecting to archive.ubuntu.com (91.189.91.81)]              4913 kB/s 0s
+                                                                               
+94% [23 Packages store 0 B] [Connecting to archive.ubuntu.com (91.189.91.81)]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>94% [Connecting to archive.ubuntu.com (91.189.91.81)]              4913 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Ign:24 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages
+
+94% [Working]                                                      4913 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:25 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.4 kB]
+
+94% [25 Packages 12.6 kB/49.4 kB 26%]                              4913 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>94% [Waiting for headers]                                          4913 kB/s 0s
+94% [25 Packages store 0 B] [Waiting for headers]                  4913 kB/s 0s
+95% [Waiting for headers]                                          4913 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:26 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [34.3 kB]
+
+95% [26 Packages 2619 B/34.3 kB 8%]                                4913 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>95% [Working]                                                      4913 kB/s 0s
+95% [26 Packages store 0 B] [Waiting for headers]                  4913 kB/s 0s
+95% [Waiting for headers]                                          4913 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1943 kB]
+
+95% [24 Packages 0 B/1942 kB 0%]                                   4913 kB/s 0s
+                                                                               
+Err:24 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages
+  File has unexpected size (1942484 != 1942540). Mirror sync in progress? [IP: 91.189.91.81 80]
+  Hashes of expected file:
+   - Filesize:1942540 [weak]
+   - SHA256:16b8796c0dfa892e74d5c88d0a6853bd2c3148d64aeed3417c6822fa30ba32e2
+   - SHA1:32ae47d3d8b90d651684bd19edbba1c4e5032830 [weak]
+   - MD5Sum:177b22218c52bf2ca70088ee841ce1f4 [weak]
+  Release file created at: Wed, 03 Dec 2025 23:38:47 +0000
+
+95% [Working]                                                      4913 kB/s 0s
+                                                                               
+Fetched 33.2 MB in 9s (3869 kB/s)
+
+Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 6%
+
+Reading package lists... 6%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 74%
+
+Reading package lists... 74%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 82%
+
+Reading package lists... 82%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 87%
+
+Reading package lists... 87%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 99%
+
+Reading package lists... Done
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-updates/universe/binary-amd64/Packages.gz  File has unexpected size (1942484 != 1942540). Mirror sync in progress? [IP: 91.189.91.81 80]
+   Hashes of expected file:
+    - Filesize:1942540 [weak]
+    - SHA256:16b8796c0dfa892e74d5c88d0a6853bd2c3148d64aeed3417c6822fa30ba32e2
+    - SHA1:32ae47d3d8b90d651684bd19edbba1c4e5032830 [weak]
+    - MD5Sum:177b22218c52bf2ca70088ee841ce1f4 [weak]
+   Release file created at: Wed, 03 Dec 2025 23:38:47 +0000
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 6%
+
+Reading package lists... 6%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 74%
+
+Reading package lists... 74%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 82%
+
+Reading package lists... 82%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 87%
+
+Reading package lists... 87%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... 54%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ca-certificates is already the newest version (20240203).
+curl is already the newest version (8.5.0-2ubuntu10.6).
+gnupg is already the newest version (2.4.4-2ubuntu17.3).
+gnupg set to manually installed.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Working]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            
+Hit:1 https://dl.yarnpkg.com/debian stable InRelease
+
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Connectin
+                                                                               
+Get:2 https://deb.nodesource.com/node_20.x nodistro InRelease [12.1 kB]
+
+0% [Waiting for headers] [Waiting for headers] [2 InRelease 12.1 kB/12.1 kB 100
+0% [Waiting for headers] [Waiting for headers] [Connecting to archive.ubuntu.co
+                                                                               
+Hit:3 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease
+
+0% [Waiting for headers] [Connecting to archive.ubuntu.com (91.189.91.81)] [Con
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Waiting for headers] [Connecting to archive.ubuntu.com (91.189.91.81)] [Con
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Waiting for headers] [Connecting to archive.ubuntu.com (91.189.91.81)] [Con
+                                                                               
+Get:4 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [13.1 kB]
+
+0% [Waiting for headers] [4 Packages 0 B/13.1 kB 0%] [Connecting to archive.ubu
+0% [Waiting for headers] [Connecting to archive.ubuntu.com (91.189.91.81)] [Con
+0% [4 Packages store 0 B] [Waiting for headers] [Connecting to archive.ubuntu.c
+0% [Waiting for headers] [Connecting to archive.ubuntu.com (91.189.91.81)] [Con
+0% [Waiting for headers] [Connecting to archive.ubuntu.com (91.189.91.81)] [Con
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Hit:5 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+
+                                                                               
+0% [Waiting for headers] [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Waiting for headers] [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                              
+Hit:6 http://archive.ubuntu.com/ubuntu noble InRelease
+
+                                              
+0% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                        
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+
+0% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                        
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+
+0% [8 InRelease 12.5 kB/126 kB 10%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [8 InRelease 61.1 kB/126 kB 48%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                   
+0% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                        
+Hit:9 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+
+                        
+0% [Working]
+            
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2059 kB]
+
+0% [Working]
+0% [11 Packages store 0 B]
+                          
+0% [Working]
+            
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2059 kB]
+
+0% [10 Packages 2059 kB]
+                        
+0% [Working]
+0% [12 Packages store 0 B]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>54% [12 Packages store 0 B] [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                 
+54% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                         
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2059 kB]
+
+54% [10 Packages 2615 B/2059 kB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>59% [10 Packages 418 kB/2059 kB 20%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                    
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1942 kB]
+
+                                    
+77% [13 Packages 3837 B/1942 kB 0%]
+78% [10 Packages store 0 B] [13 Packages 15.3 kB/1942 kB 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                            
+84% [13 Packages 565 kB/1942 kB 29%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                    
+100% [Working]
+100% [13 Packages store 0 B]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                            
+100% [Working]
+              
+Fetched 4153 kB in 3s (1298 kB/s)
+
+Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 5%
+
+Reading package lists... 5%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 57%
+
+Reading package lists... 57%
+
+Reading package lists... 57%
+
+Reading package lists... 57%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 64%
+
+Reading package lists... 64%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 70%
+
+Reading package lists... 70%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 86%
+
+Reading package lists... 86%
+
+Reading package lists... 90%
+
+Reading package lists... 90%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 90%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 5%
+
+Reading package lists... 5%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 57%
+
+Reading package lists... 57%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 57%
+
+Reading package lists... 57%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 64%
+
+Reading package lists... 64%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 70%
+
+Reading package lists... 70%
+
+Reading package lists... 70%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 86%
+
+Reading package lists... 86%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 90%
+
+Reading package lists... 90%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building dependency tree... 0%
+
+Building dependency tree... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building dependency tree... 50%
+
+Building dependency tree... 50%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 95 not upgraded.
+Need to get 32.0 MB of archives.
+After this operation, 197 MB of additional disk space will be used.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [Working]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            
+Get:1 https://deb.nodesource.com/node_20.x nodistro/main amd64 nodejs amd64 20.19.6-1nodesource1 [32.0 MB]
+
+0% [1 nodejs 0 B/32.0 MB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                            
+100% [Working]
+              
+Fetched 32.0 MB in 0s (67.7 MB/s)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package nodejs.
+(Reading database ... 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 65%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 70%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 75%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 80%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 85%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 90%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 95%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 100%
+(Reading database ... 58629 files and directories currently installed.)
+Preparing to unpack .../nodejs_20.19.6-1nodesource1_amd64.deb ...
+Unpacking nodejs (20.19.6-1nodesource1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up nodejs (20.19.6-1nodesource1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processing triggers for man-db (2.12.0-4build2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>v22.17.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install missing dependency for Chromium (used by tweet-harvest)</span>
+<span class="o">!</span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>libatk-bridge2.0-0<span class="w"> </span>libgtk-3-0<span class="w"> </span>libgbm-dev
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 5%
+
+Reading package lists... 5%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 57%
+
+Reading package lists... 57%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 57%
+
+Reading package lists... 57%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 64%
+
+Reading package lists... 64%
+
+Reading package lists... 70%
+
+Reading package lists... 70%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 86%
+
+Reading package lists... 86%
+
+Reading package lists... 90%
+
+Reading package lists... 90%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Reading package lists... 97%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building dependency tree... 50%
+
+Building dependency tree... 50%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+Note, selecting &#39;libatk-bridge2.0-0t64&#39; instead of &#39;libatk-bridge2.0-0&#39;
+Note, selecting &#39;libgtk-3-0t64&#39; instead of &#39;libgtk-3-0&#39;
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following additional packages will be installed:
+  adwaita-icon-theme at-spi2-common at-spi2-core dbus-user-session
+  dconf-gsettings-backend dconf-service gsettings-desktop-schemas
+  gtk-update-icon-cache hicolor-icon-theme humanity-icon-theme libatk1.0-0t64
+  libatspi2.0-0t64 libavahi-client3 libavahi-common-data libavahi-common3
+  libcairo-gobject2 libcolord2 libcups2t64 libdconf1 libdrm-amdgpu1
+  libdrm-common libdrm-intel1 libdrm2 libepoxy0 libgbm1 libgdk-pixbuf-2.0-0
+  libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common libgtk-3-bin libgtk-3-common
+  liblcms2-2 libllvm20 libpciaccess0 librsvg2-2 librsvg2-common
+  libsensors-config libsensors5 libwayland-client0 libwayland-cursor0
+  libwayland-egl1 libwayland-server0 libx11-xcb1 libxcb-dri3-0 libxcb-present0
+  libxcb-randr0 libxcb-sync1 libxcb-xfixes0 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxi6 libxinerama1 libxkbcommon0 libxrandr2
+  libxshmfence1 libxtst6 mesa-libgallium session-migration shared-mime-info
+  ubuntu-mono xkb-data
+Suggested packages:
+  colord cups-common gvfs liblcms2-utils pciutils librsvg2-bin lm-sensors
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following NEW packages will be installed:
+  adwaita-icon-theme at-spi2-common at-spi2-core dbus-user-session
+  dconf-gsettings-backend dconf-service gsettings-desktop-schemas
+  gtk-update-icon-cache hicolor-icon-theme humanity-icon-theme
+  libatk-bridge2.0-0t64 libatk1.0-0t64 libatspi2.0-0t64 libavahi-client3
+  libavahi-common-data libavahi-common3 libcairo-gobject2 libcolord2
+  libcups2t64 libdconf1 libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm2
+  libepoxy0 libgbm-dev libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-bin
+  libgdk-pixbuf2.0-common libgtk-3-0t64 libgtk-3-bin libgtk-3-common
+  liblcms2-2 libllvm20 libpciaccess0 librsvg2-2 librsvg2-common
+  libsensors-config libsensors5 libwayland-client0 libwayland-cursor0
+  libwayland-egl1 libwayland-server0 libx11-xcb1 libxcb-dri3-0 libxcb-present0
+  libxcb-randr0 libxcb-sync1 libxcb-xfixes0 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxi6 libxinerama1 libxkbcommon0 libxrandr2
+  libxshmfence1 libxtst6 mesa-libgallium session-migration shared-mime-info
+  ubuntu-mono xkb-data
+0 upgraded, 65 newly installed, 0 to remove and 95 not upgraded.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Need to get 52.7 MB of archives.
+After this operation, 262 MB of additional disk space will be used.
+
+0% [Working]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dbus-user-session amd64 1.14.10-4ubuntu4.1 [9968 B]
+
+0% [1 dbus-user-session 8279 B/9968 B 83%]
+                                          
+0% [Working]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 shared-mime-info amd64 2.4-4 [474 kB]
+
+0% [2 shared-mime-info 2564 B/474 kB 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0% [2 shared-mime-info 84.0 kB/474 kB 18%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                          
+1% [2 shared-mime-info 411 kB/474 kB 87%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                         
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 xkb-data all 2.41-2ubuntu1.1 [397 kB]
+
+                                         
+1% [3 xkb-data 1368 B/397 kB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                
+2% [Working]
+            
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-common all 2.4.122-1~ubuntu0.24.04.2 [8464 B]
+
+2% [4 libdrm-common 5867 B/8464 B 69%]
+                                      
+3% [Waiting for headers]
+                        
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm2 amd64 2.4.122-1~ubuntu0.24.04.2 [40.6 kB]
+
+3% [5 libdrm2 2825 B/40.6 kB 7%]
+                                
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libsensors-config all 1:3.6.0-9build1 [5546 B]
+
+3% [6 libsensors-config 2023 B/5546 B 36%]
+                                          
+3% [Working]
+            
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libsensors5 amd64 1:3.6.0-9build1 [26.6 kB]
+
+3% [7 libsensors5 1899 B/26.6 kB 7%]
+                                    
+Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libxkbcommon0 amd64 1.6.0-1build1 [122 kB]
+
+4% [8 libxkbcommon0 711 B/122 kB 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                    
+4% [Working]
+            
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgdk-pixbuf2.0-common all 2.42.10+dfsg-3ubuntu3.2 [8192 B]
+
+4% [9 libgdk-pixbuf2.0-common 1627 B/8192 B 20%]
+                                                
+4% [Waiting for headers]
+                        
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgdk-pixbuf-2.0-0 amd64 2.42.10+dfsg-3ubuntu3.2 [147 kB]
+
+4% [10 libgdk-pixbuf-2.0-0 0 B/147 kB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                         
+5% [Waiting for headers]
+                        
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gtk-update-icon-cache amd64 3.24.41-4ubuntu1.3 [51.9 kB]
+
+5% [11 gtk-update-icon-cache 2324 B/51.9 kB 4%]
+                                               
+5% [Waiting for headers]
+                        
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 hicolor-icon-theme all 0.17-2 [9976 B]
+
+5% [12 hicolor-icon-theme 2677 B/9976 B 27%]
+                                            
+6% [Working]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 humanity-icon-theme all 0.6.16 [1282 kB]
+
+6% [13 humanity-icon-theme 6846 B/1282 kB 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                             
+8% [Waiting for headers]
+                        
+Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 ubuntu-mono all 24.04-0ubuntu1 [151 kB]
+
+8% [14 ubuntu-mono 19.4 kB/151 kB 13%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                      
+8% [Working]
+            
+Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 adwaita-icon-theme all 46.0-1 [723 kB]
+
+8% [15 adwaita-icon-theme 22.5 kB/723 kB 3%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                            
+10% [Working]
+             
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 at-spi2-common all 2.52.0-1build1 [8674 B]
+
+10% [16 at-spi2-common 2199 B/8674 B 25%]
+                                         
+10% [Working]
+             
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 libxi6 amd64 2:1.8.1-1build1 [32.4 kB]
+
+10% [17 libxi6 3064 B/32.4 kB 9%]
+                                 
+11% [Working]
+             
+Get:18 http://archive.ubuntu.com/ubuntu noble/main amd64 libatspi2.0-0t64 amd64 2.52.0-1build1 [80.5 kB]
+
+11% [18 libatspi2.0-0t64 5277 B/80.5 kB 7%]
+                                           
+Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 libxtst6 amd64 2:1.2.3-1.1build1 [12.6 kB]
+
+                                           
+11% [19 libxtst6 8186 B/12.6 kB 65%]
+                                    
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdconf1 amd64 0.40.0-4ubuntu0.1 [39.6 kB]
+
+11% [20 libdconf1 5712 B/39.6 kB 14%]
+                                     
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dconf-service amd64 0.40.0-4ubuntu0.1 [27.6 kB]
+
+12% [21 dconf-service 2962 B/27.6 kB 11%]
+                                         
+12% [Working]
+             
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dconf-gsettings-backend amd64 0.40.0-4ubuntu0.1 [22.1 kB]
+
+12% [22 dconf-gsettings-backend 5084 B/22.1 kB 23%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                   
+12% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                         
+Get:23 http://archive.ubuntu.com/ubuntu noble/main amd64 session-migration amd64 0.3.9build1 [9034 B]
+
+12% [23 session-migration 9034 B/9034 B 100%]
+                                             
+13% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                         
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gsettings-desktop-schemas all 46.1-0ubuntu1 [35.6 kB]
+
+13% [24 gsettings-desktop-schemas 2566 B/35.6 kB 7%]
+                                                    
+13% [Waiting for headers]
+                         
+Get:25 http://archive.ubuntu.com/ubuntu noble/main amd64 at-spi2-core amd64 2.52.0-1build1 [56.6 kB]
+
+13% [25 at-spi2-core 41.1 kB/56.6 kB 73%]
+                                         
+Get:26 http://archive.ubuntu.com/ubuntu noble/main amd64 libatk1.0-0t64 amd64 2.52.0-1build1 [55.3 kB]
+
+13% [26 libatk1.0-0t64 18.5 kB/55.3 kB 33%]
+                                           
+Get:27 http://archive.ubuntu.com/ubuntu noble/main amd64 libatk-bridge2.0-0t64 amd64 2.52.0-1build1 [66.0 kB]
+
+14% [27 libatk-bridge2.0-0t64 7371 B/66.0 kB 11%]
+                                                 
+14% [Working]
+             
+Get:28 http://archive.ubuntu.com/ubuntu noble/main amd64 libavahi-common-data amd64 0.8-13ubuntu6 [29.7 kB]
+
+14% [28 libavahi-common-data 4826 B/29.7 kB 16%]
+                                                
+15% [Waiting for headers]
+                         
+Get:29 http://archive.ubuntu.com/ubuntu noble/main amd64 libavahi-common3 amd64 0.8-13ubuntu6 [23.3 kB]
+
+15% [29 libavahi-common3 9156 B/23.3 kB 39%]
+                                            
+15% [Working]
+             
+Get:30 http://archive.ubuntu.com/ubuntu noble/main amd64 libavahi-client3 amd64 0.8-13ubuntu6 [26.8 kB]
+
+15% [30 libavahi-client3 2694 B/26.8 kB 10%]
+                                            
+Get:31 http://archive.ubuntu.com/ubuntu noble/main amd64 libcairo-gobject2 amd64 1.18.0-3build1 [127 kB]
+
+15% [31 libcairo-gobject2 15.4 kB/127 kB 12%]
+                                             
+16% [Working]
+             
+Get:32 http://archive.ubuntu.com/ubuntu noble/main amd64 liblcms2-2 amd64 2.14-2build1 [161 kB]
+
+16% [32 liblcms2-2 21.1 kB/161 kB 13%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                      
+16% [Working]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>             
+Get:33 http://archive.ubuntu.com/ubuntu noble/main amd64 libcolord2 amd64 1.4.7-1build2 [149 kB]
+
+16% [33 libcolord2 6848 B/149 kB 5%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                    
+17% [Waiting for headers]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                         
+Get:34 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcups2t64 amd64 2.4.7-1.2ubuntu7.7 [273 kB]
+
+17% [34 libcups2t64 6848 B/273 kB 3%]
+                                     
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-amdgpu1 amd64 2.4.122-1~ubuntu0.24.04.2 [20.9 kB]
+
+18% [35 libdrm-amdgpu1 6788 B/20.9 kB 33%]
+                                          
+18% [Waiting for headers]
+                         
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpciaccess0 amd64 0.17-3ubuntu0.24.04.2 [18.9 kB]
+
+                         
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-intel1 amd64 2.4.122-1~ubuntu0.24.04.2 [63.8 kB]
+
+18% [37 libdrm-intel1 2002 B/63.8 kB 3%]
+                                        
+Get:38 http://archive.ubuntu.com/ubuntu noble/main amd64 libepoxy0 amd64 1.5.10-1build1 [220 kB]
+
+                                        
+19% [38 libepoxy0 50.7 kB/220 kB 23%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                     
+19% [Waiting for headers]
+                         
+Get:39 http://archive.ubuntu.com/ubuntu noble/main amd64 libwayland-server0 amd64 1.22.0-2.1build1 [33.9 kB]
+
+19% [39 libwayland-server0 19.3 kB/33.9 kB 57%]
+                                               
+Get:40 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libllvm20 amd64 1:20.1.2-0ubuntu1~24.04.2 [30.6 MB]
+
+                                               
+20% [40 libllvm20 59.6 kB/30.6 MB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>34% [40 libllvm20 9737 kB/30.6 MB 32%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>49% [40 libllvm20 19.4 MB/30.6 MB 64%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>64% [40 libllvm20 29.1 MB/30.6 MB 95%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                      
+66% [Working]
+             
+Get:41 http://archive.ubuntu.com/ubuntu noble/main amd64 libx11-xcb1 amd64 2:1.8.7-1build1 [7800 B]
+
+66% [41 libx11-xcb1 7800 B/7800 B 100%]
+                                       
+Get:42 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-dri3-0 amd64 1.15-1ubuntu2 [7142 B]
+
+67% [Connecting to archive.ubuntu.com (91.189.91.82)]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                     
+Get:43 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-present0 amd64 1.15-1ubuntu2 [5676 B]
+
+                                                     
+Get:44 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-randr0 amd64 1.15-1ubuntu2 [17.9 kB]
+
+                                                     
+67% [44 libxcb-randr0 6850 B/17.9 kB 38%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                         
+68% [Waiting for headers]
+                         
+Get:45 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-sync1 amd64 1.15-1ubuntu2 [9312 B]
+
+68% [45 libxcb-sync1 123 B/9312 B 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                     
+68% [Working]
+             
+Get:46 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-xfixes0 amd64 1.15-1ubuntu2 [10.2 kB]
+
+68% [46 libxcb-xfixes0 1945 B/10.2 kB 19%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                          
+68% [Waiting for headers]
+                         
+Get:47 http://archive.ubuntu.com/ubuntu noble/main amd64 libxshmfence1 amd64 1.3-1build5 [4764 B]
+
+68% [47 libxshmfence1 34 B/4764 B 1%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                     
+69% [Waiting for headers]
+                         
+Get:48 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.0.7-0ubuntu0.24.04.2 [10.3 MB]
+
+69% [48 mesa-libgallium 687 B/10.3 MB 0%]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>69% [48 mesa-libgallium 169 kB/10.3 MB 2%]                         5603 kB/s 3s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>70% [48 mesa-libgallium 936 kB/10.3 MB 9%]                         5603 kB/s 2s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>75% [48 mesa-libgallium 4457 kB/10.3 MB 43%]                       5603 kB/s 2s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:49 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.0.7-0ubuntu0.24.04.2 [32.7 kB]
+
+85% [49 libgbm1 0 B/32.7 kB 0%]                                    5603 kB/s 1s
+85% [Working]                                                      5603 kB/s 1s
+                                                                               
+Get:50 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm-dev amd64 25.0.7-0ubuntu0.24.04.2 [9840 B]
+
+                                                                               
+Get:51 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgdk-pixbuf2.0-bin amd64 2.42.10+dfsg-3ubuntu3.2 [13.9 kB]
+
+                                                                               
+Get:52 http://archive.ubuntu.com/ubuntu noble/main amd64 libwayland-client0 amd64 1.22.0-2.1build1 [26.4 kB]
+
+                                                                               
+Get:53 http://archive.ubuntu.com/ubuntu noble/main amd64 libwayland-cursor0 amd64 1.22.0-2.1build1 [10.4 kB]
+
+86% [53 libwayland-cursor0 10.1 kB/10.4 kB 97%]                    5603 kB/s 1s
+                                                                               
+Get:54 http://archive.ubuntu.com/ubuntu noble/main amd64 libwayland-egl1 amd64 1.22.0-2.1build1 [5628 B]
+
+                                                                               
+Get:55 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcomposite1 amd64 1:0.4.5-1build3 [6320 B]
+
+                                                                               
+Get:56 http://archive.ubuntu.com/ubuntu noble/main amd64 libxfixes3 amd64 1:6.0.0-2build1 [10.8 kB]
+
+                                                                               
+Get:57 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcursor1 amd64 1:1.2.1-1build1 [20.7 kB]
+
+88% [Waiting for headers]                                          5603 kB/s 1s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:58 http://archive.ubuntu.com/ubuntu noble/main amd64 libxdamage1 amd64 1:1.1.6-1build1 [6150 B]
+
+88% [58 libxdamage1 6150 B/6150 B 100%]                            5603 kB/s 1s
+88% [Waiting for headers]                                          5603 kB/s 1s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:59 http://archive.ubuntu.com/ubuntu noble/main amd64 libxinerama1 amd64 2:1.1.4-3build1 [6396 B]
+
+88% [59 libxinerama1 6396 B/6396 B 100%]                           5603 kB/s 1s
+88% [Waiting for headers]                                          5603 kB/s 1s
+                                                                               
+Get:60 http://archive.ubuntu.com/ubuntu noble/main amd64 libxrandr2 amd64 2:1.5.2-2build1 [19.7 kB]
+
+88% [60 libxrandr2 19.7 kB/19.7 kB 100%]                           5603 kB/s 1s
+89% [Waiting for headers]                                          5603 kB/s 1s
+                                                                               
+Get:61 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgtk-3-common all 3.24.41-4ubuntu1.3 [1426 kB]
+
+89% [61 libgtk-3-common 48.3 kB/1426 kB 3%]                        5603 kB/s 1s
+                                                                               
+Get:62 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgtk-3-0t64 amd64 3.24.41-4ubuntu1.3 [2913 kB]
+
+91% [62 libgtk-3-0t64 34.3 kB/2913 kB 1%]                          5603 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:63 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgtk-3-bin amd64 3.24.41-4ubuntu1.3 [73.9 kB]
+
+96% [63 libgtk-3-bin 5009 B/73.9 kB 7%]                            5603 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>96% [Waiting for headers]                                          5603 kB/s 0s
+                                                                               
+Get:64 http://archive.ubuntu.com/ubuntu noble/main amd64 librsvg2-2 amd64 2.58.0+dfsg-1build1 [2135 kB]
+
+96% [64 librsvg2-2 7140 B/2135 kB 0%]                              5603 kB/s 0s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                               
+Get:65 http://archive.ubuntu.com/ubuntu noble/main amd64 librsvg2-common amd64 2.58.0+dfsg-1build1 [11.8 kB]
+
+100% [Working]                                                     5603 kB/s 0s
+                                                                               
+Fetched 52.7 MB in 8s (6244 kB/s)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extracting templates from packages: 46%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extracting templates from packages: 92%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extracting templates from packages: 100%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package dbus-user-session.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 63992 files and directories currently installed.)
+Preparing to unpack .../00-dbus-user-session_1.14.10-4ubuntu4.1_amd64.deb ...
+Unpacking dbus-user-session (1.14.10-4ubuntu4.1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../01-shared-mime-info_2.4-4_amd64.deb ...
+Unpacking shared-mime-info (2.4-4) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package xkb-data.
+Preparing to unpack .../02-xkb-data_2.41-2ubuntu1.1_all.deb ...
+Unpacking xkb-data (2.41-2ubuntu1.1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libdrm-common.
+Preparing to unpack .../03-libdrm-common_2.4.122-1~ubuntu0.24.04.2_all.deb ...
+Unpacking libdrm-common (2.4.122-1~ubuntu0.24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libdrm2:amd64.
+Preparing to unpack .../04-libdrm2_2.4.122-1~ubuntu0.24.04.2_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.122-1~ubuntu0.24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libsensors-config.
+Preparing to unpack .../05-libsensors-config_1%3a3.6.0-9build1_all.deb ...
+Unpacking libsensors-config (1:3.6.0-9build1) ...
+Selecting previously unselected package libsensors5:amd64.
+Preparing to unpack .../06-libsensors5_1%3a3.6.0-9build1_amd64.deb ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unpacking libsensors5:amd64 (1:3.6.0-9build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libxkbcommon0:amd64.
+Preparing to unpack .../07-libxkbcommon0_1.6.0-1build1_amd64.deb ...
+Unpacking libxkbcommon0:amd64 (1.6.0-1build1) ...
+Selecting previously unselected package libgdk-pixbuf2.0-common.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Preparing to unpack .../08-libgdk-pixbuf2.0-common_2.42.10+dfsg-3ubuntu3.2_all.deb ...
+Unpacking libgdk-pixbuf2.0-common (2.42.10+dfsg-3ubuntu3.2) ...
+Selecting previously unselected package libgdk-pixbuf-2.0-0:amd64.
+Preparing to unpack .../09-libgdk-pixbuf-2.0-0_2.42.10+dfsg-3ubuntu3.2_amd64.deb ...
+Unpacking libgdk-pixbuf-2.0-0:amd64 (2.42.10+dfsg-3ubuntu3.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package gtk-update-icon-cache.
+Preparing to unpack .../10-gtk-update-icon-cache_3.24.41-4ubuntu1.3_amd64.deb ...
+Unpacking gtk-update-icon-cache (3.24.41-4ubuntu1.3) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package hicolor-icon-theme.
+Preparing to unpack .../11-hicolor-icon-theme_0.17-2_all.deb ...
+Unpacking hicolor-icon-theme (0.17-2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package humanity-icon-theme.
+Preparing to unpack .../12-humanity-icon-theme_0.6.16_all.deb ...
+Unpacking humanity-icon-theme (0.6.16) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package ubuntu-mono.
+Preparing to unpack .../13-ubuntu-mono_24.04-0ubuntu1_all.deb ...
+Unpacking ubuntu-mono (24.04-0ubuntu1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package adwaita-icon-theme.
+Preparing to unpack .../14-adwaita-icon-theme_46.0-1_all.deb ...
+Unpacking adwaita-icon-theme (46.0-1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package at-spi2-common.
+Preparing to unpack .../15-at-spi2-common_2.52.0-1build1_all.deb ...
+Unpacking at-spi2-common (2.52.0-1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libxi6:amd64.
+Preparing to unpack .../16-libxi6_2%3a1.8.1-1build1_amd64.deb ...
+Unpacking libxi6:amd64 (2:1.8.1-1build1) ...
+Selecting previously unselected package libatspi2.0-0t64:amd64.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Preparing to unpack .../17-libatspi2.0-0t64_2.52.0-1build1_amd64.deb ...
+Unpacking libatspi2.0-0t64:amd64 (2.52.0-1build1) ...
+Selecting previously unselected package libxtst6:amd64.
+Preparing to unpack .../18-libxtst6_2%3a1.2.3-1.1build1_amd64.deb ...
+Unpacking libxtst6:amd64 (2:1.2.3-1.1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libdconf1:amd64.
+Preparing to unpack .../19-libdconf1_0.40.0-4ubuntu0.1_amd64.deb ...
+Unpacking libdconf1:amd64 (0.40.0-4ubuntu0.1) ...
+Selecting previously unselected package dconf-service.
+Preparing to unpack .../20-dconf-service_0.40.0-4ubuntu0.1_amd64.deb ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unpacking dconf-service (0.40.0-4ubuntu0.1) ...
+Selecting previously unselected package dconf-gsettings-backend:amd64.
+Preparing to unpack .../21-dconf-gsettings-backend_0.40.0-4ubuntu0.1_amd64.deb ...
+Unpacking dconf-gsettings-backend:amd64 (0.40.0-4ubuntu0.1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package session-migration.
+Preparing to unpack .../22-session-migration_0.3.9build1_amd64.deb ...
+Unpacking session-migration (0.3.9build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package gsettings-desktop-schemas.
+Preparing to unpack .../23-gsettings-desktop-schemas_46.1-0ubuntu1_all.deb ...
+Unpacking gsettings-desktop-schemas (46.1-0ubuntu1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package at-spi2-core.
+Preparing to unpack .../24-at-spi2-core_2.52.0-1build1_amd64.deb ...
+Unpacking at-spi2-core (2.52.0-1build1) ...
+Selecting previously unselected package libatk1.0-0t64:amd64.
+Preparing to unpack .../25-libatk1.0-0t64_2.52.0-1build1_amd64.deb ...
+Unpacking libatk1.0-0t64:amd64 (2.52.0-1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libatk-bridge2.0-0t64:amd64.
+Preparing to unpack .../26-libatk-bridge2.0-0t64_2.52.0-1build1_amd64.deb ...
+Unpacking libatk-bridge2.0-0t64:amd64 (2.52.0-1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libavahi-common-data:amd64.
+Preparing to unpack .../27-libavahi-common-data_0.8-13ubuntu6_amd64.deb ...
+Unpacking libavahi-common-data:amd64 (0.8-13ubuntu6) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Preparing to unpack .../28-libavahi-common3_0.8-13ubuntu6_amd64.deb ...
+Unpacking libavahi-common3:amd64 (0.8-13ubuntu6) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libavahi-client3:amd64.
+Preparing to unpack .../29-libavahi-client3_0.8-13ubuntu6_amd64.deb ...
+Unpacking libavahi-client3:amd64 (0.8-13ubuntu6) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libcairo-gobject2:amd64.
+Preparing to unpack .../30-libcairo-gobject2_1.18.0-3build1_amd64.deb ...
+Unpacking libcairo-gobject2:amd64 (1.18.0-3build1) ...
+Selecting previously unselected package liblcms2-2:amd64.
+Preparing to unpack .../31-liblcms2-2_2.14-2build1_amd64.deb ...
+Unpacking liblcms2-2:amd64 (2.14-2build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libcolord2:amd64.
+Preparing to unpack .../32-libcolord2_1.4.7-1build2_amd64.deb ...
+Unpacking libcolord2:amd64 (1.4.7-1build2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libcups2t64:amd64.
+Preparing to unpack .../33-libcups2t64_2.4.7-1.2ubuntu7.7_amd64.deb ...
+Unpacking libcups2t64:amd64 (2.4.7-1.2ubuntu7.7) ...
+Selecting previously unselected package libdrm-amdgpu1:amd64.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Preparing to unpack .../34-libdrm-amdgpu1_2.4.122-1~ubuntu0.24.04.2_amd64.deb ...
+Unpacking libdrm-amdgpu1:amd64 (2.4.122-1~ubuntu0.24.04.2) ...
+Selecting previously unselected package libpciaccess0:amd64.
+Preparing to unpack .../35-libpciaccess0_0.17-3ubuntu0.24.04.2_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.17-3ubuntu0.24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../36-libdrm-intel1_2.4.122-1~ubuntu0.24.04.2_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.122-1~ubuntu0.24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libepoxy0:amd64.
+Preparing to unpack .../37-libepoxy0_1.5.10-1build1_amd64.deb ...
+Unpacking libepoxy0:amd64 (1.5.10-1build1) ...
+Selecting previously unselected package libwayland-server0:amd64.
+Preparing to unpack .../38-libwayland-server0_1.22.0-2.1build1_amd64.deb ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unpacking libwayland-server0:amd64 (1.22.0-2.1build1) ...
+Selecting previously unselected package libllvm20:amd64.
+Preparing to unpack .../39-libllvm20_1%3a20.1.2-0ubuntu1~24.04.2_amd64.deb ...
+Unpacking libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libx11-xcb1:amd64.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Preparing to unpack .../40-libx11-xcb1_2%3a1.8.7-1build1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../41-libxcb-dri3-0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../42-libxcb-present0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-randr0:amd64.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Preparing to unpack .../43-libxcb-randr0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../44-libxcb-sync1_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../45-libxcb-xfixes0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxshmfence1:amd64.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Preparing to unpack .../46-libxshmfence1_1.3-1build5_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.3-1build5) ...
+Selecting previously unselected package mesa-libgallium:amd64.
+Preparing to unpack .../47-mesa-libgallium_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-libgallium:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../48-libgbm1_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgbm1:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libgbm-dev:amd64.
+Preparing to unpack .../49-libgbm-dev_25.0.7-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgbm-dev:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libgdk-pixbuf2.0-bin.
+Preparing to unpack .../50-libgdk-pixbuf2.0-bin_2.42.10+dfsg-3ubuntu3.2_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-bin (2.42.10+dfsg-3ubuntu3.2) ...
+Selecting previously unselected package libwayland-client0:amd64.
+Preparing to unpack .../51-libwayland-client0_1.22.0-2.1build1_amd64.deb ...
+Unpacking libwayland-client0:amd64 (1.22.0-2.1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libwayland-cursor0:amd64.
+Preparing to unpack .../52-libwayland-cursor0_1.22.0-2.1build1_amd64.deb ...
+Unpacking libwayland-cursor0:amd64 (1.22.0-2.1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libwayland-egl1:amd64.
+Preparing to unpack .../53-libwayland-egl1_1.22.0-2.1build1_amd64.deb ...
+Unpacking libwayland-egl1:amd64 (1.22.0-2.1build1) ...
+Selecting previously unselected package libxcomposite1:amd64.
+Preparing to unpack .../54-libxcomposite1_1%3a0.4.5-1build3_amd64.deb ...
+Unpacking libxcomposite1:amd64 (1:0.4.5-1build3) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libxfixes3:amd64.
+Preparing to unpack .../55-libxfixes3_1%3a6.0.0-2build1_amd64.deb ...
+Unpacking libxfixes3:amd64 (1:6.0.0-2build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libxcursor1:amd64.
+Preparing to unpack .../56-libxcursor1_1%3a1.2.1-1build1_amd64.deb ...
+Unpacking libxcursor1:amd64 (1:1.2.1-1build1) ...
+Selecting previously unselected package libxdamage1:amd64.
+Preparing to unpack .../57-libxdamage1_1%3a1.1.6-1build1_amd64.deb ...
+Unpacking libxdamage1:amd64 (1:1.1.6-1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libxinerama1:amd64.
+Preparing to unpack .../58-libxinerama1_2%3a1.1.4-3build1_amd64.deb ...
+Unpacking libxinerama1:amd64 (2:1.1.4-3build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libxrandr2:amd64.
+Preparing to unpack .../59-libxrandr2_2%3a1.5.2-2build1_amd64.deb ...
+Unpacking libxrandr2:amd64 (2:1.5.2-2build1) ...
+Selecting previously unselected package libgtk-3-common.
+Preparing to unpack .../60-libgtk-3-common_3.24.41-4ubuntu1.3_all.deb ...
+Unpacking libgtk-3-common (3.24.41-4ubuntu1.3) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libgtk-3-0t64:amd64.
+Preparing to unpack .../61-libgtk-3-0t64_3.24.41-4ubuntu1.3_amd64.deb ...
+Unpacking libgtk-3-0t64:amd64 (3.24.41-4ubuntu1.3) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package libgtk-3-bin.
+Preparing to unpack .../62-libgtk-3-bin_3.24.41-4ubuntu1.3_amd64.deb ...
+Unpacking libgtk-3-bin (3.24.41-4ubuntu1.3) ...
+Selecting previously unselected package librsvg2-2:amd64.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Preparing to unpack .../63-librsvg2-2_2.58.0+dfsg-1build1_amd64.deb ...
+Unpacking librsvg2-2:amd64 (2.58.0+dfsg-1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Selecting previously unselected package librsvg2-common:amd64.
+Preparing to unpack .../64-librsvg2-common_2.58.0+dfsg-1build1_amd64.deb ...
+Unpacking librsvg2-common:amd64 (2.58.0+dfsg-1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Setting up liblcms2-2:amd64 (2.14-2build1) ...
+Setting up libwayland-server0:amd64 (1.22.0-2.1build1) ...
+Setting up libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Setting up libpciaccess0:amd64 (0.17-3ubuntu0.24.04.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up session-migration (0.3.9build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Created symlink /etc/systemd/user/graphical-session-pre.target.wants/session-migration.service → /usr/lib/systemd/user/session-migration.service.
+
+Setting up libxdamage1:amd64 (1:1.1.6-1build1) ...
+Setting up libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Setting up hicolor-icon-theme (0.17-2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up libxi6:amd64 (2:1.8.1-1build1) ...
+Setting up libxtst6:amd64 (2:1.2.3-1.1build1) ...
+Setting up libgdk-pixbuf2.0-common (2.42.10+dfsg-3ubuntu3.2) ...
+Setting up libsensors-config (1:3.6.0-9build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up xkb-data (2.41-2ubuntu1.1) ...
+Setting up libcolord2:amd64 (1.4.7-1build2) ...
+Setting up libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Setting up libdconf1:amd64 (0.40.0-4ubuntu0.1) ...
+Setting up dbus-user-session (1.14.10-4ubuntu4.1) ...
+Setting up libepoxy0:amd64 (1.5.10-1build1) ...
+Setting up libxfixes3:amd64 (1:6.0.0-2build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Setting up libavahi-common-data:amd64 (0.8-13ubuntu6) ...
+Setting up libatspi2.0-0t64:amd64 (2.52.0-1build1) ...
+Setting up shared-mime-info (2.4-4) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up libxinerama1:amd64 (2:1.1.4-3build1) ...
+Setting up libxrandr2:amd64 (2:1.5.2-2build1) ...
+Setting up libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.2) ...
+Setting up libsensors5:amd64 (1:3.6.0-9build1) ...
+Setting up libxshmfence1:amd64 (1.3-1build5) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up at-spi2-common (2.52.0-1build1) ...
+Setting up libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Setting up libgdk-pixbuf-2.0-0:amd64 (2.42.10+dfsg-3ubuntu3.2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up libcairo-gobject2:amd64 (1.18.0-3build1) ...
+Setting up libwayland-egl1:amd64 (1.22.0-2.1build1) ...
+Setting up libdrm-common (2.4.122-1~ubuntu0.24.04.2) ...
+Setting up libxcomposite1:amd64 (1:0.4.5-1build3) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up libxkbcommon0:amd64 (1.6.0-1build1) ...
+Setting up libwayland-client0:amd64 (1.22.0-2.1build1) ...
+Setting up gtk-update-icon-cache (3.24.41-4ubuntu1.3) ...
+Setting up libatk1.0-0t64:amd64 (2.52.0-1build1) ...
+Setting up libxcursor1:amd64 (1:1.2.1-1build1) ...
+Setting up libavahi-common3:amd64 (0.8-13ubuntu6) ...
+Setting up dconf-service (0.40.0-4ubuntu0.1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up librsvg2-2:amd64 (2.58.0+dfsg-1build1) ...
+Setting up librsvg2-common:amd64 (2.58.0+dfsg-1build1) ...
+Setting up libdrm2:amd64 (2.4.122-1~ubuntu0.24.04.2) ...
+Setting up libgdk-pixbuf2.0-bin (2.42.10+dfsg-3ubuntu3.2) ...
+Setting up libwayland-cursor0:amd64 (1.22.0-2.1build1) ...
+Setting up libavahi-client3:amd64 (0.8-13ubuntu6) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up libdrm-amdgpu1:amd64 (2.4.122-1~ubuntu0.24.04.2) ...
+Setting up libatk-bridge2.0-0t64:amd64 (2.52.0-1build1) ...
+Setting up dconf-gsettings-backend:amd64 (0.40.0-4ubuntu0.1) ...
+Setting up libdrm-intel1:amd64 (2.4.122-1~ubuntu0.24.04.2) ...
+Setting up libcups2t64:amd64 (2.4.7-1.2ubuntu7.7) ...
+Setting up libgtk-3-common (3.24.41-4ubuntu1.3) ...
+Setting up gsettings-desktop-schemas (46.1-0ubuntu1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up mesa-libgallium:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Setting up libgbm1:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Setting up libgbm-dev:amd64 (25.0.7-0ubuntu0.24.04.2) ...
+Setting up adwaita-icon-theme (46.0-1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>update-alternatives: using /usr/share/icons/Adwaita/cursor.theme to provide /usr/share/icons/default/index.theme (x-cursor-theme) in auto mode
+Setting up humanity-icon-theme (0.6.16) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up ubuntu-mono (24.04-0ubuntu1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processing triggers for man-db (2.12.0-4build2) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processing triggers for libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.4) ...
+Setting up libgtk-3-0t64:amd64 (3.24.41-4ubuntu1.3) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Setting up at-spi2-core (2.52.0-1build1) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;resident_evil.csv&#39;</span>
+<span class="n">search_keyword</span> <span class="o">=</span> <span class="s1">&#39;resident evil since:2023-04-01 until:2024-04-01 lang:en&#39;</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="o">!</span>npx<span class="w"> </span>-y<span class="w"> </span>tweet-harvest@2.6.1<span class="w"> </span>-o<span class="w"> </span><span class="s2">&quot;{filename}&quot;</span><span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;{search_keyword}&quot;</span><span class="w"> </span>--tab<span class="w"> </span><span class="s2">&quot;LATEST&quot;</span><span class="w"> </span>-l<span class="w"> </span><span class="o">{</span>limit<span class="o">}</span><span class="w"> </span>--token<span class="w"> </span><span class="o">{</span>twitter_auth_token<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>⠙⠹⠸⠼⠴⠦⠧⠇⠏<span class=" -Color -Color-Bold -Color-Bold-Green">Tweet Harvest [v2.6.1]</span>
+
+<span class=" -Color -Color-Blue">Research by </span><span class=" -Color -Color-Bold -Color-Bold-Blue">Helmi Satria</span>
+<span class=" -Color -Color-Blue">Use it for Educational Purposes only!</span>
+
+<span class=" -Color -Color-Yellow">This script uses Chromium Browser to crawl data from Twitter with </span><span class=" -Color -Color-Bold -Color-Bold-Yellow">your Twitter auth token</span><span class=" -Color -Color-Yellow">.</span>
+<span class=" -Color -Color-Yellow">Please enter your Twitter auth token when prompted.</span>
+
+<span class=" -Color -Color-Bold -Color-Bold-Red">Note:</span> Keep your access token secret! Don&#39;t share it with anyone else.
+<span class=" -Color -Color-Bold -Color-Bold-Red">Note:</span> This script only runs on your local device.
+
+
+<span class=" -Color -Color-Blue">Opening twitter search page...</span>
+
+
+<span class=" -Color -Color-Blue">Found existing file ./tweets-data/resident_evil.csv, renaming to ./tweets-data/resident_evil.old.csv</span>
+
+-- Scrolling... (1) (2) (3)
+<span class=" -Color -Color-Yellow">Filling in keywords: resident evil since:2023-04-01 until:2024-04-01 lang:en</span>
+
+ (4) (5)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 20</span>
+
+-- Scrolling... (1) (2)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 40</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 60</span>
+
+-- Scrolling... (1) (2)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 80</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 97</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 117</span>
+
+--Taking a break, waiting for 10 seconds...
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 137</span>
+
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 157</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 176</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 196</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 216</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 236</span>
+
+--Taking a break, waiting for 10 seconds...
+
+-- Scrolling... (1) (2) (3) (4) (5)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 256</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 276</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 293</span>
+
+-- Scrolling... (1) (2) (3)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 313</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 333</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 349</span>
+
+--Taking a break, waiting for 10 seconds...
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 368</span>
+
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 388</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 408</span>
+
+-- Scrolling... (1) (2) (3) (4) (5)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 428</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 448</span>
+
+-- Scrolling... (1) (2)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 468</span>
+
+--Taking a break, waiting for 10 seconds...
+
+-- Scrolling... (1) (2)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 486</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 504</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 524</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 544</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 564</span>
+
+-- Scrolling... (1) (2)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 584</span>
+
+--Taking a break, waiting for 10 seconds...
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 604</span>
+
+-- Scrolling... (1) (2)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 624</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 644</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 661</span>
+
+-- Scrolling... (1) (2)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 681</span>
+
+-- Scrolling... (1)
+
+<span class=" -Color -Color-Blue">Your tweets saved to: /content/tweets-data/resident_evil.csv</span>
+<span class=" -Color -Color-Yellow">Total tweets saved: 701</span>
+
+--Taking a break, waiting for 10 seconds...
+
+-- Scrolling... (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) (17) (18) (19) (20) (21)<span class=" -Color -Color-Yellow">No more tweets found, please check your search criteria and csv file result</span>
+<span class=" -Color -Color-Yellow">Timeout reached 1 times, making sure again...</span>
+
+-- Scrolling... (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) (17) (18) (19) (20) (21)<span class=" -Color -Color-Yellow">No more tweets found, please check your search criteria and csv file result</span>
+<span class=" -Color -Color-Yellow">Timeout reached 2 times, making sure again...</span>
+[v2.6.1] Error parsing response json: {&quot;_type&quot;:&quot;Response&quot;,&quot;_guid&quot;:&quot;response@49a8c4e316b90dc56a6b9c070076a3a7&quot;}
+[v2.6.1] Most likely, you have already exceeded the Twitter rate limit. Read more on https://x.com/elonmusk/status/1675187969420828672.
+[v2.6.1] Error parsing response json: {&quot;_type&quot;:&quot;Response&quot;,&quot;_guid&quot;:&quot;response@a92d155faf8b371bfea6cfa018834364&quot;}
+[v2.6.1] Most likely, you have already exceeded the Twitter rate limit. Read more on https://x.com/elonmusk/status/1675187969420828672.
+[v2.6.1] Error parsing response json: {&quot;_type&quot;:&quot;Response&quot;,&quot;_guid&quot;:&quot;response@542b284daecd9f1d81526bab802e4c9e&quot;}
+[v2.6.1] Most likely, you have already exceeded the Twitter rate limit. Read more on https://x.com/elonmusk/status/1675187969420828672.
+[v2.6.1] Error: page.waitForTimeout: Target page, context or browser has been closed
+<span class=" -Color -Color-Blue">Keywords: resident evil since:2023-04-01 until:2024-04-01 lang:en</span>
+Twitter Harvest v 2.6.1
+node:internal/process/promises:391
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+page.screenshot: Target page, context or browser has been closed
+    at crawl (/root/.npm/_npx/d28e8c2154917da4/node_modules/tweet-harvest/dist/bin.js:470:16)
+
+Node.js v20.19.6
+^C
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Specify the path to your CSV file</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;tweets-data/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="c1"># Read the CSV file into a pandas DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+
+<span class="c1"># Display the DataFrame</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-4888a386-afc2-42dd-a7bd-cca46115164f" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>conversation_id_str</th>
+      <th>created_at</th>
+      <th>favorite_count</th>
+      <th>full_text</th>
+      <th>id_str</th>
+      <th>image_url</th>
+      <th>in_reply_to_screen_name</th>
+      <th>lang</th>
+      <th>location</th>
+      <th>quote_count</th>
+      <th>reply_count</th>
+      <th>retweet_count</th>
+      <th>tweet_url</th>
+      <th>user_id_str</th>
+      <th>username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1774583126750101712</td>
+      <td>Sun Mar 31 23:42:42 +0000 2024</td>
+      <td>2</td>
+      <td>Resident Evil 5</td>
+      <td>1774583126750101712</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177458312675010...</td>
+      <td>1128086311410253824</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1774518932252000418</td>
+      <td>Sun Mar 31 23:42:21 +0000 2024</td>
+      <td>1</td>
+      <td>@Rickysanchezzz1 @Gigaz0rd @RETINAPrime its ca...</td>
+      <td>1774583038929760719</td>
+      <td>NaN</td>
+      <td>Rickysanchezzz1</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177458303892976...</td>
+      <td>882952455851474946</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1774552706486878605</td>
+      <td>Sun Mar 31 23:42:09 +0000 2024</td>
+      <td>0</td>
+      <td>@Ayme_official favorite character: Gepard from...</td>
+      <td>1774582991466979328</td>
+      <td>NaN</td>
+      <td>Ayme_official</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177458299146697...</td>
+      <td>1055598844526895104</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1774582716467446109</td>
+      <td>Sun Mar 31 23:41:04 +0000 2024</td>
+      <td>1</td>
+      <td>Please be an April Fools Joke I want Resident ...</td>
+      <td>1774582716467446109</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177458271646744...</td>
+      <td>1598446526724034574</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1774573383591825426</td>
+      <td>Sun Mar 31 23:40:14 +0000 2024</td>
+      <td>1</td>
+      <td>@NoahJ456 Resident evil and fallout nice!</td>
+      <td>1774582506152435822</td>
+      <td>NaN</td>
+      <td>NoahJ456</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177458250615243...</td>
+      <td>1658336755370565632</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>696</th>
+      <td>1774429445618606491</td>
+      <td>Sun Mar 31 13:47:48 +0000 2024</td>
+      <td>4</td>
+      <td>@GamewithDave Back in 1996 my best friends bro...</td>
+      <td>1774433415913234523</td>
+      <td>https://pbs.twimg.com/media/GKANybjWQAA_2sV.jpg</td>
+      <td>GamewithDave</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177443341591323...</td>
+      <td>1722620724232572928</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>697</th>
+      <td>1774433158437515671</td>
+      <td>Sun Mar 31 13:46:47 +0000 2024</td>
+      <td>33</td>
+      <td>Leon S Kennedy from Resident Evil 4 #REBHFun h...</td>
+      <td>1774433158437515671</td>
+      <td>https://pbs.twimg.com/media/GKANjToWkAAAm_R.jpg</td>
+      <td>NaN</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>2</td>
+      <td>7</td>
+      <td>https://x.com/undefined/status/177443315843751...</td>
+      <td>1281614577793368067</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>698</th>
+      <td>1774230791205085680</td>
+      <td>Sun Mar 31 13:44:38 +0000 2024</td>
+      <td>0</td>
+      <td>@tango_bongo Cool Resident Evil item</td>
+      <td>1774432619834593622</td>
+      <td>NaN</td>
+      <td>tango_bongo</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177443261983459...</td>
+      <td>1363044897431851010</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>699</th>
+      <td>1774432179835269342</td>
+      <td>Sun Mar 31 13:42:53 +0000 2024</td>
+      <td>0</td>
+      <td>No way the resident evil 2 trophies looks a bi...</td>
+      <td>1774432179835269342</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177443217983526...</td>
+      <td>1410028095063707648</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>700</th>
+      <td>1774431998896963747</td>
+      <td>Sun Mar 31 13:42:10 +0000 2024</td>
+      <td>2</td>
+      <td>a snake of june (2002) picnic (1996) resident ...</td>
+      <td>1774431998896963747</td>
+      <td>https://pbs.twimg.com/media/GKAK0ylXgAA5y8j.png</td>
+      <td>NaN</td>
+      <td>en</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>https://x.com/undefined/status/177443199889696...</td>
+      <td>1384881216118214657</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>701 rows × 15 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-4888a386-afc2-42dd-a7bd-cca46115164f')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-4888a386-afc2-42dd-a7bd-cca46115164f button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-4888a386-afc2-42dd-a7bd-cca46115164f');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-993e8c24-5549-4e8a-bff0-73c6ed2d64de">
+      <button class="colab-df-quickchart" onclick="quickchart('df-993e8c24-5549-4e8a-bff0-73c6ed2d64de')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-993e8c24-5549-4e8a-bff0-73c6ed2d64de button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_71c061fe-489f-4a25-a174-dfa8415e4110">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('df')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_71c061fe-489f-4a25-a174-dfa8415e4110 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('df');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Cek jumlah data yang didapatkan</span>
+
+<span class="n">num_tweets</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Jumlah tweet dalam dataframe adalah </span><span class="si">{</span><span class="n">num_tweets</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah tweet dalam dataframe adalah 701.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pagerank">
+<h1>PageRank<a class="headerlink" href="#pagerank" title="Link to this heading">#</a></h1>
+<p>Import lib &amp; baca data</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># --- baca file ---</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;tweets-data/resident_evil.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># hanya ambil kolom yang kita butuh</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;in_reply_to_screen_name&quot;</span><span class="p">]]</span>
+
+<span class="c1"># pastikan string &amp; ganti NaN jadi string kosong</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;in_reply_to_screen_name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;in_reply_to_screen_name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah baris:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  username in_reply_to_screen_name
+0      nan                        
+1      nan         Rickysanchezzz1
+2      nan           Ayme_official
+3      nan                        
+4      nan                NoahJ456
+Jumlah baris: 701
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bangun graph user-to-user (reply graph)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># graph terarah untuk PageRank</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+
+<span class="c1"># tambah node untuk semua user (supaya &quot;semua data&quot; masuk)</span>
+<span class="n">all_users</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span> <span class="o">|</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;in_reply_to_screen_name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+<span class="n">all_users</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># buang string kosong</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">(</span><span class="n">all_users</span><span class="p">)</span>
+
+<span class="c1"># tambah edge untuk tweet yang merupakan balasan (in_reply_to_screen_name tidak kosong)</span>
+<span class="n">edges</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">src</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">]</span>
+    <span class="n">dst</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;in_reply_to_screen_name&quot;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">dst</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span> <span class="ow">and</span> <span class="n">src</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+        <span class="n">edges</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">))</span>
+
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">(</span><span class="n">edges</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah node (user):&quot;</span><span class="p">,</span> <span class="n">G</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah edge (interaksi):&quot;</span><span class="p">,</span> <span class="n">G</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah node (user): 196
+Jumlah edge (interaksi): 195
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hitung PageRank &amp; lihat top user</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># PageRank di graph terarah</span>
+<span class="n">pagerank_scores</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
+
+<span class="c1"># buat DataFrame biar enak dibaca</span>
+<span class="n">pr_df</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">pagerank_scores</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pagerank&quot;</span><span class="p">])</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="s2">&quot;username&quot;</span><span class="p">})</span>
+    <span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;pagerank&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># tampilkan 20 user dengan PageRank tertinggi</span>
+<span class="n">top_n</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pr_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">top_n</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           username  pagerank
+0      videotechuk_  0.005102
+1           phisnom  0.005102
+2          Gigaz0rd  0.005102
+3        bgrizzleM8  0.005102
+4      devilmanaugh  0.005102
+5   ziggy_princess_  0.005102
+6       retro_anime  0.005102
+7     Ayme_official  0.005102
+8         Raulderp7  0.005102
+9          pudgerro  0.005102
+10   SuperBoJackson  0.005102
+11         NIKKE_en  0.005102
+12   Drodriguezwdsc  0.005102
+13     0UTERHEAVENS  0.005102
+14      MelonSaurus  0.005102
+15       GalaktixGG  0.005102
+16   SonnyBauer8462  0.005102
+17   RealJamesWoods  0.005102
+18  WilliamRAguilar  0.005102
+19     TheNCSmaster  0.005102
+</pre></div>
+</div>
+</div>
+</div>
+<p>Deteksi community (cluster warna)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">networkx.algorithms</span><span class="w"> </span><span class="kn">import</span> <span class="n">community</span>
+
+<span class="c1"># ubah ke undirected untuk deteksi komunitas</span>
+<span class="n">G_undirected</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">to_undirected</span><span class="p">()</span>
+
+<span class="n">communities</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">community</span><span class="o">.</span><span class="n">greedy_modularity_communities</span><span class="p">(</span><span class="n">G_undirected</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah community:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">communities</span><span class="p">))</span>
+
+<span class="c1"># mapping: node -&gt; id komunitas (0,1,2,...)</span>
+<span class="n">node2comm</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">cid</span><span class="p">,</span> <span class="n">comm</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">communities</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">comm</span><span class="p">:</span>
+        <span class="n">node2comm</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="n">cid</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah community: 1
+</pre></div>
+</div>
+</div>
+</div>
+<p>Visualisasi: warna = cluster, ukuran = PageRank</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># posisi node (layout). Bisa coba &#39;spring_layout&#39; atau &#39;kamada_kawai_layout&#39;</span>
+<span class="c1"># kalau grumpel banget, coba ganti jadi nx.kamada_kawai_layout(G)</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># siapkan warna komunitas</span>
+<span class="n">num_comms</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">communities</span><span class="p">)</span>
+<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s2">&quot;tab20&quot;</span><span class="p">,</span> <span class="n">num_comms</span><span class="p">)</span>  <span class="c1"># sampai 20 warna beda</span>
+
+<span class="n">node_colors</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">node_sizes</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
+    <span class="c1"># warna berdasarkan community</span>
+    <span class="n">cid</span> <span class="o">=</span> <span class="n">node2comm</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">node_colors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cmap</span><span class="p">(</span><span class="n">cid</span><span class="p">))</span>
+
+    <span class="c1"># ukuran berdasarkan PageRank (kalau tidak ada, pakai nilai kecil)</span>
+    <span class="n">pr</span> <span class="o">=</span> <span class="n">pagerank_scores</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">)</span>
+    <span class="n">node_sizes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3000</span> <span class="o">*</span> <span class="n">pr</span><span class="p">)</span>  <span class="c1"># scaler bisa kamu ubah</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># draw edges</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">arrows</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># draw nodes</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span>
+    <span class="n">G</span><span class="p">,</span>
+    <span class="n">pos</span><span class="p">,</span>
+    <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span>
+    <span class="n">node_size</span><span class="o">=</span><span class="n">node_sizes</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># opsional: label hanya untuk node dengan PageRank tinggi biar gak berantakan</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="n">u</span><span class="p">:</span> <span class="n">u</span> <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">pagerank_scores</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">s</span> <span class="o">&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span> <span class="mi">95</span><span class="p">)}</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Network User Twitter</span><span class="se">\n</span><span class="s2">warna = komunitas, size = PageRank&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipython-input-22555151.py:7: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap(&quot;tab20&quot;, num_comms)  # sampai 20 warna beda
+</pre></div>
+</div>
+<img alt="_images/d3a25498666c7f94adea5db1eec8281d10eee3149ef902dde390253915ce0389.png" src="_images/d3a25498666c7f94adea5db1eec8281d10eee3149ef902dde390253915ce0389.png" />
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="DataNasafinal.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">DATA NASA Final</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Crawling data RE &lt;&gt;1000</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pagerank">PageRank</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 22-038 Ihya' Ulumuddin
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
