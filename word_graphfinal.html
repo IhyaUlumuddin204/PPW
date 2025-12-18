@@ -1,0 +1,2117 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Pencarian &amp; Penambangan Web</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'word_graphfinal';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Crawling data RE &lt;&gt;1000" href="Crawling_RE.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/ftprofile.jpg" class="logo__image only-light" alt="Pencarian & Penambangan Web - Home"/>
+    <script>document.write(`<img src="_static/ftprofile.jpg" class="logo__image only-dark" alt="Pencarian & Penambangan Web - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Profile
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pengantarwebmining.html">Pengantar Web Mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="webcrawling.html">Web Crawling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IhyaUlumuddin_CrawlingPPW.html">Tugas Crawling PTA dan Berita</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="Tugastoken_ihya.html">Tugas Tokenisasi abstrak</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tf_idf.html">TF-IDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klassifikasi_berita.html">Klasifikasi Dengan LDA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klassifikasi_berita_svm_dan_Naivbayes.html">Klasifikasi Dengan SVM , Naifbayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kluastering_email.html">klastering email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pagerank%20%281%29.html">Page Rank</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ChallengeA.html">ChallengeA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DataNasa.html">DATA NASA</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="DataNasafinal.html">DATA NASA Final</a></li>
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="PagerankFB.html">Pagerank Facebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Crawling_RE.html">Crawling data RE &lt;&gt;1000</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/word_graphfinal.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pymupdf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pymupdf in /usr/local/python/3.12.1/lib/python3.12/site-packages (1.26.7)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">25.1.1</span> -&gt; <span class=" -Color -Color-Green">25.3</span>
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">python3 -m pip install --upgrade pip</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Note: you may need to restart the kernel to use updated packages.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pymupdf</span>
+
+<span class="n">doc</span> <span class="o">=</span> <span class="n">pymupdf</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;jurnal.pdf&quot;</span><span class="p">)</span> <span class="c1"># open a document</span>
+<span class="n">out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="c1"># create a text output</span>
+<span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">:</span> <span class="c1"># iterate the document pages</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf8&quot;</span><span class="p">)</span> <span class="c1"># get plain text (is in UTF-8)</span>
+    <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="c1"># write text of page</span>
+    <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">((</span><span class="mi">12</span><span class="p">,)))</span> <span class="c1"># write page delimiter (form feed 0x0C)</span>
+<span class="n">out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">nltk</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>  <span class="c1"># hanya perlu sekali</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt_tab&#39;</span><span class="p">)</span>  <span class="c1"># opsional, untuk versi terbaru NLTK (≥3.8.2)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /home/codespace/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package punkt_tab to
+[nltk_data]     /home/codespace/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;output.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">teks</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">teks</span><span class="p">[:</span><span class="mi">200</span><span class="p">])</span>  <span class="c1"># tampilkan 200 karakter pertama</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>JURNAL EKSPLORA INFORMATIKA 
+◼ 32 
+ 
+p-ISSN: 2089-1814; e-ISSN: 2460-3694; DOI: 10.30864/eksplora.v10i1.390 
+Analisis Sentimen pada Ulasan Pembelian Produk di 
+Marketplace Shopee Menggunakan Pendekata
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install: pip install nltk</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+
+
+<span class="n">sentences</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">teks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;JURNAL EKSPLORA INFORMATIKA \n◼ 32 \n \np-ISSN: 2089-1814; e-ISSN: 2460-3694; DOI: 10.30864/eksplora.v10i1.390 \nAnalisis Sentimen pada Ulasan Pembelian Produk di \nMarketplace Shopee Menggunakan Pendekatan Natural \nLanguage Processing \n \n \nElik Hari Muktafin1, Kusrini2, Emha Taufiq Luthfi3 \nMagister Teknik Informatika \nUniversitas Amikom Yogyakarta \nYogyakarta, Indonesia \ne-mail: 1elik.muktafin@students.amikom.ac.id, 2kusrini@amikom.ac.id, 3emhataufiqluthfi@amikom.ac.id \n \nDiajukan: 1 Juli 2020; Direvisi: 7 Agustus 2020; Diterima: 15 Agustus 2020 \n \nAbstrak \nUlasan produk di marketplace merupakan informasi yang berharga apabila diolah dengan baik.&#39;, &#39;Penjual dapat melakukan analisis ulasan produk untuk mendapat informasi yang dapat digunakan dalam \nevaluasi produk dan layanan.&#39;, &#39;Kegiatan analisis ulasan produk tidak cukup dengan melihat jumlah bintang, \ndiperlukan melihat seluruh isi komentar ulasan untuk dapat mengetahui maksud dari ulasan.&#39;, &#39;Apabila \ndalam jumlah sedikit dapat dilakukan secara manual, namun dalam jumlah banyak lebih efektif \nmenggunakan sistem.&#39;, &#39;Dibutuhkan sistem yang mampu menganalisis banyak ulasan dengan efektif agar \nmemudahkan dalam memahami maksud ulasan.&#39;, &#39;Penelitian ini menggunakan algoritma KNN dan TF-IDF \ndengan pendekatan NLP untuk mengklasifikasikan ulasan produk “hijab instan” ke dalam 2 kelas (positif \ndan negatif).&#39;, &#39;Klasifikasi menggunakan pendekatan NLP mendapat akurasi sebesar 76,92%, presisi 80,00% \ndan recall 74,07%, sedangkan tanpa NLP hanya mendapat akurasi sebesar 69,23%, presisi 80,00% dan \nrecall 64,52%.&#39;, &#39;Kata yang sering muncul pada ulasan dapat menggambarkan penilaian pembeli secara \numum pada produk.&#39;, &#39;Pada ulasan positif menunjukkan pembeli puas terhadap kualitas, kecepatan \npengiriman dan harga barang, sedangkan pada ulasan negatif pembeli kecewa pada warna, dan jumlah \nbarang yang dikirim tidak sama dengan yang dipesan.&#39;, &#39;Kata kunci: Analisis sentimen, Ulasan produk, Marketplace, KNN, NLP.&#39;, &#39;Abstract \n Product reviews in the marketplace are valuable information if processed properly.&#39;, &#39;Sellers can \nanalyze product reviews to get information that can be used in evaluating products and services.&#39;, &#39;The \nactivity of analyzing product reviews is not enough to look at the number of stars, it is necessary to see the \nentire contents of the review comments to be able to find out the meaning of the review.&#39;, &#39;If a small amount \nis done manually, but in large numbers it is more effective to use the system.&#39;, &#39;A system that is able to analyze \nreviews effectively is needed to make it easier to understand the intent of reviews.&#39;, &#39;This study uses the KNN \nand TF-IDF algorithm with the NLP approach to classify &quot;instant hijab&quot; product reviews into 2 classes \n(positive and negative).&#39;, &#39;Classification using the NLP approach gets 76.92% accuracy, 80,00% precision \nand 74,07% recall, while without NLP it only gets 69.23% accuracy, 80,00% precision and 64,52% recall.&#39;, &quot;Words that often appear on reviews can describe the general buyer&#39;s judgment on the product.&quot;, &#39;The positive \nreviews show the buyer is satisfied with the quality, speed of delivery and the price of the goods, while the \nnegative reviews the buyer is disappointed in the color, and the number of items sent is not the same as \nordered.&#39;, &#39;Keywords: Sentiment analysis, Product reviews, Marketplace, KNN, NLP.&#39;, &#39;1.&#39;, &#39;Pendahuluan \nMarketplace merupakan perkembangan dari e-commerce sebagai media daring berbasis internet \nuntuk tempat melakukan kegiatan bisnis dan transaksi antara pembeli dan penjual [1].&#39;, &#39;Pada marketplace \npembeli dapat mencari barang yang ingin di beli dari banyak penjual atau toko.&#39;, &#39;Berdasarkan data Peta \nE‑Commerce Indonesia yang dikeluarkan oleh iPrice, Shopee adalah marketplace dengan jumlah \npengunjung terbanyak di Indonesia pada kuartal pertama tahun 2020 dengan jumlah pengunjung per bulan \nbrought to you by \nCORE\nView metadata, citation and similar papers at core.ac.uk\nprovided by Jurnal Eksplora Informatika\n\x0c◼ 33 \n \nAnalisis Sentimen pada Ulasan Pembelian Produk di Marketplace Shopee Menggunakan Pendekatan \nNatural Language Processing (Elik Hari Muktafin) \nmencapai 71 juta pengunjung [2].&#39;, &#39;Kondisi ini dimanfaatkan oleh produsen, Industri Kecil Menengah \n(IKM), Usaha Mikro Kecil Menegah (UMKM), pemasok, maupun distributor untuk menjangkau calon \npembeli yang membutuhkan produknya.&#39;, &#39;Salah satu produk yang banyak dijual di Shopee adalah produk \nbusana muslim.&#39;, &#39;Kualitas produk busana muslim selain dapat dilihat dari foto dan deskripsi produk yang \ntertera, dapat pula dilihat dari ulasan produk dari pembeli sebelumnya.&#39;, &#39;Ulasan produk merupakan salah \nsatu sumber informasi tentang kualitas produk dan sangat berpengaruh pada konsumen [3].&#39;, &#39;Dalam kegiatan pembelian barang di marketplace, pembeli dapat memberikan ulasan setelah menerima \nbarang yang dibeli.&#39;, &#39;Ulasan pembelian produk terdiri dari bintang dan isi komentar ulasan yang berisi tanggapan, \napresiasi maupun kritik dan masukan pada produk yang telah dibeli tersebut [4].&#39;, &#39;Semakin banyak jumlah \nbintang yang dimiliki, maka semakin baik pula reputasi yang dimiliki produk tersebut [5].&#39;, &#39;Ulasan pembelian \nproduk memiliki pengaruh yang signifikan terhadap minat beli dari pembeli lain [6].&#39;, &#39;Ulasan pembelian produk \ndapat digunakan oleh penjual untuk mendapat informasi untuk bahan perbaikan pada produk dan layanan \nsehingga tercipta kepuasan pelanggan.&#39;, &#39;Kepuasan pelanggan merupakan hal penting yang menjadi tujuan \nperusahaan [7].&#39;, &#39;Analisis ulasan secara mudah dapat dilakukan dengan melihat jumlah bintang yang diberikan oleh \npembeli, tetapi jumlah bintang tidak dapat mewakili isi dari keseluruhan ulasan.&#39;, &#39;Diperlukan melihat seluruh \nisi komentar ulasan untuk dapat mengetahui keseluruhan maksud ulasan.&#39;, &#39;Sangat dimungkinkan untuk \nmenganalisis ulasan secara manual dengan melihat satu persatu, namun apabila ulasan yang dimiliki banyak \nakan lebih cepat menggunakan sistem analisis sentimen [8].&#39;, &#39;Pada penelitian ini peneliti melakukan analisis sentimen pada ulasan produk di marketplace \nShopee.&#39;, &#39;Bagian ulasan produk terdiri dari isi komentar dengan format teks bebas dan peringkat jumlah \nbintang dari 1 sampai 5 [9].&#39;, &#39;Isi komentar ulasan digunakan untuk mengetahui informasi yang menjadi fokus \npembeli dalam memberikan ulasan.&#39;, &#39;Isi komentar ulasan dapat berisi lebih dari satu penilaian atribut produk, \nsedangkan setiap ulasan hanya memiliki satu penilaian jumlah bintang, sehingga jumlah bintang tidak dapat \nmewakili setiap fitur produk yang dinilai oleh pembeli [9].&#39;, &#39;Informasi yang disampaikan pembeli dapat \nmerujuk pada fitur produk seperti harga, kualitas, bahan, warna, bentuk, ukuran, rasa, jumlah, maupun pada \npelayanan yang diberikan seperti pengemasan, lama pengiriman, dan tanggapan penjual.&#39;, &#39;Beberapa penelitian sebelumnya mengatakan bahwa ulasan produk memiliki pengaruh positif \npada niat pembelian, sering kali calon pembeli mempertimbangkan faktor ulasan untuk meyakinkan \nkualitas produk yang akan dibeli [10].&#39;, &#39;Penelitian tentang sentimen analisis pada ulasan produk sudah pernah \ndilakukan oleh peneliti sebelumnya.&#39;, &#39;Penelitian oleh Lutfi dan Permatasari [11] menganalisis ulasan produk \ndi marketplace Bukalapak untuk mengetahui sentimen ulasan pengguna bernilai positif atau negatif dengan \npendekatan memanfaatkan Support Vector Machine dengan akurasi 93,42%.&#39;, &#39;Pada penelitian yang \ndilakukan Muljono dan Dian [12], mempresentasikan analisis sentimen terhadap data opini di Twitter pada \npelayanan situs marketplace di Indonesia menggunakan algoritma Naive Bayes dengan hasil akurasi sebesar \n93.33%.&#39;, &#39;Pada penelitian lain oleh Norman Kendal [13] menunjukkan penggunaan Natural Language \nProcessing (NLP) dapat diterapkan secara efektif ke pasar produk busana secara daring untuk memprediksi \nkategori atau sub kategori produk dari judul produk.&#39;, &#39;Tujuan dari penelitian ini adalah menganalisis sentimen ulasan pembelian produk pada produk \n“hijab instan” di Shopee menggunakan algoritma KNN dengan pembobotan TF-IDF dan diklasifikasi ke \ndalam 2 kelas (positif dan negatif).&#39;, &#39;Kemudian dibandingkan tingkat keberhasilan klasifikasi antara data \nyang melalui pra-pemrosesan dengan dan tanpa pendekatan NLP.&#39;, &#39;Tujuan lain dari penelitian ini adalah \nuntuk mengetahui fitur apa yang menjadi fokus ulasan positif dan negatif pada produk hijab instan, sehingga \npenjual dapat melakukan perbaikan dan peningkatan kualitas produk dan layanan secara tepat.&#39;, &#39;Permasalahan dalam menganalisis ulasan pembelian produk di marketplace adalah banyaknya penggunaan \nsingkatan dan bahasa yang tidak baku sehingga sulit dimengerti oleh sistem.&#39;, &#39;Oleh karena itu, pendekatan \nNatural Language Processing (NLP) diperlukan untuk memperbaiki bahasa pada isi komentar ulasan \nsehingga mencapai kinerja maksimal dalam analisis sentimen [14].&#39;, &#39;Tanpa NLP, Machine Learning tidak \ndapat membuat kemajuan yang berarti [15].&#39;, &#39;2.&#39;, &#39;Metode Penelitian \nAlur penelitian dalam analisis sentimen ulasan pembelian produk di Shopee menggunakan \npendekatan Natural Language Processing (NLP) terdiri dari beberapa tahapan seperti yang ditunjukkan \npada Gambar 1.&#39;, &#39;Tahapan awal penelitian ini dimulai dengan penentuan produk yang akan dianalisis, lalu \ndilanjutkan dengan pengumpulan data ulasan produk.&#39;, &#39;Dilakukan pra-pemrosesan pada ulasan yang sudah \nterkumpul dengan dan tanpa pendekatan NLP sehingga menghasilkan 2 dataset, dengan pendekatan NLP \ndan dataset tanpa pendekatan NLP.&#39;, &#39;Setiap dataset dibagi menjadi data latih dan data uji, kemudian \n\x0c◼ 34 \n \nJurnal Eksplora Informatika Vol.&#39;, &#39;10, No.&#39;, &#39;1, September 2020. \n \nditerapkan perhitungan pembobotan TF-IDF pada kedua dataset untuk dibandingkan hasil keduanya dan \ndilakukan analisis hasil.&#39;, &#39;Gambar 1.&#39;, &#39;Alur penelitian \n \nPada tahapan penentuan produk, produk yang digunakan dalam penelitian ini adalah 120 produk \nterlaris di Shopee berdasarkan hasil pencarian produk dengan kata kunci “hijab instan”.&#39;, &#39;Produk dipilih \nberdasarkan urutan jumlah penjualan produk tanpa melihat asal toko dan asal wilayah.&#39;, &#39;Alasan pemilihan \nkata kunci “hijab instan” yaitu: 1) Memiliki jumlah pencarian lebih tinggi dibanding tipe hijab lainnya \nmenurut Google Trends per April 2020 [16]; 2) Memiliki penjualan yang tinggi di Shopee dengan penjualan \ntertinggi mencapai 48 ribu produk per bulan dari satu produk [17]; 3) Tipe hijab instan memiliki fitur yang \nkompleks mulai dari model, bahan, warna, ukuran, potongan, dan jahitan.&#39;, &#39;Tahapan pengumpulan data ulasan dilakukan dengan menggunakan aplikasi Scraper yang dibuat \nsecara mandiri menggunakan bahasa Python.&#39;, &#39;Setiap produk diambil 6 ulasan dari halaman pertama pada \nulasan bintang 1 sampai ulasan bintang 5, sehingga menghasilkan total 3.341 ulasan.&#39;, &#39;Gambar 2.&#39;, &#39;Proses pengambilan komentar menggunakan aplikasi Scraper.&#39;, &#39;Alur kerja sistem aplikasi Scraper ditunjukkan pada Gambar 2.&#39;, &#39;Proses dimulai dengan mengakses \nURL produk dan membuka halaman ulasan dengan jumlah bintang 1, kemudian mengunduh satu persatu \nulasan produk yang muncul dan disimpan ke basis data.&#39;, &#39;Apabila semua ulasan dengan jumlah bintang 1 \ntelah diunduh, aplikasi Scraper akan membuka halaman ulasan dengan jumlah bintang 2 dan seterusnya \nhingga mencapai halaman ulasan dengan jumlah bintang 5.&#39;, &#39;◼ 35 \n \nAnalisis Sentimen pada Ulasan Pembelian Produk di Marketplace Shopee Menggunakan Pendekatan \nNatural Language Processing (Elik Hari Muktafin) \nUlasan pembelian produk disimpan dalam basis data MySQL agar mudah dikelola [18].&#39;, &#39;Dari 3.341 \nulasan yang didapat, dipilih ulasan dengan kriteria berikut: \n1.&#39;, &#39;Setiap produk diambil maksimal 1 ulasan pada setiap jumlah bintang yang memenuhi kriteria \ndan diurutkan berdasarkan ulasan terbaru.&#39;, &#39;2.&#39;, &#39;Ulasan dengan panjang kurang dari 100 karakter tidak digunakan.&#39;, &#39;3.&#39;, &#39;Ulasan yang digunakan hanyalah ulasan yang memiliki tag.&#39;, &#39;4.&#39;, &#39;Ulasan yang hanya berisi emoticons atau simbol tidak digunakan.&#39;, &#39;5.&#39;, &#39;Ulasan yang hanya berisi satu kata yang sama tidak digunakan, contohnya “mantul mantul \nmantul mantul mantul mantul mantul mantul mantul”.&#39;, &#39;6.&#39;, &#39;Ulasan yang tidak terdapat dalam kosa kata bahasa Indonesia tidak digunakan, contohnya \n“urkbroekheueofnfbsheowmshsodbaegaefeafafafafafaadadada” \nSeleksi ulasan menghasilkan 260 ulasan yang layak sebagai dataset.&#39;, &#39;Dataset dilabeli secara \nmanual oleh 5 koresponden, terdiri dari 3 koresponden dari pembeli atau pengguna Shopee yang memiliki \npengalaman dalam membeli produk di Shopee dan 2 koresponden adalah penjual di Shopee.&#39;, &#39;Dataset diberi \nlabel dalam 2 kelas, ulasan positif dan negatif untuk setiap produk.&#39;, &#39;Dataset kemudian melalui proses pra-pemrosesan untuk membersihkan dan menyiapkan data \nsehingga siap dianalisis [19].&#39;, &#39;Pra-pemrosesan dilakukan dalam 2 keadaan, yang pertama pra-pemrosesan \ntanpa pendekatan NLP yang terdiri dari tahapan menghilangkan emoticons dan simbol, lowercase folding, \ndan penanganan tag.&#39;, &#39;Yang kedua pra-pemrosesan dengan pendekatan Natural Language Processing (NLP) \ndengan tujuan untuk memperbaiki bahasa yang ada pada ulasan, karena pada ulasan ditemukan banyak \npenggunaan kata yang tidak baku dan singkatan.&#39;, &#39;Natural Language Processing (NLP) merupakan salah \nsatu cabang ilmu Kecerdasan Buatan yang berfokus pada pengolahan bahasa natural yang dapat digunakan \nuntuk mengatasi hambatan pengenalan bahasa percakapan sehari hari oleh sistem komputer.&#39;, &#39;Gambar 3.&#39;, &#39;Tahap pra-pemrosesan menggunakan pendekatan NLP.&#39;, &#39;Alur kerja tahapan pra-pemrosesan dengan pendekatan NLP ditunjukkan pada Gambar 3, dengan \npenjelasan setiap tahapannya sebagai berikut: \na. Menghilangkan emoticons dan simbol \n \nPada penelitian ini emoticons dan simbol yang ada pada ulasan dibuang karena penelitian ini hanya \nberfokus pada teks yang terkandung dalam ulasan.&#39;, &#39;Simbol yang dibuang adalah “ ~”, “ `”, “ !”, “ $”, \n“ %”,” ^”, “ &amp;”, “ *”, “ (“, “ )”,” _”,” –“, “ +”, “ =”, “ :”, “ “”, “ ‘”,” &lt;”, “ &gt;”, “koma”, ” \ntitik”, “ ?”, “ /”, “ \\”, “ #”, dan “ |”.&#39;, &#39;Ulasan yang mengandung simbol seperti “memuaskan banget \nkak : )” setelah diproses maka menjadi “memuaskan banget kak”.&#39;, &#39;b. Lowercase folding \n \nLowercase folding adalah mengubah semua huruf menjadi huruf kecil agar terhitung sebagai kata yang \nsama [20].&#39;, &#39;Komentar ” Bagus banget sesuai pesanan” menjadi “bagus banget sesuai pesanan”, huruf \n“B” kapital diubah menjadi ”b” huruf kecil.&#39;, &#39;c. Penanganan tag \n \nTag ulasan adalah potongan informasi yang telah disediakan Shopee dan dapat disertakan pada ulasan \npembelian produk.&#39;, &#39;Tidak semua ulasan mengandung tag, sehingga perlu dilakukan penanganan khusus \npada ulasan yang mempunyai tag.&#39;, &#39;Tag pada ulasan ditambahkan menjadi bagian dari isi komentar \nulasan.&#39;, &#39;Contoh tag yang disediakan Shopee seperti “Kecepatan pengiriman sangat baik”, “Respon \npenjual sangat baik&quot;.&#39;, &#39;d. Word Normalizer \n \nWord Normalizer digunakan untuk memperbaiki kata-kata dalam ulasan sehingga menghasilkan \nkalimat yang baik dan benar sesuai dengan aturan tata bahasa Indonesia.&#39;, &#39;Peningkatan ini diperlukan \nuntuk memudahkan pembaca memahami makna kalimat [1].&#39;, &#39;Komentar “barangnya bagus bgt” maka \nsetelah proses Word Normalizer menjadi “barangnya bagus banget”.&#39;, &#39;Kata “bgt” diubah menjadi \n“banget” sehingga lebih mudah dipahami.&#39;, &#39;◼ 36 \n \nJurnal Eksplora Informatika Vol.&#39;, &#39;10, No.&#39;, &#39;1, September 2020. \n \ne. Stemming \n \nStemming berfungsi untuk membuat suatu kata menjadi kata dasar, dengan menghilangkan semua \nimbuhan yang ada pada kata tersebut [21].&#39;, &#39;Sebagai contoh kalimat “bahannya halus dan tidak membuat \nkegerahan” kemudian diubah menjadi “bahan halus dan tidak buat gerah” \nf. Stopword Removal \n \nStopword removal berfungsi untuk menghilangkan kata-kata yang mempunyai jumlah kemunculan \nbanyak tapi tidak terlalu penting [22].&#39;, &#39;Kata yang masuk stopword seperti “yang”, “dan”, “di”, “dari” \nsehingga menyisakan kata-kata yang penting.&#39;, &#39;Sebagai contoh kalimat “barang yang warna hijau dan \nbiru bagus” kemudian diubah menjadi “barang warna hijau biru bagus”.&#39;, &#39;g. Tokenizer \n \nTokenizer berfungsi untuk membagi teks input menjadi array token, karakter yang digunakan dalam \nbahasa Indonesia adalah alfabet dan setiap token dipisahkan oleh spasi.&#39;, &#39;Sebagai contoh kalimat \n“barangnya bagus banget” kemudian diubah menjadi “barangnya”, “bagus”, “banget”.&#39;, &#39;Dataset yang telah melalui tahapan pra-pemrosesan dengan dan tanpa pendekatan NLP, dibagi \nmenjadi 2 bagian dengan komposisi 208 data latih dan 52 data uji.&#39;, &#39;Kemudian diterapkan pembobotan \ndengan algoritma Term Frequency Inverse Document Frequency (TF-IDF).&#39;, &#39;TF-IDF digunakan untuk \nmemberikan pembobotan hubungan suatu kata atau istilah terhadap keseluruhan ulasan.&#39;, &#39;Frekuensi \nkemunculan kata di dalam ulasan menunjukkan seberapa penting kata itu di dalam ulasan tersebut, dan \nulasan mana yang memiliki kata tersebut sehingga ulasan dapat diklasifikasikan ke dalam 2 kelas (ulasan \npositif dan ulasan negatif) [23].&#39;, &#39;Perhitungan TF-IDF menggunakan Persamaan 1.&#39;, &#39;𝑊𝑥,𝑦= 𝑡𝑓𝑥,𝑦 × log (\n𝑁\n𝑑𝑓𝑥) \n(1) \n \nDi mana 𝑊𝑥,𝑦 adalah bobot istilah (ty) terhadap dokumen (dx).&#39;, &#39;Sedangkan 𝑡𝑓𝑥,𝑦 adalah jumlah \nkemunculan istilah (ty) dalam dokumen (dx).&#39;, &#39;N adalah jumlah semua dokumen yang ada dalam dataset dan \ndfx adalah jumlah dokumen yang mengandung istilah (ty), minimal ada satu kata yaitu istilah (ty).&#39;, &#39;3.&#39;, &#39;Hasil dan Pembahasan \n3.1.&#39;, &#39;Daftar Ulasan Produk Shopee \nUlasan yang digunakan didapatkan dari kegiatan pencarian ulasan produk pada bulan April 2020 \ndi Shopee.&#39;, &#39;Ulasan diambil dari produk terlaris dengan pencarian menggunakan kata kunci “hijab instan”.&#39;, &#39;Contoh ulasan yang digunakan ditunjukkan pada Tabel 1.&#39;, &#39;Tabel 1.&#39;, &#39;Contoh ulasan produk.&#39;, &#39;No \nAkun \nIsi Ulasan \nTag Ulasan \nBintang \nLabel \n1 \nw*****c \nAlhamdulillah owner nya baik, yaa walaupun aku chatt \nagak lama balasnya saya juga maklumin karena yang beli \njuga bukan aku aja toh.\\nAku order 100 piece yang \ndatang cuma 97 dan Alhamdulillah nya begitu \nmengajukan pengembalian dana langsung diBALIKIN \nKualitas produk sangat \nbaik.&#39;, &#39;5/5 \nPositif \n2 \nnasrul8623 \nUkuran nya kok tidak sama ya.&#39;, &#39;Ada yang kecil ada yang \npas.&#39;, &#39;Hmm gpp deh tak kasih bintang 4 aja ya soallnya \nmasih belum konsisten dengan produknya.&#39;, &#39;Kualitas produk baik.&#39;, &#39;4/5 \nNegatif \n3 \nd*****e \nTipis banget ternyata huhuuu sedih tapi ya lumayan aja \nlah buat dirumah sehari2 mah harus pake ciput yg nutup \nklo gak nerawang gitu mungkin karna harganya \njuga..\\nTapi emg pengirimannya termasuk cepet sih \nini..\\nya plus minus gitu gaes..\\nHappy shopping gaes.. \nKualitas \nproduk \nstandar.&#39;, &#39;Harga produk \nstandar.&#39;, &#39;3/5 \nNegatif \n4 \nn*****r \nuntuk warna mocca, hitam, maroon udh bener dkirim \nbergo meskipun jahitannya ga rapi samsek.&#39;, &#39;tapi yg navy \nkenapa yg dikirim bkn bergo malah kerudung segitiga \nsih.&#39;, &#39;ini beli barengan sm temen2.&#39;, &#39;pada nyalahin yg beli \nnavy karna yg dtg bukan bergo \nKualitas produk kurang \nbaik.&#39;, &#39;2/5 \nNegatif \n5 \naiiunii05 \nBelanja ke dua dan alhamdulillah puas lagi, pertahankan \nkualitas nya ya semoga berkah toko nya dan laku, aamiin \nsuka banget sama kerudung nya dan bahan nya nyaman, \nsecara nyari di pasaran udah banyak yg jual tapi bahan \nnya jersey kebanyakan dan kurang suka jersey, kalo ini \ndiamon jadi enak pake nya \nKualitas produk sangat \nbaik.&#39;, &#39;Produk original.&#39;, &#39;Harga produk sangat \nbaik.&#39;, &#39;Kecepatan \npengiriman sangat baik.&#39;, &#39;5/5 \nPositif \n \n\x0c◼ 37 \n \nAnalisis Sentimen pada Ulasan Pembelian Produk di Marketplace Shopee Menggunakan Pendekatan \nNatural Language Processing (Elik Hari Muktafin) \nPada Tabel 1, akun w*****c menuliskan ulasan tentang layanan perpesanan dan jumlah barang \nyang dikirim tidak sesuai, tetapi memberikan tag ulasan kualitas produk sangat baik dengan jumlah bintang \n5/5 dan diberikan label positif.&#39;, &#39;Akun nasrul8623 menuliskan ulasan tentang ukuran yang tidak sesuai dan \nmemberi tag kualitas produk baik dengan jumlah bintang 4/5 dan diberikan label negatif.&#39;, &#39;Bisa disimpulkan \nbahwa jumlah bintang pada ulasan tidak selalu mewakili isi ulasan.&#39;, &#39;Ulasan dengan jumlah bintang 5/5 tidak \nmenjamin pembeli puas pada semua fitur barang dan pelayanan yang didapat.&#39;, &#39;Fitur tag pada ulasan \nmembantu pembeli untuk lebih spesifik menyebut fitur apa saja yang diulas.&#39;, &#39;Informasi dari ulasan ini dapat \ndiolah untuk menjadi perbaikan oleh penjual ke depan.&#39;, &#39;3.2.&#39;, &#39;Analisis Ulasan \nUlasan yang digunakan sebanyak 260 ulasan, yang telah diberi label oleh 5 koresponden dan \nmenghasilkan 129 ulasan positif dan 131 ulasan negatif.&#39;, &#39;Ulasan dijadikan dataset dengan komposisi 208 \ndata latih dan 52 data uji, kemudian dilakukan pra-pemrosesan  dengan pendekatan NLP.&#39;, &#39;Pada tahap pra-\npemrosesan diterapkan fitur word normalizer, stemming, dan stopword removal untuk setiap ulasan.&#39;, &#39;Word normalizer untuk menangani variasi penulisan kata yang memiliki makna yang sama agar \nterhitung sebagai istilah tunggal [24].&#39;, &#39;Contoh variasi penulisan kata yang memiliki makna sama \nditunjukkan pada Tabel 2.&#39;, &#39;Tabel 2.&#39;, &#39;Variasi penulisan kata pada ulasan yang memiliki makna sama.&#39;, &#39;No \nIstilah pada ulasan \nWord normalizer \nJumlah ulasan \n1 \ntidak \ntidak \n40 \n2 \ntdk \ntidak \n11 \n3 \ngak \ntidak \n33 \n4 \ng \ntidak \n7 \n5 \ntdak \ntidak \n1 \n6 \nga \ntidak \n40 \n7 \ngk \ntidak \n10 \n8 \nbanget \nbanget \n28 \n9 \nbgt \nbanget \n12 \n10 \nbget \nbanget \n1 \n \nPada Tabel 2 menunjukkan variasi kata yang memiliki makna sama.&#39;, &#39;Kata “ga” ditemukan pada \n40 ulasan dan kata “gak” ditemukan pada 33 ulasan, digunakan oleh pembeli untuk menggantikan kata \n“tidak”.&#39;, &#39;Kata “bgt” ditemukan pada 12 ulasan dan kata “bget” ditemukan pada 1 ulasan yang digunakan \noleh pembeli untuk menggantikan kata “banget”.&#39;, &#39;Penggunaan word normalizer dapat menangani \nbanyaknya variasi kata yang digunakan pada penulisan ulasan oleh pembeli untuk diubah menjadi istilah \nyang sama.&#39;, &#39;Selanjutnya dilakukan proses stemming pada dataset, untuk menghilangkan awalan, sisipan dan \nakhiran kata sehingga menjadi bentuk dasarnya, dengan tujuan pengambilan informasi menjadi efisien dan \nefektif [25].&#39;, &#39;Contoh penerapan stemming ditunjukkan pada Tabel 3.&#39;, &#39;Tabel 3.&#39;, &#39;Hasil penerapan stemming.&#39;, &#39;No \nIstilah pada ulasan \nStemming \nJumlah ulasan \n1 \ndikirim \nkirim \n24 \n2 \ndikirimkan \nkirim \n1 \n3 \nlangganan \nlanggan \n26 \n4 \nberlangganan \nlanggan \n1 \n5 \njahitannya \njahit \n10 \n6 \ndijahit \njahit \n2 \n7 \npenjahit \njahit \n1 \n8 \npesanan \npesan \n23 \n9 \nmemesan \npesan \n1 \n10 \ndipesan \npesan \n1 \n \nPada Tabel 3 dapat dilihat kata-kata pada ulasan seperti “dikirim” dan “dikirimkan” apabila \ndihilangkan awalan, sisipan dan akhiran akan menjadi kata dasar “kirim”.&#39;, &#39;Begitu juga dengan kata \n“jahitannya”, “dijahit”, dan “penjahit” setalah melalui proses stemming menjadi kata dasar “jahit”.&#39;, &#39;Stemming membuat kata-kata pada ulasan menjadi bentuk dasarnya dan menjadi istilah yang sama.&#39;, &#39;Selanjutnya dilakukan proses stopword removal untuk menghilangkan stopword dari ulasan.&#39;, &#39;Daftar stopword yang digunakan dibuat sendiri mengacu pada konteks kata yang sering dipakai dalam \n\x0c◼ 38 \n \nJurnal Eksplora Informatika Vol.&#39;, &#39;10, No.&#39;, &#39;1, September 2020. \n \nulasan maupun dalam jual beli secara daring.&#39;, &#39;Contoh daftar stopword yang dipakai ditunjukkan pada Tabel \n4.&#39;, &#39;Tabel 4.&#39;, &#39;Contoh daftar stopword.&#39;, &#39;No \nStopword \nJumlah kemunculan \n1 \nyang \n214 \n2 \ndi \n104 \n3 \ntapi \n92 \n4 \ndan \n73 \n5 \nya \n62 \n6 \njuga \n61 \n7 \njadi \n34 \n8 \nuntuk \n32 \n9 \ndengan \n31 \n10 \nke \n22 \n \nDapat dilihat pada Tabel 4, kata “yang” merupakan salah satu daftar stopword yang paling banyak \nmuncul, yaitu sebanyak 214 kali, dan kata “di” yang muncul sebanyak 104 kali.&#39;, &#39;Selain dalam bentuk kata \nangka juga masuk ke dalam stopword, angka tidak berpengaruh pada analisis sentimen dan dapat dihapus, \nsehingga dapat mengurangi kebisingan dan meningkatkan efisiensi [26].&#39;, &#39;Hasil keseluruhan proses pra-\npemrosesan dapat dilihat pada Tabel 5.&#39;, &#39;Tabel 5.&#39;, &#39;Hasil pra-pemrosesan.&#39;, &#39;No \nUlasan Produk \nPra-pemrosesan \nLabel \nAktual \nWord Normalizer \nStemming \nStopword Removal \n1 \nMksh \nadmin, \njilbabny \nsudah \ndatang, \nbagus \nwalaupun agak tipis dan \nsedikit menerawang, tapi \nkalau dipake smg gak \nnerawang.&#39;, &#39;terimakasih \nadmin \njilbabnya \nsudah \ndatang \nbagus walaupun agak tipis \ndan sedikit menerawang \ntapi kalau dipakai semoga \ntidak menerawang \nterimakasih admin jilbab \nsudah \ndatang \nbagus \nwalaupun agak tipis dan \nsedikit \nterawang \ntapi \nkalau pakai moga tidak \nterawang \nterimakasih admin \njilbab \ndatang \nbagus \ntipis \nterawang dipakai \nterawang \nPositif \n2 \nKualitas \nproduk \nsangat \nbagus, \nproduk \noriginal, \nkecepatan produk sangat \nbaik, semoga kedepannya \nmakin baik dan amanah ya \nsemoga berkah amiiinnnn \nkualitas \nproduk \nsangat \nbagus \nproduk \noriginal \nkecepatan produk sangat \nbaik semoga kedepannya \nmakin baik dan amanah ya \nsemoga berkah amin \nkualitas produk sangat \nbagus produk original \ncepat produk sangat baik \nmoga depan makin baik \ndan amanah ya moga \nberkah amin \nkualitas \nproduk \nbagus \nproduk \noriginal \ncepat \nproduk baik baik \namanah berkah \nPositif \n3 \nBagus nih, bregonya depan \nbelakang panjang.&#39;, &#39;Paling \nsebel, \nbrego \nbiasanya \npendek diblakang, yg ini \nsuka bgt.&#39;, &#39;Talinya tebal.&#39;, &#39;Jahitannya bagus cuma msh \nharus \npotongin \nsisa2 \nbenang aja.&#39;, &#39;bagus ini bregonya depan \nbelakang panjang paling \nsebel \nbrego \nbiasanya \npendek di belakang yang ini \nsuka banget talinya tebal \njahitannya \nbagus \ncuma \nmasih harus memotong sisa \nbenang saja \nbagus ini brego depan \nbelakang panjang paling \nsebel brego biasa pendek \ndi belakang yang ini suka \nbanget tali tebal jahit \nbagus cuma masih harus \npotong sisa benang saja \nbagus brego sebel \nbrego \nsuka \ntali \ntebal jahit bagus \npotong sisa benang \nPositif \n4 \nUkurannya kok engak sama \nya.&#39;, &#39;Ada yang kecil ada yang \npas.&#39;, &#39;Hmm gpp deh tak kasih \nbintang 4 aja ya soalnya \nmasih \nbelum \nkonsisten \ndengan produknya.&#39;, &#39;ukurannya kok tidak sama \nya ada yang kecil ada yang \nsesuai tidak apa apa deh \ntidak kasih bintang saja ya \nsoalnya \nmasih \nbelum \nkonsisten \ndengan \nproduknya \nukur kok tidak sama ya \nada yang kecil ada yang \nsesuai tidak apa apa deh \ntidak kasih bintang saja \nya soal masih belum \nkonsisten dengan produk \nukur kecil sesuai \nkasih bintang soal \nbelum \nkonsisten \nproduk \nNegatif \n5 \nTipis banget ternyata huhu \nsedih tapi ya lumayan aja \nlah buat dirumah sehari2 \nmah harus pake ciput yg \nnutup klo gak nerawang \ngitu \nmungkin \nkarna \nharganya.&#39;, &#39;tipis banget ternyata huhu \nsedih tapi ya lumayan saja \nlah buat dirumah sehari \nmah harus pakai ciput yang \nmenutup \nkalau \ntidak \nnerawang begitu mungkin \nkarena harganya \ntipis banget nyata huhu \nsedih tapi ya lumayan \nsaja lah buat rumah hari \nmah harus pakai ciput \nyang tutup kalau tidak \nnerawang \nbegitu \nmungkin karena harga \ntipis nyata sedih \nlumayan \nrumah \nhari pakai ciput \ntutup \nnerawang \nharga \nNegatif \n \nPada Tabel 5 menunjukkan ulasan produk yang telah melewati pra-pemrosesan menggunakan \npendekatan NLP dengan fitur word normalize, stemming, dan stopword removal.&#39;, &#39;Salah satu indikator \nkepuasan pelanggan adalah pencapaian performa dari sebuah produk yang diterima oleh pelanggan sama  \ndengan ekspektasi pelanggan itu sendiri [27].&#39;, &#39;Dilakukan pelanggan dengan memberikan ulasan \nmenggunakan kata berkonotasi positif, hal ini sesuai dengan hasil ulasan yang diberi label oleh koresponden \n\x0c◼ 39 \n \nAnalisis Sentimen pada Ulasan Pembelian Produk di Marketplace Shopee Menggunakan Pendekatan \nNatural Language Processing (Elik Hari Muktafin) \ndi mana ulasan terdapat kata “bagus”, “suka” dan “cepat”.&#39;, &#39;Sedangkan indikator pelanggan tidak puas \nadalah dengan memberikan ulasan dengan kata berkonotasi negatif, seperti kata “tidak”, “kecewa”, dan \n“tipis”.&#39;, &#39;Dalam ulasan nomor 1, walaupun berlabel positif tetapi pada isi ulasan terdapat kritikan untuk \npenjual yang menggambarkan bahan hijab dengan kata “tipis”.&#39;, &#39;Dari contoh ini dapat membuktikan bahwa \npemberian jumlah bintang tinggi tidak selalu menggambarkan apa yang dirasakan oleh pembeli.&#39;, &#39;Terkadang \nada pembeli yang kecewa pada satu fitur tapi puas pada fitur lainnya, ada pula pembeli yang kecewa tetapi \nmemberikan kesempatan perbaikan pada penjual dengan tetap memberi jumlah bintang tinggi.&#39;, &#39;3.3.&#39;, &#39;Perhitungan KNN Menggunakan TF-IDF \nPenelitian ini menggunakan algoritma KNN dengan k=3 untuk melakukan klasifikasi ulasan.&#39;, &#39;Penggunaan KNN didukung TF-IDF untuk mengukur bobot atau tingkat pentingnya sebuah kata dalam \nulasan [28].&#39;, &#39;Perhitungan TF-IDF dilakukan pada 208 data latih dan 52 data uji dalam keadaan data sesudah \nmelalui pra-pemrosesan dengan dan tanpa pendekatan NLP.&#39;, &#39;Kemudian dihitung jumlah kecocokan hasil \npelabelan dari prediksi 52 data uji dibandingkan dengan pelabelan manual oleh koresponden menggunakan \nconfusion matrix.&#39;, &#39;Confusion matrix membagi keadaan menjadi; True Positif (TP) menunjukkan jumlah data \ndengan kelas positif dan hasil prediksi benar, True Negatif (TN) menunjukkan jumlah data dengan kelas \nnegatif dan hasil prediksi benar, False Positif (FP) menunjukkan jumlah data dengan kelas positif dan hasil \nprediksi salah dan False Negatif (FN) menunjukkan jumlah data dengan kelas negatif dan hasil prediksi \nsalah.&#39;, &#39;Hasil prediksi ditunjukkan pada Tabel 6.&#39;, &#39;Tabel 6.&#39;, &#39;Hasil confusion matrix data uji dengan dan tanpa pra-pemrosesan NLP.&#39;, &#39;Hasi Klasifikasi \nTanpa Pra-pemrosesan  \nDengan Pra-pemrosesan  \nTrue Positif (TP) \n20 \n20 \nTrue Negatif (TN) \n16 \n20 \nFalse Positif (FP) \n5 \n5 \nFalse Negatif (FN) \n11 \n7 \n \nHasil dari confusion matrix kemudian dilakukan perhitungan untuk mendapatkan nilai akurasi, \npresisi dan recall.&#39;, &#39;Akurasi adalah rasio antara sampel yang diklasifikasikan dengan benar dibandingkan \ndengan jumlah total sampel, akurasi dihitung menggunakan Persamaan 2.&#39;, &#39;Presisi adalah proporsi sampel \npositif yang diklasifikasikan dengan benar terhadap jumlah total sampel yang di prediksi positif, presisi \ndihitung menggunakan Persamaan 3.&#39;, &#39;Recall adalah sampel positif yang diklasifikasikan dengan benar ke \ntotal jumlah sampel positif, recall dihitung menggunakan Persamaan 4 [29].&#39;, &#39;𝐴𝑘𝑢𝑟𝑎𝑠𝑖= \n𝑇𝑃+𝑇𝑁\n𝑇𝑃+𝐹𝑃+𝐹𝑁+𝑇𝑁 \n (2) \n \n \n𝑃𝑟𝑒𝑠𝑖𝑠𝑖= \n𝑇𝑃\n𝐹𝑃+𝑇𝑃 \n(3) \n \n \n𝑅𝑒𝑐𝑎𝑙𝑙= \n𝑇𝑃\n𝑇𝑃+𝐹𝑁 \n(4) \n \nPersamaan 2, 3 dan 4 diterapkan pada hasil pengujian dua keadaan data uji, yaitu tanpa pendekatan \nNLP dan dengan pendekatan NLP, didapat hasil perbandingan yang ditunjukkan pada Tabel 7.&#39;, &#39;Tabel 7.&#39;, &#39;Hasil pengujian dengan dan tanpa pra-pemrosesan NLP.&#39;, &#39;Hasil \nPengujian \nTanpa Pra-\npemrosesan  \nDengan Pra-\npemrosesan  \nAkurasi \n69,23% \n76,92% \nPresisi \n80,00% \n80,00% \nRecall \n64,52% \n74,07% \n \nHasil pengujian pada Tabel 7 menunjukkan bahwa klasifikasi melalui pra-pemrosesan tanpa \npendekatan NLP menunjukkan hasil akurasi 69.23% sedangkan klasifikasi melalui pra-pemrosesan dengan \npendekatan NLP menunjukkan peningkatan hasil akurasi menjadi 76,92%.&#39;, &#39;Presisi dari kedua data \nmenunjukkan hasil sama yaitu 80,00%.&#39;, &#39;Nilai recall data melalui pra-pemrosesan tanpa NLP menunjukkan \nhasil 64,52% dan melalui pra-pemrosesan dengan NLP menunjukkan peningkatan menjadi 74,07%.&#39;, &#39;Secara \nkeseluruhan hasil klasifikasi mengalami peningkatan pada data yang telah melalui tahap pra-pemrosesan \n\x0c◼ 40 \n \nJurnal Eksplora Informatika Vol.&#39;, &#39;10, No.&#39;, &#39;1, September 2020. \n \nmenggunakan pendekatan NLP.&#39;, &#39;Penerapan pra-pemrosesan dengan NLP memungkinkan mengubah kata \ntidak baku dan singkatan menjadi seragam, sehingga penerapan pembobotan kata dan penghitungan \nfrekuensi kemunculan kata yang sudah seragam dengan TF-IDF menjadi lebih efektif.&#39;, &#39;Penelitian sebelumnya [30] menggunakan algoritma KNN dan TF-IDF dalam mengklasifikasi \nsentimen pada media sosial Twitter memperoleh akurasi 67,2%.&#39;, &#39;Sedangkan pada penelitian ini memperoleh \nakurasi lebih tinggi yaitu 76,92%.&#39;, &#39;Nilai akurasi yang lebih rendah pada penelitian sebelumnya disebabkan \nkarena tidak menggunakan word normalizer sehingga penggunaan kata tidak baku dan kesalahan penulisan \nkata maupun singkatan pada kebiasaan pengguna Twitter tidak ditangani dengan baik.&#39;, &#39;Penelitian lainnya \n[31] tentang Deep Sentiment Analysis pada angket penilaian terbuka menggunakan KNN menghasilkan \npresisi 59,4%.&#39;, &#39;Pada penelitian ini menghasilkan presisi 80%, di mana sistem dapat memprediksi 40 ulasan \ndari 52 ulasan yang diuji.&#39;, &#39;3.4.&#39;, &#39;Frekuensi Kemunculan Kata \nKata-kata yang mempunyai frekuensi kemunculan yang tinggi dalam ulasan dapat \nmenggambarkan keadaan penerimaan pasar secara umum pada produk.&#39;, &#39;Kata yang sering digunakan dalam \nmemberikan ulasan di Shopee pada produk “hijab instan” ditunjukkan dengan wordcloud yang dibuat \ndengan aplikasi Wordart pada Gambar 4 dan Gambar 5.&#39;, &#39;Gambar 4.&#39;, &#39;Wordcloud kemunculan kata pada ulasan positif.&#39;, &#39;Pada ulasan dengan label positif, kata yang memiliki frekuensi kemunculan lebih dari 50 kali \nadalah kata “bagus” 123 kali, kata “suka” 99 kali, kata “cepat” 68 kali, kata “banget” 56 kali, kata “harga” \n55 kali, dan kata “barang” 53 kali.&#39;, &#39;Penggunaan kata “bagus”, “barang”, “suka”, dan “banget” merujuk \npada kualitas produk yang diterima yang sesuai harapan pembeli.&#39;, &#39;Penggunaan kata “cepat” merujuk pada \nkecepatan pengiriman produk yang baik, sedangkan penggunaan kata “harga” merujuk pada penentuan \nharga yang baik untuk produk hijab instan dari sudut pandang pembeli.&#39;, &#39;Gambar 5.&#39;, &#39;Wordcloud kemunculan kata pada ulasan negatif.&#39;, &#39;Pada ulasan dengan label negatif, kata yang memiliki frekuensi kemunculan lebih dari 50 kali \nadalah kata “tidak” 168 kali, kata “warna” 67 kali, kata “kirim” 55 kali, kata “kecewa” 50 kali, dan kata \n“pesan” 55 kali.&#39;, &#39;Kata “tidak” dan “kecewa” menunjukkan pembeli menerima keadaan yang tidak cocok \ndengan harapannya, seperti kata “tidak” yang diikuti dengan kata “warna” yang merujuk pada warna dari \nproduk hijab instan yang diterima pembeli tidak sesuai.&#39;, &#39;Kata “tidak” yang diikuti kata “kirim” dan “pesan” \n\x0c◼ 41 \n \nAnalisis Sentimen pada Ulasan Pembelian Produk di Marketplace Shopee Menggunakan Pendekatan \nNatural Language Processing (Elik Hari Muktafin) \nmerujuk pada jumlah produk atau spesifikasi produk yang dikirim tidak sesuai dengan apa yang dipesan \noleh pembeli.&#39;, &#39;Dari frekuensi kata yang muncul pada ulasan positif dan ulasan negatif, dapat menggambarkan \nkeadaan pada segmentasi penjualan hijab instan di Shopee di mana sebagian pembeli merasa puas pada \nkualitas produk, kecepatan pengiriman produk dan harga produk.&#39;, &#39;Sedangkan sebagian pembeli merasa tidak \npuas pada warna produk dan jumlah pengiriman produk yang tidak sesuai dengan yang dipesan oleh \npembeli.&#39;, &#39;4.&#39;, &#39;Kesimpulan \nUlasan produk pada marketplace Shopee dibutuhkan oleh calon pembeli untuk mencari informasi \ntentang kualitas produk yang akan dibeli, sekaligus sebagai masukan untuk penjual dalam meningkatkan \nkualitas produk dan pelayanan.&#39;, &#39;Pemberian bintang pada ulasan tidak selalu dapat menggambarkan isi dari \nulasan, hal ini dibuktikan adanya pemberian jumlah bintang yang tinggi, tetapi isi dari ulasannya bernilai \nnegatif.&#39;, &#39;Analisis sentimen pada isi ulasan produk dapat memberikan informasi yang lebih dalam tentang \npenilaian pembeli pada produk yang dijual di marketplace Shopee.&#39;, &#39;Penggunaan pendekatan NLP pada pra-pemrosesan data untuk meningkatkan akurasi klasifikasi \nsangat diperlukan.&#39;, &#39;Fitur Word Normalizer berfungi untuk memperbaiki bahasa yang tidak baku dan \nsingkatan yang digunakan dalam ulasan, seperti “tdk”, “gak”, “g”, “tdak”, “ga”, dan “gk” yang dapat \ndiseragamkan menjadi kata “tidak”.&#39;, &#39;Fitur Stemming dan Stopword removal juga dapat meningkatkan \nakurasi klasifikasi, terbukti dengan penerapan ketiga fitur tersebut, dapat menghasilkan nilai akurasi \nmenjadi 76,92%, presisi 80,00%, dan recall 74,07%, hasil ini lebih tinggi di bandingkan dengan klasifikasi \nyang tidak menggunakan fitur NLP yang hanya menghasilkan nilai akurasi sebesar 69,23%, presisi 80,00%, \ndan recall 64,52%.&#39;, &#39;Penelitian ini menemukan bahwa kata-kata yang dominan pada ulasan positif adalah kata “bagus”, \n“suka”, “cepat”, “banget”, “harga”, dan “barang” yang menunjukkan produk hijab instan mendapat ulasan \npositif dari pembeli dari segi kualitas barang, kecepatan pengiriman dan harga barang.&#39;, &#39;Sedangkan kata-kata \nyang dominan pada ulasan negatif adalah “tidak”, “warna”, “kirim”, “kecewa”, dan “pesan” yang \nmenunjukkan produk hijab instan mendapat ulasan negatif dari pembeli dari segi ketidaksesuaian warna \nserta jumlah atau spesifikasi barang yang dikirim dengan barang yang dipesan oleh pembeli.&#39;, &#39;Hasil penelitian ini dapat diterapkan untuk sistem analisis pemasaran dengan menggali informasi \ndari ulasan yang diberikan pembeli di marketplace, sehingga informasi yang didapat bisa digunakan sebagai \nmasukan bagi penjual dalam meningkatkan produk dan pelayanannya.&#39;, &#39;Informasi ini juga dapat digunakan \noleh penjual lain untuk kegiatan analisis kompetitor.&#39;, &#39;Dengan menganalisis kelemahan dan keunggulan dari \nproduk dengan memanfaatkan informasi pada ulasan, memungkinkan penjual untuk dapat menghadirkan \nproduk yang mampu menutupi kekurangan dan meningkatkan keunggulan produk dibanding kompetitor.&#39;, &#39;Daftar Pustaka \n[1] A. K. Putra, R. D. Nyoto, and P. H. Sasty, “Rancang Bangun Aplikasi Marketplace Penyedia Jasa Les \nPrivate Di Kota Pontianak Berbasis Web,” J. Sist.&#39;, &#39;dan Teknol.&#39;, &#39;Inf., vol.&#39;, &#39;5, no.&#39;, &#39;1, pp.&#39;, &#39;22–25, 2017.&#39;, &#39;[2] IPrice, “Peta E ‑ Commerce Indonesia,” 2018. https://iprice.co.id/insights/mapofecommerce/ \n(accessed May 04, 2020).&#39;, &#39;[3] H. Wang and Y. Wang, “A Review of Online Product Reviews,” J. Serv.&#39;, &#39;Sci.&#39;, &#39;Manag., vol.&#39;, &#39;13, no.&#39;, &#39;01, \npp.&#39;, &#39;88–96, 2020, doi: 10.4236/jssm.2020.131006.&#39;, &#39;[4] A. Spink, B. J. Jansen, D. Wolfram, and T. Saracevic, “From E-sex to e-commerce: Web search \nchanges,” Computer (Long.&#39;, &#39;Beach.&#39;, &#39;Calif)., vol.&#39;, &#39;35, no.&#39;, &#39;3, pp.&#39;, &#39;107–109, 2002, doi: 10.1109/2.989940.&#39;, &#39;[5] J. Seth and H. Sidgwick, “Toward the Next Generation of Recommender Systems: A Survey of the \nState-of-the-Art and Possible Extensions,” IEEE Trans.&#39;, &#39;Knowl.&#39;, &#39;Data Eng., vol.&#39;, &#39;17, no.&#39;, &#39;6, pp.&#39;, &#39;734–\n749, 2005, doi: 10.2307/2176678.&#39;, &#39;[6] I. R. S. Servanda, R. K. S. Putri, and N. A. Ananda, “Peran Ulasan Produk dan Fot Produk yang \nDitampilkan Penjual pada Marketplace Shopee terhadap Minat Beli Pria dan Wanita,” J. Manaj.&#39;, &#39;dan \nBisnis, vol.&#39;, &#39;2, no.&#39;, &#39;2, pp.&#39;, &#39;69–79, 2019, doi: 10.37673/jmb.v2i2.526.&#39;, &#39;[7] M. Firdaus, F. Rizki, F. Gaus, and I. Susanto, “Analisis Sentimen Dan Topic Modelling Dalam \nAplikasi Ruangguru,” J-SAKTI (Jurnal Sains Komput.&#39;, &#39;dan Inform., vol.&#39;, &#39;4, p. 66, Mar.&#39;, &#39;2020, doi: \n10.30645/j-sakti.v4i1.188.&#39;, &#39;[8] K. S. Samith, “Sentiment Analysis System for Product Review: A Survey,” no.&#39;, &#39;April, pp.&#39;, &#39;268–278, \n2015, doi: 10.3850/978-981-09-5346-1_cse-571.&#39;, &#39;[9] B. Ahmed and A. Ghabayen, “Review Rating Prediction Framework Using Deep Learning,” J. \nAmbient Intell.&#39;, &#39;Humaniz.&#39;, &#39;Comput., Mar.&#39;, &#39;2020, doi: 10.1007/s12652-020-01807-4.&#39;, &#39;◼ 42 \n \nJurnal Eksplora Informatika Vol.&#39;, &#39;10, No.&#39;, &#39;1, September 2020.&#39;, &#39;[10] M. Nurul, N. Soewarno, and I. Isnalita, “Pengaruh Jumlah Pengunjung, Ulasan Produk, Reputasi Toko \nDan Status Gold Badge pada Penjualan Dalam Tokopedia,” E-JA (e-Jurnal Akuntansi), vol.&#39;, &#39;28, no.&#39;, &#39;3, \npp.&#39;, &#39;1855–1865, 2019, doi: 10.24843/EJA.2019.v28.i03.p14.&#39;, &#39;[11] A.&#39;, &#39;A. Lutfi, A. E. Permanasari, and S. Fauziati, “Sentiment Analysis in the Sales Review of Indonesian \nMarketplace by Utilizing Support Vector Machine,” J. Inf.&#39;, &#39;Syst.&#39;, &#39;Eng.&#39;, &#39;Bus.&#39;, &#39;Intell., vol.&#39;, &#39;4, no.&#39;, &#39;1, p. 57, \n2018, doi: 10.20473/jisebi.4.1.57-64.&#39;, &#39;[12] Muljono, D. P. Artanti, A. Syukur, A. Prihandono, and D. R. I. M. Setiadi, “Analisis Sentimen Untuk \nPenilaian Pelayanan Situs Belanja Online Menggunakan Algoritma Naïve Bayes,” in Konferensi \nNasional \nSistem \nInformasi \n2018, \n2018, \npp.&#39;, &#39;8–9, \n[Online].&#39;, &#39;Available: \nhttp://jurnal.atmaluhur.ac.id/index.php/knsi2018/article/view/353.&#39;, &#39;[13] K. Norman, Z. Li, Y. T. Oh, G. Golwala, S. Sundaram, and J. Allebach, “Application of natural \nlanguage processing to an online fashion marketplace,” IS T Int.&#39;, &#39;Symp.&#39;, &#39;Electron.&#39;, &#39;Imaging Sci.&#39;, &#39;Technol., pp.&#39;, &#39;1–5, 2018, doi: 10.2352/ISSN.2470-1173.2018.10.IMAWM-444.&#39;, &#39;[14] E. Cambria, S. Poria, A. Gelbukh, and M. Thelwall, “Sentiment Analysis Is a Big Suitcase,” IEEE \nIntell.&#39;, &#39;Syst., vol.&#39;, &#39;32, pp.&#39;, &#39;74–80, Nov. 2017, doi: 10.1109/MIS.2017.4531228.&#39;, &#39;[15] M. T. Khan, M. Durrani, A. Ali, I. Inayat, S. Khalid, and K. H. Khan, “Sentiment analysis and the \ncomplex natural language,” Complex Adapt.&#39;, &#39;Syst.&#39;, &#39;Model., vol.&#39;, &#39;4, no.&#39;, &#39;1, 2016, doi: 10.1186/s40294-\n016-0016-9.&#39;, &#39;[16] G. Trends, “hijab instan, hijab persegi, hijab voal - Explore - Google Trends.” \nhttps://trends.google.com/trends/explore?geo=ID&amp;q=hijab instan,hijab persegi,hijab voal (accessed \nApr.&#39;, &#39;28, 2020).&#39;, &#39;[17] Shopee, \n“Harga \nHijab \nInstan \nTerbaik.” \nhttps://shopee.co.id/search?keyword=hijab \ninstan&amp;page=0&amp;sortBy=sales (accessed Apr.&#39;, &#39;28, 2020).&#39;, &#39;[18] A. Solichin, “MySql 5: Dari Pemula Hingga Mahir,” Univ.&#39;, &#39;Budi Luhur, Jakarta, Jan. 2010.&#39;, &#39;[19] M. Mhatre, D. Phondekar, P. Kadam, A. Chawathe, and K. Ghag, “Dimensionality reduction for \nsentiment analysis using pre-processing techniques,” in 2017 International Conference on Computing \nMethodologies and Communication (ICCMC), 2017, pp.&#39;, &#39;16–21, doi: 10.1109/ICCMC.2017.8282676.&#39;, &#39;[20] L. A. Mullen, K. Benoit, O. Keyes, D. Selivanov, and J. Arnold, “Fast, Consistent Tokenization of \nNatural Language Text,” J.&#39;, &#39;Open Source Softw., vol.&#39;, &#39;3, no.&#39;, &#39;23, p. 655, 2018, doi: 10.21105/joss.00655.&#39;, &#39;[21] B. P. Pande and H. S. Dhami, “Application of Natural Language Processing Tools in Stemming,” Int.&#39;, &#39;J. Comput.&#39;, &#39;Appl., vol.&#39;, &#39;27, no.&#39;, &#39;6, pp.&#39;, &#39;14–19, 2011, doi: 10.5120/3302-4530.&#39;, &#39;[22] A. Prakash and U. Kumar, “International Journal of Computer Sciences and Engineering Open Access \nAuthentication \nProtocols \nand \nTechniques\u202f: \nA \nSurvey,” \nno.&#39;, &#39;March, \n2019, \ndoi: \n10.26438/ijcse/v6i6.10141020.&#39;, &#39;[23] R. Melita, V. Amrizal, H. Suseno, and T. Dirjam, “Penerapan Metode Term Frequency Inverse \nDocument Frequency (Tf-Idf) dan Cosine Similarity pada Sistem Temu Kembali Informasi untuk \nMengetahui Syarah Hadits Berbasis Web (Studi Kasus: Hadits Shahih Bukhari-Muslim),” J. Tek.&#39;, &#39;Inform., vol.&#39;, &#39;11, no.&#39;, &#39;2, pp.&#39;, &#39;149–164, Nov. 2018, doi: 10.15408/jti.v11i2.8623.&#39;, &#39;[24] V. Jahjah, R. Khoury, and L. Lamontagne, Word Normalization Using Phonetic Signatures.&#39;, &#39;2016.&#39;, &#39;[25] J. Asian, H. E. Williams, and S. M. M. Tahaghoghi, “Stemming Indonesian,” Conf.&#39;, &#39;Res.&#39;, &#39;Pract.&#39;, &#39;Inf.&#39;, &#39;Technol.&#39;, &#39;Ser., vol.&#39;, &#39;38, no.&#39;, &#39;January, pp.&#39;, &#39;307–314, 2005, doi: 10.1145/1316457.1316459.&#39;, &#39;[26] M. Khader, A. Awajan, and G. Al-Naymat, “The Effects of Natural Language Processing on Big Data \nAnalysis: Sentiment Analysis Case Study,” in 2018 International Arab Conference on Information \nTechnology (ACIT), 2018, pp.&#39;, &#39;1–7, doi: 10.1109/ACIT.2018.8672697.&#39;, &#39;[27] D. Astuti and M. Lutfi, “Analisis Pengaruh Kualitas Pelayanan Dan Kepuasan Pelanggan Terhadap \nLoyalitas Pelanggan,” J. Ekobis  Ekon.&#39;, &#39;Bisnis Manaj., vol.&#39;, &#39;9, pp.&#39;, &#39;132–144, Mar.&#39;, &#39;2020, doi: \n10.37932/j.e.v9i2.64.&#39;, &#39;[28] A. Tripathy, A. Agrawal, and S. K. Rath, “Classification of sentiment reviews using n-gram machine \nlearning \napproach,” \nExpert \nSyst.&#39;, &#39;Appl., \nvol.&#39;, &#39;57, \npp.&#39;, &#39;117–126, \n2016, \ndoi: \nhttps://doi.org/10.1016/j.eswa.2016.03.028.&#39;, &#39;[29] A. Tharwat, “Classification Assessment Methods,” Appl.&#39;, &#39;Comput.&#39;, &#39;Informatics, no.&#39;, &#39;January, 2018, doi: \n10.1016/j.aci.2018.08.003.&#39;, &#39;[30] A. Deviyanto and M. D. R. Wahyudi, “Penerapan Analisis Sentimen Pada Pengguna Twitter \nMenggunakan Metode K-Nearest Neighbor,” JISKA (Jurnal Inform.&#39;, &#39;Sunan Kalijaga), vol.&#39;, &#39;3, no.&#39;, &#39;1, \npp.&#39;, &#39;1–13, 2018, doi: 10.14421/jiska.2018.31-01.&#39;, &#39;[31] J. Riany, M. Fajar, and M. P. Lukman, “Penerapan Deep Sentiment Analysis pada Angket Penilaian \nTerbuka Menggunakan K-Nearest Neighbor,” Sisfo, vol.&#39;, &#39;06, no.&#39;, &#39;01, pp.&#39;, &#39;147–156, 2016, doi: \n10.24089/j.sisfo.2016.09.011.&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                               kalimat
+0    JURNAL EKSPLORA INFORMATIKA \n◼ 32 \n \np-ISSN...
+1    Penjual dapat melakukan analisis ulasan produk...
+2    Kegiatan analisis ulasan produk tidak cukup de...
+3    Apabila \ndalam jumlah sedikit dapat dilakukan...
+4    Dibutuhkan sistem yang mampu menganalisis bany...
+..                                                 ...
+380        1–13, 2018, doi: 10.14421/jiska.2018.31-01.
+381  [31] J. Riany, M. Fajar, and M. P. Lukman, “Pe...
+382                                            06, no.
+383                                            01, pp.
+384  147–156, 2016, doi: \n10.24089/j.sisfo.2016.09...
+
+[385 rows x 1 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;kalimat.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Untuk membuat word graph</p>
+<p>Lanjutkan dengan menggunakan <a class="reference external" href="https://www.geeksforgeeks.org/nlp/co-occurence-matrix-in-nlp/">https://www.geeksforgeeks.org/nlp/co-occurence-matrix-in-nlp/</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># 1. Read the &#39;kalimat.csv&#39; file into a pandas DataFrame.</span>
+<span class="n">df_kalimat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;kalimat.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># 2. Access the &#39;kalimat&#39; column and 3. Concatenate all text entries into a single string.</span>
+<span class="n">all_text</span> <span class="o">=</span> <span class="n">df_kalimat</span><span class="p">[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;First 500 characters of the concatenated text:</span><span class="se">\n</span><span class="si">{</span><span class="n">all_text</span><span class="p">[:</span><span class="mi">500</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>First 500 characters of the concatenated text:
+JURNAL EKSPLORA INFORMATIKA 
+◼ 32 
+ 
+p-ISSN: 2089-1814; e-ISSN: 2460-3694; DOI: 10.30864/eksplora.v10i1.390 
+Analisis Sentimen pada Ulasan Pembelian Produk di 
+Marketplace Shopee Menggunakan Pendekatan Natural 
+Language Processing 
+ 
+ 
+Elik Hari Muktafin1, Kusrini2, Emha Taufiq Luthfi3 
+Magister Teknik Informatika 
+Universitas Amikom Yogyakarta 
+Yogyakarta, Indonesia 
+e-mail: 1elik.muktafin@students.amikom.ac.id, 2kusrini@amikom.ac.id, 3emhataufiqluthfi@amikom.ac.id 
+ 
+Diajukan: 1 Juli 2020; Dir
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">string</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">df_to_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;kalimat.csv&#39;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># Pastikan input string</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+
+    <span class="c1"># Hapus karakter spesifik</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;◼&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Deteksi kata berulang seperti &quot;laki-laki&quot;, &quot;pura-pura&quot;</span>
+    <span class="c1"># Pola: kata-kata yang sama dipisah tanda hubung</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\b(\w+)-\1\b&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+    <span class="c1"># Hapus punctuation</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span>
+
+    <span class="c1"># Hapus angka</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\d+&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+    <span class="c1"># Lowercase</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="c1"># Hapus kata yang hanya satu huruf (mis. &quot;v&quot;, &quot;a&quot;, &quot;b&quot;)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\b[a-zA-Z]\b&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+    <span class="c1"># Hilangkan spasi berlebih</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="c1"># --- Tambahan: hapus kata berulang berurutan + filter 1 huruf lagi (jaga-jaga) ---</span>
+    <span class="k">if</span> <span class="n">text</span><span class="p">:</span>
+        <span class="n">tokens</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+        <span class="n">cleaned_tokens</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">tok</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">:</span>
+            <span class="c1"># skip kalau hanya satu huruf</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tok</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="c1"># skip kalau sama dengan kata sebelumnya (kata berulang)</span>
+            <span class="k">if</span> <span class="n">tok</span> <span class="o">==</span> <span class="n">prev</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="n">cleaned_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tok</span><span class="p">)</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="n">tok</span>
+
+        <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cleaned_tokens</span><span class="p">)</span>
+    <span class="c1"># ----------------------------------------------------------------------</span>
+
+    <span class="k">return</span> <span class="n">text</span>
+
+<span class="c1"># Terapkan pembersihan</span>
+<span class="n">df_to_clean</span><span class="p">[</span><span class="s1">&#39;cleaned_kalimat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_to_clean</span><span class="p">[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
+
+<span class="c1"># Simpan ke CSV</span>
+<span class="n">df_to_clean</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;kalimat_cleaned.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Processed data with cleaned text saved to &#39;kalimat_cleaned.csv&#39;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_to_clean</span><span class="p">[[</span><span class="s1">&#39;kalimat&#39;</span><span class="p">,</span> <span class="s1">&#39;cleaned_kalimat&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processed data with cleaned text saved to &#39;kalimat_cleaned.csv&#39;
+                                             kalimat  \
+0  JURNAL EKSPLORA INFORMATIKA \n◼ 32 \n \np-ISSN...   
+1  Penjual dapat melakukan analisis ulasan produk...   
+2  Kegiatan analisis ulasan produk tidak cukup de...   
+3  Apabila \ndalam jumlah sedikit dapat dilakukan...   
+4  Dibutuhkan sistem yang mampu menganalisis bany...   
+
+                                     cleaned_kalimat  
+0  jurnal eksplora informatika pissn eissn doi ek...  
+1  penjual dapat melakukan analisis ulasan produk...  
+2  kegiatan analisis ulasan produk tidak cukup de...  
+3  apabila dalam jumlah sedikit dapat dilakukan s...  
+4  dibutuhkan sistem yang mampu menganalisis bany...  
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.corpus</span><span class="w"> </span><span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.tokenize</span><span class="w"> </span><span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">Counter</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span> <span class="c1"># Import re for regex operations</span>
+
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define stop_id and normalize_token function here for self-containment</span>
+<span class="n">stop_id</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s2">&quot;indonesian&quot;</span><span class="p">))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">normalize_token</span><span class="p">(</span><span class="n">tok</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="n">tok</span> <span class="o">=</span> <span class="n">tok</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="c1"># only letters or letters-with-hyphens (e.g., laki-laki)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[a-zA-Z]+(?:-[a-zA-Z]+)*&quot;</span><span class="p">,</span> <span class="n">tok</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">tok</span> <span class="ow">in</span> <span class="n">stop_id</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tok</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">tok</span>
+
+<span class="c1"># Load the cleaned data</span>
+<span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;kalimat_cleaned.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Concatenate all cleaned text into a single string</span>
+<span class="n">all_cleaned_text</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;cleaned_kalimat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="c1"># Tokenize the concatenated text</span>
+<span class="n">raw_words</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">all_cleaned_text</span><span class="p">)</span>
+
+<span class="c1"># Apply normalization and filtering using the normalize_token function</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">normalize_token</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">raw_words</span><span class="p">]</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span><span class="p">]</span> <span class="c1"># Remove empty strings resulting from normalization</span>
+
+<span class="n">window_size</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Meningkatkan ukuran jendela untuk hubungan kata yang lebih kaya</span>
+
+<span class="c1"># 6. Membuat daftar pasangan kata yang muncul bersamaan</span>
+<span class="n">co_occurrences</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="n">Counter</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="n">window_size</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">),</span> <span class="n">i</span> <span class="o">+</span> <span class="n">window_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span><span class="p">:</span>
+            <span class="n">co_occurrences</span><span class="p">[</span><span class="n">word</span><span class="p">][</span><span class="n">words</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1"># 7. Membuat daftar kata unik</span>
+<span class="n">unique_words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>
+
+<span class="c1"># 8. Inisialisasi matriks ko-okurensi</span>
+<span class="n">co_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">unique_words</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">unique_words</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># 9. Membuat mapping dari kata ke indeks</span>
+<span class="n">word_index</span> <span class="o">=</span> <span class="p">{</span><span class="n">word</span><span class="p">:</span> <span class="n">idx</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_words</span><span class="p">)}</span>
+
+<span class="c1"># 10. Mengisi matriks ko-okurensi</span>
+<span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">neighbors</span> <span class="ow">in</span> <span class="n">co_occurrences</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">neighbor</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">neighbor</span> <span class="ow">in</span> <span class="n">word_index</span><span class="p">:</span>  <span class="c1"># Pastikan kata tetangga ada dalam unique_words</span>
+            <span class="n">co_matrix</span><span class="p">[</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]][</span><span class="n">word_index</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]]</span> <span class="o">=</span> <span class="n">count</span>
+
+<span class="c1"># 11. Membuat DataFrame agar lebih mudah dibaca</span>
+<span class="n">co_matrix_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">co_matrix</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">unique_words</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">unique_words</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan matriks ko-okurensi</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriks Ko-okurensi&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">co_matrix_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">,</span> <span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total kata setelah preprocessing:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriks Ko-okurensi
+            doi  amikom  comput  uji  kesimpulan  persatu  tutup  diterima  \
+doi           0       0       1    0           0        0      0         0   
+amikom        0       0       0    0           0        0      0         0   
+comput        1       0       0    0           0        0      0         0   
+uji           0       0       0    0           0        0      0         0   
+kesimpulan    0       0       0    0           0        0      0         0   
+persatu       0       0       0    0           0        0      0         0   
+tutup         0       0       0    0           0        0      0         0   
+diterima      0       0       0    0           0        0      0         0   
+karakter      0       0       0    0           0        0      0         0   
+pengujian     0       0       0    1           0        0      0         0   
+
+            karakter  pengujian  
+doi                0          0  
+amikom             0          0  
+comput             0          0  
+uji                0          1  
+kesimpulan         0          0  
+persatu            0          0  
+tutup              0          0  
+diterima           0          0  
+karakter           0          0  
+pengujian          0          0  
+Total kata setelah preprocessing: 3406
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /home/codespace/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /home/codespace/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">from_pandas_adjacency</span><span class="p">(</span><span class="n">co_matrix_df</span><span class="p">)</span>
+
+<span class="c1"># Visualize the graph</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span> <span class="c1"># positions for all nodes - k regulates the distance between nodes</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Co-occurrence Network Graph&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span> <span class="c1"># Hide axes</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8a1cd8655e15923a57e2b1c90220556c53abc3f3a32dfbd03d90c03471ab7990.png" src="_images/8a1cd8655e15923a57e2b1c90220556c53abc3f3a32dfbd03d90c03471ab7990.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pagerank_scores</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil perhitungan PageRank untuk tiap node:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil perhitungan PageRank untuk tiap node:
+ulasan: 0.0331
+produk: 0.0248
+and: 0.0143
+the: 0.0102
+doi: 0.0085
+no: 0.0078
+pembeli: 0.0078
+nlp: 0.0078
+vol: 0.0072
+pp: 0.0064
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># 1. Membuat DataFrame pandas dari dictionary pagerank_scores</span>
+<span class="n">pagerank_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="nb">list</span><span class="p">(</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">items</span><span class="p">()),</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Kata&#39;</span><span class="p">,</span> <span class="s1">&#39;Skor PageRank&#39;</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># 2. Mengurutkan DataFrame berdasarkan &#39;Skor PageRank&#39; secara menurun</span>
+<span class="n">pagerank_df</span> <span class="o">=</span> <span class="n">pagerank_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span>
+    <span class="n">by</span><span class="o">=</span><span class="s1">&#39;Skor PageRank&#39;</span><span class="p">,</span>
+    <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+
+<span class="c1"># 3. Menampilkan 20 kata teratas</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;20 kata dengan Skor PageRank tertinggi:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pagerank_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20 kata dengan Skor PageRank tertinggi:
+           Kata  Skor PageRank
+0        ulasan       0.033135
+1        produk       0.024768
+2           and       0.014312
+3           the       0.010182
+4           doi       0.008469
+5            no       0.007835
+6       pembeli       0.007808
+7           nlp       0.007797
+8           vol       0.007199
+9            pp       0.006362
+10      positif       0.006336
+11         data       0.006330
+12           of       0.006305
+13        bagus       0.006094
+14  marketplace       0.006013
+15      bintang       0.006009
+16     analisis       0.005899
+17   pendekatan       0.005749
+18        hasil       0.005681
+19       shopee       0.005539
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Get PageRank scores from the previously calculated pagerank_scores dictionary</span>
+<span class="n">pagerank_values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+<span class="c1"># Normalize PageRank scores for coloring (0 to 1 range)</span>
+<span class="c1"># Avoid division by zero if all scores are the same or zero</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">pagerank_values</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">scores_norm</span> <span class="o">=</span> <span class="p">(</span><span class="n">pagerank_values</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">pagerank_values</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">pagerank_values</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">pagerank_values</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">scores_norm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">pagerank_values</span><span class="p">)</span> <span class="c1"># If all scores are same, set to 0</span>
+
+<span class="n">node_colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">scores_norm</span><span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">node</span><span class="p">)]</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">))</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># Create labels dictionary with PageRank scores</span>
+<span class="c1"># Ensure all nodes in G are present in pagerank_scores before creating labels</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="n">node</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()}</span>
+
+<span class="c1"># Draw nodes with colors based on PageRank score</span>
+<span class="n">nodes</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">viridis</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Co-occurrence Network Graph with PageRank Coloring and Scores&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add a color bar to show PageRank scale</span>
+<span class="n">cbar</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">cbar</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="s1">&#39;Normalized PageRank Score&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a0e68540b3ab9f80a0d9a719fae15d8aefb25e996c8711a43ac765a869cbf97a.png" src="_images/a0e68540b3ab9f80a0d9a719fae15d8aefb25e996c8711a43ac765a869cbf97a.png" />
+</div>
+</div>
+<p>Stopwords + fungsi clean token (node harus kata jelas, tanpa angka/karakter aneh)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.tokenize</span><span class="w"> </span><span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.corpus</span><span class="w"> </span><span class="kn">import</span> <span class="n">stopwords</span>
+
+<span class="c1"># kalau belum pernah:</span>
+<span class="c1"># nltk.download(&quot;punkt&quot;)</span>
+<span class="c1"># nltk.download(&quot;stopwords&quot;)</span>
+
+<span class="c1"># 1) Load data</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;kalimat_cleaned.csv&quot;</span><span class="p">)</span>
+<span class="n">texts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;kalimat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah kalimat:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">texts</span><span class="p">))</span>
+
+<span class="c1"># 2) Stopwords Indonesia</span>
+<span class="n">stop_id</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s2">&quot;indonesian&quot;</span><span class="p">))</span>
+
+<span class="c1"># 3) Blacklist metadata jurnal</span>
+<span class="n">blacklist</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;doi&quot;</span><span class="p">,</span> <span class="s2">&quot;issn&quot;</span><span class="p">,</span> <span class="s2">&quot;jurnal&quot;</span><span class="p">,</span> <span class="s2">&quot;volume&quot;</span><span class="p">,</span> <span class="s2">&quot;nomor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;abstrak&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">,</span> <span class="s2">&quot;universitas&quot;</span><span class="p">,</span> <span class="s2">&quot;indonesia&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;yogyakarta&quot;</span><span class="p">,</span> <span class="s2">&quot;alamat&quot;</span><span class="p">,</span> <span class="s2">&quot;tanggal&quot;</span><span class="p">,</span> <span class="s2">&quot;diterima&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;direvisi&quot;</span><span class="p">,</span> <span class="s2">&quot;diajukan&quot;</span><span class="p">,</span><span class="s2">&quot;ya&quot;</span><span class="p">,</span><span class="s2">&quot;the&quot;</span><span class="p">,</span><span class="s1">&#39;at&#39;</span><span class="p">,</span><span class="s1">&#39;leee&#39;</span>
+<span class="p">}</span>
+
+<span class="c1"># 4) Normalisasi token FINAL</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">normalize_token</span><span class="p">(</span><span class="n">tok</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="n">tok</span> <span class="o">=</span> <span class="n">tok</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[a-zA-Z]+&quot;</span><span class="p">,</span> <span class="n">tok</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">tok</span> <span class="ow">in</span> <span class="n">stop_id</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">tok</span> <span class="ow">in</span> <span class="n">blacklist</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tok</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="n">tok</span>
+
+<span class="c1"># 5) Normalisasi SEMUA kalimat</span>
+<span class="n">normalized_sentences</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">texts</span><span class="p">:</span>
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="n">clean</span> <span class="o">=</span> <span class="p">[</span><span class="n">normalize_token</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">raw</span><span class="p">]</span>
+    <span class="n">clean</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">clean</span> <span class="k">if</span> <span class="n">x</span><span class="p">]</span>
+    <span class="n">normalized_sentences</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">clean</span><span class="p">))</span>
+
+<span class="c1"># 6) Simpan ke CSV</span>
+<span class="n">df_out</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;kalimat_normalized&quot;</span><span class="p">:</span> <span class="n">normalized_sentences</span>
+<span class="p">})</span>
+
+<span class="n">df_out</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;kalimat_normalized.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File berhasil disimpan: kalimat_normalized.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># 7) Tampilkan contoh hasil (head)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Contoh hasil normalisasi (1 kalimat):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_out</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Token head 5 dari kalimat pertama:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_out</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[:</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah kalimat: 385
+File berhasil disimpan: kalimat_normalized.csv
+
+Contoh hasil normalisasi (1 kalimat):
+eksplora informatika analisis sentimen ulasan pembelian produk marketplace shopee pendekatan natural language processing elik emha taufiq magister teknik informatika amikom juli agustus agustus ulasan produk marketplace informasi berharga diolah
+
+Token head 5 dari kalimat pertama:
+[&#39;eksplora&#39;, &#39;informatika&#39;, &#39;analisis&#39;, &#39;sentimen&#39;, &#39;ulasan&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tokenisasi + bikin bigram (1 token 2 kata) lalu gabung unigram+bigrams</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">all_sent_tokens</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">texts</span><span class="p">:</span>
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="n">toks</span> <span class="o">=</span> <span class="p">[</span><span class="n">normalize_token</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">raw</span><span class="p">]</span>
+    <span class="n">toks</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">toks</span> <span class="k">if</span> <span class="n">x</span><span class="p">]</span>
+
+    <span class="n">bigrams</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">toks</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">toks</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">toks</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+
+    <span class="n">combined</span> <span class="o">=</span> <span class="n">toks</span> <span class="o">+</span> <span class="n">bigrams</span>  <span class="c1"># gabung 1 token 1 kata + 1 token 2 kata</span>
+
+    <span class="k">if</span> <span class="n">combined</span><span class="p">:</span>
+        <span class="n">all_sent_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">combined</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kalimat valid (punya token):&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_sent_tokens</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contoh tokens:&quot;</span><span class="p">,</span> <span class="n">all_sent_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">][:</span><span class="mi">25</span><span class="p">]</span> <span class="k">if</span> <span class="n">all_sent_tokens</span> <span class="k">else</span> <span class="s2">&quot;Tidak ada token&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kalimat valid (punya token): 347
+Contoh tokens: [&#39;eksplora&#39;, &#39;informatika&#39;, &#39;analisis&#39;, &#39;sentimen&#39;, &#39;ulasan&#39;, &#39;pembelian&#39;, &#39;produk&#39;, &#39;marketplace&#39;, &#39;shopee&#39;, &#39;pendekatan&#39;, &#39;natural&#39;, &#39;language&#39;, &#39;processing&#39;, &#39;elik&#39;, &#39;emha&#39;, &#39;taufiq&#39;, &#39;magister&#39;, &#39;teknik&#39;, &#39;informatika&#39;, &#39;amikom&#39;, &#39;juli&#39;, &#39;agustus&#39;, &#39;agustus&#39;, &#39;ulasan&#39;, &#39;produk&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bangun co-occurrence matrix -&gt; graph (hubungan kata dengan kata)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">window_size</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># bisa 2-5</span>
+<span class="n">edge_counter</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
+<span class="n">node_counter</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">all_sent_tokens</span><span class="p">:</span>
+    <span class="n">node_counter</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="n">window_size</span><span class="p">,</span> <span class="n">n</span><span class="p">)):</span>
+            <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">tokens</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tokens</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">:</span>
+                <span class="n">edge_counter</span><span class="p">[(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total kandidat node:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">node_counter</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total kandidat edge:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">edge_counter</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total kandidat node: 3043
+Total kandidat edge: 9072
+</pre></div>
+</div>
+</div>
+</div>
+<p>Filter node/edge biar bersih + bentuk graph final</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">min_node_freq</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">min_edge_weight</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">valid_nodes</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">node_counter</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">c</span> <span class="o">&gt;=</span> <span class="n">min_node_freq</span><span class="p">}</span>
+
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">valid_nodes</span><span class="p">:</span>
+    <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="n">node_counter</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">edge_counter</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">w</span> <span class="o">&gt;=</span> <span class="n">min_edge_weight</span> <span class="ow">and</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">valid_nodes</span> <span class="ow">and</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">valid_nodes</span><span class="p">:</span>
+        <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">w</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah node:&quot;</span><span class="p">,</span> <span class="n">G</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah edge:&quot;</span><span class="p">,</span> <span class="n">G</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah node: 788
+Jumlah edge: 997
+</pre></div>
+</div>
+</div>
+</div>
+<p>Node dan edge</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+
+<span class="c1"># hanya node yang punya hubungan</span>
+<span class="n">nodes_with_edges</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span> <span class="k">if</span> <span class="n">G</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">G_plot</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">subgraph</span><span class="p">(</span><span class="n">nodes_with_edges</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># HITUNG PAGERANK DARI GRAPH YANG SAMA</span>
+<span class="n">pr</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G_plot</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span><span class="p">)</span>
+
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G_plot</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">0.35</span><span class="p">)</span>
+
+<span class="n">pr_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">pr</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+<span class="n">pr_max</span> <span class="o">=</span> <span class="n">pr_values</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="k">if</span> <span class="n">pr_values</span><span class="o">.</span><span class="n">size</span> <span class="k">else</span> <span class="mf">1.0</span>
+
+<span class="n">node_sizes</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1800</span> <span class="o">*</span> <span class="p">((</span><span class="n">pr</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">/</span> <span class="n">pr_max</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.03</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G_plot</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span>
+<span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+
+<span class="c1"># NODE</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span>
+    <span class="n">G_plot</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span>
+    <span class="n">node_size</span><span class="o">=</span><span class="n">node_sizes</span><span class="p">,</span>
+    <span class="n">node_color</span><span class="o">=</span><span class="s2">&quot;#a6d8ec&quot;</span><span class="p">,</span>
+    <span class="n">edgecolors</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+    <span class="n">linewidths</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span>
+<span class="p">)</span>
+
+<span class="c1"># EDGE</span>
+<span class="n">edge_artist</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span>
+    <span class="n">G_plot</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.65</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mf">1.4</span><span class="p">,</span>
+    <span class="n">edge_color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span>
+<span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">edge_artist</span><span class="o">.</span><span class="n">set_zorder</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="c1"># LABEL</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span>
+    <span class="n">G_plot</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span>
+    <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
+    <span class="n">font_weight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+    <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;#a6d8ec&quot;</span><span class="p">,</span>
+        <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+        <span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round,pad=0.20&quot;</span><span class="p">,</span>
+        <span class="n">alpha</span><span class="o">=</span><span class="mf">0.65</span>
+    <span class="p">),</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Graph PageRank — Node yang Punya Hubungan&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5b9eefb4d53b82ae1d6e482b7f0422252a2025502beddaf266674b7a8d71878a.png" src="_images/5b9eefb4d53b82ae1d6e482b7f0422252a2025502beddaf266674b7a8d71878a.png" />
+</div>
+</div>
+<p>Centrality (PageRank, Degree, Betweenness, Closeness)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pagerank_scores</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span><span class="p">)</span>
+<span class="n">degree_c</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">degree_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">between_c</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span><span class="p">,</span> <span class="n">normalized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">close_c</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Output nilai PageRank tiap node</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;node&quot;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()),</span>
+    <span class="s2">&quot;freq&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;freq&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()],</span>
+    <span class="s2">&quot;pagerank&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">pagerank_scores</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()],</span>
+    <span class="s2">&quot;degree_centrality&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">degree_c</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()],</span>
+    <span class="s2">&quot;betweenness_centrality&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">between_c</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()],</span>
+    <span class="s2">&quot;closeness_centrality&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">close_c</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()],</span>
+<span class="p">})</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;pagerank&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>node</th>
+      <th>freq</th>
+      <th>pagerank</th>
+      <th>degree_centrality</th>
+      <th>betweenness_centrality</th>
+      <th>closeness_centrality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ulasan</td>
+      <td>162</td>
+      <td>0.029568</td>
+      <td>0.100381</td>
+      <td>0.116181</td>
+      <td>0.196817</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>produk</td>
+      <td>120</td>
+      <td>0.021813</td>
+      <td>0.072427</td>
+      <td>0.072337</td>
+      <td>0.186428</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>bagus</td>
+      <td>28</td>
+      <td>0.010256</td>
+      <td>0.038119</td>
+      <td>0.027718</td>
+      <td>0.163105</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>pembeli</td>
+      <td>37</td>
+      <td>0.007390</td>
+      <td>0.033037</td>
+      <td>0.033033</td>
+      <td>0.168043</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>negatif</td>
+      <td>27</td>
+      <td>0.006622</td>
+      <td>0.024142</td>
+      <td>0.019840</td>
+      <td>0.167176</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>positif</td>
+      <td>32</td>
+      <td>0.006210</td>
+      <td>0.024142</td>
+      <td>0.012272</td>
+      <td>0.165608</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>banget</td>
+      <td>23</td>
+      <td>0.005878</td>
+      <td>0.021601</td>
+      <td>0.011609</td>
+      <td>0.136130</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>nlp</td>
+      <td>37</td>
+      <td>0.005778</td>
+      <td>0.025413</td>
+      <td>0.024895</td>
+      <td>0.136898</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>kualitas</td>
+      <td>24</td>
+      <td>0.005412</td>
+      <td>0.016518</td>
+      <td>0.005907</td>
+      <td>0.157677</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>bintang</td>
+      <td>29</td>
+      <td>0.005318</td>
+      <td>0.020330</td>
+      <td>0.009701</td>
+      <td>0.157421</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>hasil</td>
+      <td>29</td>
+      <td>0.005259</td>
+      <td>0.021601</td>
+      <td>0.011092</td>
+      <td>0.141073</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>analisis</td>
+      <td>26</td>
+      <td>0.005247</td>
+      <td>0.012706</td>
+      <td>0.006742</td>
+      <td>0.157421</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>marketplace</td>
+      <td>25</td>
+      <td>0.005086</td>
+      <td>0.012706</td>
+      <td>0.016089</td>
+      <td>0.160943</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>data</td>
+      <td>30</td>
+      <td>0.004954</td>
+      <td>0.020330</td>
+      <td>0.012617</td>
+      <td>0.156282</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>sentimen</td>
+      <td>21</td>
+      <td>0.004793</td>
+      <td>0.008895</td>
+      <td>0.007992</td>
+      <td>0.154418</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>pendekatan</td>
+      <td>29</td>
+      <td>0.004600</td>
+      <td>0.015248</td>
+      <td>0.008204</td>
+      <td>0.147165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>kualitas produk</td>
+      <td>19</td>
+      <td>0.004412</td>
+      <td>0.012706</td>
+      <td>0.021923</td>
+      <td>0.140056</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>pembelian</td>
+      <td>16</td>
+      <td>0.004361</td>
+      <td>0.005083</td>
+      <td>0.000000</td>
+      <td>0.153929</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>language</td>
+      <td>16</td>
+      <td>0.004223</td>
+      <td>0.007624</td>
+      <td>0.000005</td>
+      <td>0.127382</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>pendekatan nlp</td>
+      <td>19</td>
+      <td>0.004204</td>
+      <td>0.010165</td>
+      <td>0.012432</td>
+      <td>0.108585</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>stemming</td>
+      <td>14</td>
+      <td>0.004194</td>
+      <td>0.012706</td>
+      <td>0.010442</td>
+      <td>0.145730</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>hijab instan</td>
+      <td>15</td>
+      <td>0.004112</td>
+      <td>0.006353</td>
+      <td>0.000029</td>
+      <td>0.006353</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>natural</td>
+      <td>17</td>
+      <td>0.004112</td>
+      <td>0.007624</td>
+      <td>0.000004</td>
+      <td>0.126552</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>ulasan positif</td>
+      <td>9</td>
+      <td>0.003822</td>
+      <td>0.007624</td>
+      <td>0.000168</td>
+      <td>0.008034</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>shopee</td>
+      <td>26</td>
+      <td>0.003636</td>
+      <td>0.012706</td>
+      <td>0.005281</td>
+      <td>0.157167</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>memiliki</td>
+      <td>15</td>
+      <td>0.003606</td>
+      <td>0.013977</td>
+      <td>0.001245</td>
+      <td>0.151409</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>akurasi</td>
+      <td>17</td>
+      <td>0.003594</td>
+      <td>0.012706</td>
+      <td>0.001538</td>
+      <td>0.130637</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>tipis</td>
+      <td>11</td>
+      <td>0.003475</td>
+      <td>0.012706</td>
+      <td>0.004312</td>
+      <td>0.134342</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>natural language</td>
+      <td>16</td>
+      <td>0.003436</td>
+      <td>0.008895</td>
+      <td>0.006226</td>
+      <td>0.069877</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>processing</td>
+      <td>14</td>
+      <td>0.003410</td>
+      <td>0.006353</td>
+      <td>0.000000</td>
+      <td>0.120807</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Ambil 20 kata penting (unik) dari graph (berdasarkan PageRank)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">top20</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">display</span><span class="p">(</span><span class="n">top20</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top 20 nodes:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top20</span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>node</th>
+      <th>freq</th>
+      <th>pagerank</th>
+      <th>degree_centrality</th>
+      <th>betweenness_centrality</th>
+      <th>closeness_centrality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ulasan</td>
+      <td>162</td>
+      <td>0.029568</td>
+      <td>0.100381</td>
+      <td>0.116181</td>
+      <td>0.196817</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>produk</td>
+      <td>120</td>
+      <td>0.021813</td>
+      <td>0.072427</td>
+      <td>0.072337</td>
+      <td>0.186428</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>bagus</td>
+      <td>28</td>
+      <td>0.010256</td>
+      <td>0.038119</td>
+      <td>0.027718</td>
+      <td>0.163105</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>pembeli</td>
+      <td>37</td>
+      <td>0.007390</td>
+      <td>0.033037</td>
+      <td>0.033033</td>
+      <td>0.168043</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>negatif</td>
+      <td>27</td>
+      <td>0.006622</td>
+      <td>0.024142</td>
+      <td>0.019840</td>
+      <td>0.167176</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>positif</td>
+      <td>32</td>
+      <td>0.006210</td>
+      <td>0.024142</td>
+      <td>0.012272</td>
+      <td>0.165608</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>banget</td>
+      <td>23</td>
+      <td>0.005878</td>
+      <td>0.021601</td>
+      <td>0.011609</td>
+      <td>0.136130</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>nlp</td>
+      <td>37</td>
+      <td>0.005778</td>
+      <td>0.025413</td>
+      <td>0.024895</td>
+      <td>0.136898</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>kualitas</td>
+      <td>24</td>
+      <td>0.005412</td>
+      <td>0.016518</td>
+      <td>0.005907</td>
+      <td>0.157677</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>bintang</td>
+      <td>29</td>
+      <td>0.005318</td>
+      <td>0.020330</td>
+      <td>0.009701</td>
+      <td>0.157421</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>hasil</td>
+      <td>29</td>
+      <td>0.005259</td>
+      <td>0.021601</td>
+      <td>0.011092</td>
+      <td>0.141073</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>analisis</td>
+      <td>26</td>
+      <td>0.005247</td>
+      <td>0.012706</td>
+      <td>0.006742</td>
+      <td>0.157421</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>marketplace</td>
+      <td>25</td>
+      <td>0.005086</td>
+      <td>0.012706</td>
+      <td>0.016089</td>
+      <td>0.160943</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>data</td>
+      <td>30</td>
+      <td>0.004954</td>
+      <td>0.020330</td>
+      <td>0.012617</td>
+      <td>0.156282</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>sentimen</td>
+      <td>21</td>
+      <td>0.004793</td>
+      <td>0.008895</td>
+      <td>0.007992</td>
+      <td>0.154418</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>pendekatan</td>
+      <td>29</td>
+      <td>0.004600</td>
+      <td>0.015248</td>
+      <td>0.008204</td>
+      <td>0.147165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>kualitas produk</td>
+      <td>19</td>
+      <td>0.004412</td>
+      <td>0.012706</td>
+      <td>0.021923</td>
+      <td>0.140056</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>pembelian</td>
+      <td>16</td>
+      <td>0.004361</td>
+      <td>0.005083</td>
+      <td>0.000000</td>
+      <td>0.153929</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>language</td>
+      <td>16</td>
+      <td>0.004223</td>
+      <td>0.007624</td>
+      <td>0.000005</td>
+      <td>0.127382</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>pendekatan nlp</td>
+      <td>19</td>
+      <td>0.004204</td>
+      <td>0.010165</td>
+      <td>0.012432</td>
+      <td>0.108585</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 20 nodes:
+[&#39;ulasan&#39;, &#39;produk&#39;, &#39;bagus&#39;, &#39;pembeli&#39;, &#39;negatif&#39;, &#39;positif&#39;, &#39;banget&#39;, &#39;nlp&#39;, &#39;kualitas&#39;, &#39;bintang&#39;, &#39;hasil&#39;, &#39;analisis&#39;, &#39;marketplace&#39;, &#39;data&#39;, &#39;sentimen&#39;, &#39;pendekatan&#39;, &#39;kualitas produk&#39;, &#39;pembelian&#39;, &#39;language&#39;, &#39;pendekatan nlp&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+
+<span class="c1"># fungsi filter node penting (berdasarkan isi node)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">is_kalimat_penting</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="c1"># buang url / noise teknis</span>
+    <span class="n">blacklist_fragment</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;http&quot;</span><span class="p">,</span> <span class="s2">&quot;www&quot;</span><span class="p">,</span> <span class="s2">&quot;search&quot;</span><span class="p">,</span> <span class="s2">&quot;google&quot;</span><span class="p">,</span> <span class="s2">&quot;insta&quot;</span><span class="p">,</span> <span class="s2">&quot;page&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;token&quot;</span><span class="p">,</span> <span class="s2">&quot;assessment&quot;</span><span class="p">,</span> <span class="s2">&quot;tools&quot;</span><span class="p">,</span> <span class="s2">&quot;keyword&quot;</span><span class="p">,</span> <span class="s2">&quot;sales&quot;</span>
+    <span class="p">]</span>
+    <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">b</span> <span class="ow">in</span> <span class="n">node</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">blacklist_fragment</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="c1"># hanya huruf + spasi (untuk bigram)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[a-zA-Z ]+&quot;</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="c1"># minimal panjang (biar bukan kata receh)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">node</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">return</span> <span class="kc">True</span>
+
+
+<span class="c1"># filter dari result PageRank</span>
+<span class="n">important_nodes</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">result</span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">is_kalimat_penting</span><span class="p">)]</span>
+
+<span class="c1"># ambil top 20 berdasarkan PageRank</span>
+<span class="n">top20_penting</span> <span class="o">=</span> <span class="n">important_nodes</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">top20_penting</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top 20 kalimat/kata penting:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top20_penting</span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>node</th>
+      <th>freq</th>
+      <th>pagerank</th>
+      <th>degree_centrality</th>
+      <th>betweenness_centrality</th>
+      <th>closeness_centrality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ulasan</td>
+      <td>162</td>
+      <td>0.029568</td>
+      <td>0.100381</td>
+      <td>0.116181</td>
+      <td>0.196817</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>produk</td>
+      <td>120</td>
+      <td>0.021813</td>
+      <td>0.072427</td>
+      <td>0.072337</td>
+      <td>0.186428</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>bagus</td>
+      <td>28</td>
+      <td>0.010256</td>
+      <td>0.038119</td>
+      <td>0.027718</td>
+      <td>0.163105</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>pembeli</td>
+      <td>37</td>
+      <td>0.007390</td>
+      <td>0.033037</td>
+      <td>0.033033</td>
+      <td>0.168043</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>negatif</td>
+      <td>27</td>
+      <td>0.006622</td>
+      <td>0.024142</td>
+      <td>0.019840</td>
+      <td>0.167176</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>positif</td>
+      <td>32</td>
+      <td>0.006210</td>
+      <td>0.024142</td>
+      <td>0.012272</td>
+      <td>0.165608</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>banget</td>
+      <td>23</td>
+      <td>0.005878</td>
+      <td>0.021601</td>
+      <td>0.011609</td>
+      <td>0.136130</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>kualitas</td>
+      <td>24</td>
+      <td>0.005412</td>
+      <td>0.016518</td>
+      <td>0.005907</td>
+      <td>0.157677</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>bintang</td>
+      <td>29</td>
+      <td>0.005318</td>
+      <td>0.020330</td>
+      <td>0.009701</td>
+      <td>0.157421</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>hasil</td>
+      <td>29</td>
+      <td>0.005259</td>
+      <td>0.021601</td>
+      <td>0.011092</td>
+      <td>0.141073</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>analisis</td>
+      <td>26</td>
+      <td>0.005247</td>
+      <td>0.012706</td>
+      <td>0.006742</td>
+      <td>0.157421</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>marketplace</td>
+      <td>25</td>
+      <td>0.005086</td>
+      <td>0.012706</td>
+      <td>0.016089</td>
+      <td>0.160943</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>sentimen</td>
+      <td>21</td>
+      <td>0.004793</td>
+      <td>0.008895</td>
+      <td>0.007992</td>
+      <td>0.154418</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>pendekatan</td>
+      <td>29</td>
+      <td>0.004600</td>
+      <td>0.015248</td>
+      <td>0.008204</td>
+      <td>0.147165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>kualitas produk</td>
+      <td>19</td>
+      <td>0.004412</td>
+      <td>0.012706</td>
+      <td>0.021923</td>
+      <td>0.140056</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>pembelian</td>
+      <td>16</td>
+      <td>0.004361</td>
+      <td>0.005083</td>
+      <td>0.000000</td>
+      <td>0.153929</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>language</td>
+      <td>16</td>
+      <td>0.004223</td>
+      <td>0.007624</td>
+      <td>0.000005</td>
+      <td>0.127382</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>pendekatan nlp</td>
+      <td>19</td>
+      <td>0.004204</td>
+      <td>0.010165</td>
+      <td>0.012432</td>
+      <td>0.108585</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>stemming</td>
+      <td>14</td>
+      <td>0.004194</td>
+      <td>0.012706</td>
+      <td>0.010442</td>
+      <td>0.145730</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>natural</td>
+      <td>17</td>
+      <td>0.004112</td>
+      <td>0.007624</td>
+      <td>0.000004</td>
+      <td>0.126552</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 20 kalimat/kata penting:
+[&#39;ulasan&#39;, &#39;produk&#39;, &#39;bagus&#39;, &#39;pembeli&#39;, &#39;negatif&#39;, &#39;positif&#39;, &#39;banget&#39;, &#39;kualitas&#39;, &#39;bintang&#39;, &#39;hasil&#39;, &#39;analisis&#39;, &#39;marketplace&#39;, &#39;sentimen&#39;, &#39;pendekatan&#39;, &#39;kualitas produk&#39;, &#39;pembelian&#39;, &#39;language&#39;, &#39;pendekatan nlp&#39;, &#39;stemming&#39;, &#39;natural&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+
+<span class="c1"># 1) Ambil Top 20 dari result (sudah urut pagerank desc)</span>
+<span class="n">top20</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">top20_nodes</span> <span class="o">=</span> <span class="n">top20</span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># 2) Subgraph hanya Top 20</span>
+<span class="n">H</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">subgraph</span><span class="p">(</span><span class="n">top20_nodes</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># 3) Ambil skor PageRank buat node size</span>
+<span class="n">pr</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">top20</span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">],</span> <span class="n">top20</span><span class="p">[</span><span class="s2">&quot;pagerank&quot;</span><span class="p">]))</span>
+
+<span class="c1"># kalau ada node yang tidak kebawa (harusnya nggak), kasih default kecil</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">H</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
+    <span class="n">pr</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+
+<span class="c1"># 4) Skala ukuran node biar kelihatan (ubah kalau kekecilan/kegedean)</span>
+<span class="n">node_sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3000</span> <span class="o">*</span> <span class="p">(</span><span class="n">pr</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">/</span> <span class="nb">max</span><span class="p">(</span><span class="n">pr</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">H</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
+
+<span class="c1"># 5) Layout (biar mirip gaya gambar)</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.35</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
+
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span>
+    <span class="n">H</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span>
+    <span class="n">node_size</span><span class="o">=</span><span class="n">node_sizes</span><span class="p">,</span>
+    <span class="n">node_color</span><span class="o">=</span><span class="s2">&quot;#a6d8ec&quot;</span><span class="p">,</span>   <span class="c1"># biru muda kayak gambar</span>
+    <span class="n">edgecolors</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
+    <span class="n">linewidths</span><span class="o">=</span><span class="mf">1.5</span>
+<span class="p">)</span>
+
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span>
+    <span class="n">H</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span>
+    <span class="n">font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">font_weight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Top 20 Node Penting (PageRank) - Word Graph&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top 20 nodes:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top20_nodes</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9f7947f6427b25a10d60d3560000f967ed8dc8e1411174f0459fd00e833f1466.png" src="_images/9f7947f6427b25a10d60d3560000f967ed8dc8e1411174f0459fd00e833f1466.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 20 nodes:
+[&#39;ulasan&#39;, &#39;produk&#39;, &#39;bagus&#39;, &#39;pembeli&#39;, &#39;negatif&#39;, &#39;positif&#39;, &#39;banget&#39;, &#39;nlp&#39;, &#39;kualitas&#39;, &#39;bintang&#39;, &#39;hasil&#39;, &#39;analisis&#39;, &#39;marketplace&#39;, &#39;data&#39;, &#39;sentimen&#39;, &#39;pendekatan&#39;, &#39;kualitas produk&#39;, &#39;pembelian&#39;, &#39;language&#39;, &#39;pendekatan nlp&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Crawling_RE.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Crawling data RE &lt;&gt;1000</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 22-038 Ihya' Ulumuddin
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
