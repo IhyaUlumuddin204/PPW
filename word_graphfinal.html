@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Pencarian &amp; Penambangan Web</title>
+    <title>word_graph &#8212; Pencarian &amp; Penambangan Web</title>
   
   
   
@@ -178,7 +178,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="pengantarwebmining.html">Pengantar Web Mining</a></li>
 <li class="toctree-l1"><a class="reference internal" href="webcrawling.html">Web Crawling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IhyaUlumuddin_CrawlingPPW.html">Tugas Crawling PTA dan Berita</a></li>
@@ -212,8 +212,9 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="PagerankFB.html">Pagerank Facebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PagerankFB%20%282%29.html">Pagerank Facebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Crawling_RE.html">Crawling data RE &lt;&gt;1000</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">word_graph</a></li>
 </ul>
 
     </div>
@@ -339,9 +340,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -352,19 +351,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>word_graph</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -374,7 +365,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="word-graph">
+<h1>word_graph<a class="headerlink" href="#word-graph" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pymupdf</span>
 </pre></div>
@@ -708,38 +701,38 @@ Diajukan: 1 Juli 2020; Dir
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriks Ko-okurensi
-            doi  amikom  comput  uji  kesimpulan  persatu  tutup  diterima  \
-doi           0       0       1    0           0        0      0         0   
-amikom        0       0       0    0           0        0      0         0   
-comput        1       0       0    0           0        0      0         0   
-uji           0       0       0    0           0        0      0         0   
-kesimpulan    0       0       0    0           0        0      0         0   
-persatu       0       0       0    0           0        0      0         0   
-tutup         0       0       0    0           0        0      0         0   
-diterima      0       0       0    0           0        0      0         0   
-karakter      0       0       0    0           0        0      0         0   
-pengujian     0       0       0    1           0        0      0         0   
-
-            karakter  pengujian  
-doi                0          0  
-amikom             0          0  
-comput             0          0  
-uji                0          1  
-kesimpulan         0          0  
-persatu            0          0  
-tutup              0          0  
-diterima           0          0  
-karakter           0          0  
-pengujian          0          0  
-Total kata setelah preprocessing: 3406
-</pre></div>
-</div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /home/codespace/nltk_data...
 [nltk_data]   Package punkt is already up-to-date!
 [nltk_data] Downloading package stopwords to
 [nltk_data]     /home/codespace/nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriks Ko-okurensi
+             konsumen  informatika  phonetic  ekspektasi  meaning  akurasi  \
+konsumen            0            0         0           0        0        0   
+informatika         0            0         0           0        0        0   
+phonetic            0            0         0           0        0        0   
+ekspektasi          0            0         0           0        0        0   
+meaning             0            0         0           0        0        0   
+akurasi             0            0         0           0        0        6   
+removal             0            0         0           0        0        1   
+diterima            0            0         0           1        0        0   
+without             0            0         0           0        0        0   
+kondisi             0            0         0           0        0        0   
+
+             removal  diterima  without  kondisi  
+konsumen           0         0        0        0  
+informatika        0         0        0        0  
+phonetic           0         0        0        0  
+ekspektasi         0         1        0        0  
+meaning            0         0        0        0  
+akurasi            1         0        0        0  
+removal            2         0        0        0  
+diterima           0         0        0        0  
+without            0         0        0        0  
+kondisi            0         0        0        0  
+Total kata setelah preprocessing: 3406
 </pre></div>
 </div>
 </div>
@@ -765,7 +758,7 @@ Total kata setelah preprocessing: 3406
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8a1cd8655e15923a57e2b1c90220556c53abc3f3a32dfbd03d90c03471ab7990.png" src="_images/8a1cd8655e15923a57e2b1c90220556c53abc3f3a32dfbd03d90c03471ab7990.png" />
+<img alt="_images/2b77f2940de4042097d70308079f43aaa436b4aa1b1b8d24986f2d188a038e35.png" src="_images/2b77f2940de4042097d70308079f43aaa436b4aa1b1b8d24986f2d188a038e35.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -884,7 +877,7 @@ pp: 0.0064
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/a0e68540b3ab9f80a0d9a719fae15d8aefb25e996c8711a43ac765a869cbf97a.png" src="_images/a0e68540b3ab9f80a0d9a719fae15d8aefb25e996c8711a43ac765a869cbf97a.png" />
+<img alt="_images/acc3afbc8874871dea2a5dadc2bfa8bb1bb113c1ce1ae0868ad1deb6cbb61250.png" src="_images/acc3afbc8874871dea2a5dadc2bfa8bb1bb113c1ce1ae0868ad1deb6cbb61250.png" />
 </div>
 </div>
 <p>Stopwords + fungsi clean token (node harus kata jelas, tanpa angka/karakter aneh)</p>
@@ -1129,7 +1122,7 @@ Jumlah edge: 997
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/5b9eefb4d53b82ae1d6e482b7f0422252a2025502beddaf266674b7a8d71878a.png" src="_images/5b9eefb4d53b82ae1d6e482b7f0422252a2025502beddaf266674b7a8d71878a.png" />
+<img alt="_images/9135792157d193b3bb9b17e0600a73a916800ff901e6ec51f2b10817913da37b.png" src="_images/9135792157d193b3bb9b17e0600a73a916800ff901e6ec51f2b10817913da37b.png" />
 </div>
 </div>
 <p>Centrality (PageRank, Degree, Betweenness, Closeness)</p>
@@ -1996,13 +1989,14 @@ Jumlah edge: 997
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/9f7947f6427b25a10d60d3560000f967ed8dc8e1411174f0459fd00e833f1466.png" src="_images/9f7947f6427b25a10d60d3560000f967ed8dc8e1411174f0459fd00e833f1466.png" />
+<img alt="_images/b6446a00a9539e950149bad4c7262ac336ea8c757aa7805a5ba170836d17fea3.png" src="_images/b6446a00a9539e950149bad4c7262ac336ea8c757aa7805a5ba170836d17fea3.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 20 nodes:
 [&#39;ulasan&#39;, &#39;produk&#39;, &#39;bagus&#39;, &#39;pembeli&#39;, &#39;negatif&#39;, &#39;positif&#39;, &#39;banget&#39;, &#39;nlp&#39;, &#39;kualitas&#39;, &#39;bintang&#39;, &#39;hasil&#39;, &#39;analisis&#39;, &#39;marketplace&#39;, &#39;data&#39;, &#39;sentimen&#39;, &#39;pendekatan&#39;, &#39;kualitas produk&#39;, &#39;pembelian&#39;, &#39;language&#39;, &#39;pendekatan nlp&#39;]
 </pre></div>
 </div>
 </div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2049,21 +2043,6 @@ Jumlah edge: 997
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
